@@ -1,4 +1,4 @@
-sitegroup: d8-starter_io_composer
+sitegroup: thelady_co_za
 deploy_tasks:
   development:
     before_deploy:
