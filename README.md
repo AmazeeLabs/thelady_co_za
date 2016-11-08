@@ -133,3 +133,6 @@ You will need:
   - Manually move the `sites/default/files` directory to `web/sites/default/files`
   - Manually remove all leftover derictories that should not be there anymore (like `modules`, `themes`, etc)
   - Update bash aliases, example: https://github.com/AmazeeLabs/devops/commit/e257359
+
+# thelady_co_za
+D8 website: The Lady (South African Women in Tech)
