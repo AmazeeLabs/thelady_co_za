@@ -32,6 +32,9 @@ a.clear-btn, a.clear-btn:link, a.clear-btn:visited {
 
 a.black-btn, a.black-btn:link, a.black-btn:visited {
   @include button($color:$black);
+  &:hover{
+    color: $black;
+  }
 }
 
 
