@@ -72,18 +72,21 @@
  * @see html.html.twig
  */
 #}
-<div id="page-wrapper">
-  <div id="page">
+<div class="page-wrapper">
+  <div class="page">
+
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       <div class="inner grid">
         {{ page.header }}
       </div>
     </header>
 
+
+    {% block fullpage %}
     {{ page.messages }}
 
     <main id="main" class="layout-main clearfix">
-      <div class="inner grid">
+      <div class="grid">
         {% if is_front == false %}
         {{ title }}
         {% endif %}
@@ -91,14 +94,39 @@
       </div>
     </main>
 
+    {% endblock %}
+
+    {% block footer %}
     <footer class="site-footer">
-      <div class="inner grid">
-        {% if page.footer %}
-          <div class="site-footer__top layout-container clearfix">
-            {{ page.footer }}
+      <div class="grid">
+
+        {% if page.footer_left_top %}
+          <div class="footer-top-left layout-container clearfix">
+            <div class="grid">
+              {{ page.footer_left_top }}
+            </div>
           </div>
         {% endif %}
-      </footer>
-    </div>
+
+        {% if page.footer_right_top %}
+          <div class="footer-top-right layout-container clearfix">
+             <div class="grid">
+               {{ page.footer_right_top }}
+             </div>
+          </div>
+        {% endif %}
+
+        {% if page.footer_bottom %}
+          <div class="footer-bottom layout-container clearfix">
+             <div class="grid">
+                {{ page.footer_bottom }}
+             </div>
+          </div>
+        {% endif %}
+
+      </div>
+    </footer>
+    {% endblock %}
+
   </div>
 </div>
