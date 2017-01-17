@@ -8,6 +8,10 @@ libraries:
   - beaker/base
 stylesheets-remove:
 regions:
-  header: Header
-  content: Content
-  footer: Footer
+  header_left: Header Left
+  header_right: Header Right
+  content_top: Content Top
+  content: Content Main
+  footer_left_top: Footer Left Top
+  footer_right_top: Footer Right Top
+  footer_bottom: Footer Bottom
