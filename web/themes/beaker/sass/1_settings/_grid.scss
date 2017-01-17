@@ -45,3 +45,27 @@ $susy: (
     @include container(4);
   }
 }
+
+
+/*
+* Frontpage Styling
+*/
+.path-frontpage .content-wrapper{
+  max-width: 100% ;
+  padding: 0 ;
+}
+
+
+/*
+* Main Content Styling
+*/
+.inner{
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .layout-main{
+    width: 100%;
+    float: left;
+    margin-bottom: $gutter;
+  }
+}

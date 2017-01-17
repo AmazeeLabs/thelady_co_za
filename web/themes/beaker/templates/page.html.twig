@@ -85,14 +85,35 @@
     {% block fullpage %}
     {{ page.messages }}
 
-    <main id="main" class="layout-main clearfix">
-      <div class="grid">
-        {% if is_front == false %}
-        {{ title }}
-        {% endif %}
-        {{ page.content }}
+
+    {% if page.content_top %}
+    <div class="content-top layout-container clearfix">
+      <div class="inner">
+          {{ page.content_bottom }}
       </div>
-    </main>
+    </div>
+    {% endif %}
+
+
+    <div class="content-wrapper clearfix">
+
+      <main id="main" class="layout-main clearfix">
+        <div class="inner">
+          {{ page.content }}
+        </div>
+      </main>
+
+    </div>
+
+
+    {% if page.content_bottom %}
+    <div class="content-bottom clearfix">
+      <div class="inner">
+        {{ page.content_bottom }}
+      </div>
+    </div>
+    {% endif %}
+
 
     {% endblock %}
 
@@ -114,7 +135,9 @@
 
         {% if page.footer_bottom %}
           <div class="footer-bottom layout-container clearfix">
-            {{ page.footer_bottom }}
+            <div class="inner">
+              {{ page.footer_bottom }}
+            </div>
           </div>
         {% endif %}
 
