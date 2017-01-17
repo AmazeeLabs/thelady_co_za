@@ -29,3 +29,9 @@ a.gold-btn, a.gold-btn:link, a.gold-btn:visited {
 a.clear-btn, a.clear-btn:link, a.clear-btn:visited {
   @include button($color:$white);
 }
+
+a.black-btn, a.black-btn:link, a.black-btn:visited {
+  @include button($color:$black);
+}
+
+
