@@ -12,6 +12,7 @@ regions:
   header_right: Header Right
   content_top: Content Top
   content: Content Main
+  content_bottom: Content Bottom
   footer_left_top: Footer Left Top
   footer_right_top: Footer Right Top
   footer_bottom: Footer Bottom
