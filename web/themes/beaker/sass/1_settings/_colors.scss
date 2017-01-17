@@ -1,9 +1,15 @@
+// =====================
+// DESIGN COLORS
+
+$gold: #dbbc90;
+
+
 // MOST COMMONLY USED COLORS THROUGHOUT THEME
 // =============================================================================
 
-$black: #000;
-$white: #fff;
-$grey: #ddd;
+$black: #000000;
+$white: #ffffff;
+$grey: #dddddd;
 
 // CUSTOM COLORS
 $green: green;
@@ -13,10 +19,18 @@ $blue: blue;
 
 $body-text: $black;
 
-$link: $blue;
+$link: $gold;
+
+
 
 // ======================
 // DEFAULT SYSTEM COLORS
 
 $system__pink: #F9D5DB; // For errors i.e.
 $system__blue: #D9EDF7; // For system messages i.e.
+
+
+// ======================
+// GUTTER
+
+$gutter: 20px;

@@ -1,0 +1,11 @@
+// LISTS STYLES
+// =============================================================================
+
+ul,ol{
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 2px 0;
+    list-style-type: none;
+  }
+}
