@@ -1,0 +1,31 @@
+// BUTTONS
+// =============================================================================
+
+@mixin button($color:$black, $font-size:15px, $padding:12px 30px) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  color: $color;
+  @include font-bold;
+  display: inline-block;
+  font-size: $font-size;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  @include transition(all 0.5s ease);
+  line-height: 1em;
+  padding: $padding;
+  &:hover {
+    background-color: rgba($color, 0.2);
+    text-decoration: none;
+  }
+}
+
+
+
+a.gold-btn, a.gold-btn:link, a.gold-btn:visited {
+  @include button($color:$gold);
+}
+
+a.clear-btn, a.clear-btn:link, a.clear-btn:visited {
+  @include button($color:$white);
+}
