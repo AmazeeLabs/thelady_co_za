@@ -1,0 +1,25 @@
+uuid: 892a1bc0-518f-47b8-9f7f-ffb23076ba4b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3396e81a-4c02-4e57-8af6-effb29c477c6'
+  module:
+    - block_content
+  theme:
+    - beaker
+id: copyrightandconnect
+theme: beaker
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:3396e81a-4c02-4e57-8af6-effb29c477c6'
+settings:
+  id: 'block_content:3396e81a-4c02-4e57-8af6-effb29c477c6'
+  label: 'Copyright and Connect'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

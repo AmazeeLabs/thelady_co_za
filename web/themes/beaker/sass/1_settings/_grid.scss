@@ -23,6 +23,7 @@ $susy: (
 // GENERAL BREAKPOINTS
 // =============================================================================
 .grid {
+  background-image: none !important;
   padding: 0 15px;
   @include breakpoint($tablet-up) {
     @include container($susy);
