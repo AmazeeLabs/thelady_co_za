@@ -1,0 +1,46 @@
+footer{
+
+  background-color: $design-black;
+  .amazee-accredit{
+    text-align: center;
+    width: 100%;
+    margin: $gutter auto;
+    span{
+      font-size: 13px;
+      color: $white;
+      display: block;
+      margin-bottom: $gutter/2;
+    }
+    .left, .right{
+      display: inline-block;
+    }
+    .left{
+      margin-right: 20px;
+      img{ width: 150px; }
+    }
+    .right{
+      img{ width: 62px; }
+    }
+  }
+
+  .all-rights{
+    .copyright{
+      float: left;
+      p{
+        color: $white;
+        font-size: 13px;
+      }
+    }
+    .connect{
+      float: right;
+      li{
+        list-style-type: none;
+        display: inline;
+        margin: 0 ;
+        padding-right: 10px;
+        img{ width: 30px; }
+      }
+    }
+  }
+
+}
