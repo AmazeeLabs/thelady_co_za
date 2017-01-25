@@ -1,9 +1,9 @@
-uuid: ca808e37-1380-4241-828a-99e7bd9d5490
+uuid: 258ca1c1-5791-4b7e-84e5-04c05c9b026e
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e0a59692-f458-4d71-866d-92ac7351b845'
+    - 'block_content:basic:01ece117-dea9-461f-9f74-6c3a5b50580d'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: beaker
 region: footer_bottom
 weight: 0
 provider: null
-plugin: 'block_content:e0a59692-f458-4d71-866d-92ac7351b845'
+plugin: 'block_content:01ece117-dea9-461f-9f74-6c3a5b50580d'
 settings:
-  id: 'block_content:e0a59692-f458-4d71-866d-92ac7351b845'
+  id: 'block_content:01ece117-dea9-461f-9f74-6c3a5b50580d'
   label: 'Amazee Accreditation'
   provider: block_content
   label_display: '0'
