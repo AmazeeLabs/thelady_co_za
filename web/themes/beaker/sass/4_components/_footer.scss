@@ -1,44 +1,73 @@
-footer{
+footer {
 
   background-color: $design-black;
-  .amazee-accredit{
+  p {
+    color: $gold;
+    font-size: 13px;
+  }
+
+
+  .amazee-accredit {
     text-align: center;
     width: 100%;
-    margin: $gutter auto;
-    span{
+    margin: auto;
+    @include breakpoint($small) {
+      width: 50%;
+      margin-bottom: $gutter;
+    }
+    span {
+      color: $gold;
       font-size: 13px;
-      color: $white;
       display: block;
       margin-bottom: $gutter/2;
     }
-    .left, .right{
+    .left, .right {
       display: inline-block;
     }
-    .left{
-      margin-right: 20px;
+    .left {
+      margin-right: $gutter;
+      margin-top: $gutter;
+      @include breakpoint($small) {
+        margin-bottom: $gutter;
+        margin-right: 0;
+      }
       img{ width: 150px; }
     }
-    .right{
-      img{ width: 62px; }
+    .right {
+      img { width: 62px; }
     }
   }
 
-  .all-rights{
-    .copyright{
-      float: left;
-      p{
-        color: $white;
-        font-size: 13px;
+
+
+  .all-rights {
+    @include breakpoint($small) {
+      margin-bottom: $gutter;
+    }
+
+    .copyright,
+    .connect {
+      @include breakpoint($small) {
+        float: none !important;
+        display: block;
+        text-align: center;
       }
     }
-    .connect{
+    .copyright {
+      float: left;
+    }
+    .connect {
       float: right;
-      li{
+      margin-top: $gutter;
+      @include breakpoint($small) {
+        margin-top: 0;
+      }
+      li {
         list-style-type: none;
         display: inline;
-        margin: 0 ;
-        padding-right: 10px;
-        img{ width: 30px; }
+        margin: 0;
+        padding-right: 5px;
+        img { width: 30px; }
       }
     }
   }
