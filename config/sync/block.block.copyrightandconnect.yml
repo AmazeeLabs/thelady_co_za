@@ -1,9 +1,9 @@
-uuid: 892a1bc0-518f-47b8-9f7f-ffb23076ba4b
+uuid: acc48fea-4a8d-4a1b-84e2-42175586ffdb
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:3396e81a-4c02-4e57-8af6-effb29c477c6'
+    - 'block_content:basic:bcb90312-6e97-4c7a-a5c0-5ab9f2f2b5bc'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: copyrightandconnect
 theme: beaker
 region: footer_bottom
-weight: 0
+weight: -5
 provider: null
-plugin: 'block_content:3396e81a-4c02-4e57-8af6-effb29c477c6'
+plugin: 'block_content:bcb90312-6e97-4c7a-a5c0-5ab9f2f2b5bc'
 settings:
-  id: 'block_content:3396e81a-4c02-4e57-8af6-effb29c477c6'
+  id: 'block_content:bcb90312-6e97-4c7a-a5c0-5ab9f2f2b5bc'
   label: 'Copyright and Connect'
   provider: block_content
   label_display: '0'

@@ -11,7 +11,7 @@ dependencies:
 id: amazeeaccreditation
 theme: beaker
 region: footer_bottom
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:01ece117-dea9-461f-9f74-6c3a5b50580d'
 settings:
