@@ -6,6 +6,11 @@ footer {
     font-size: 13px;
   }
 
+  a {
+    &:hover{ opacity: 0.4; }
+  }
+
+  .region-footer-bottom { position: relative; }
 
   .amazee-accredit {
     text-align: center;
@@ -40,6 +45,24 @@ footer {
 
 
 
+  .language-switcher-language-url{
+    position: absolute;
+    right: $gutter*8;
+    bottom: 12px;
+
+    li {
+      list-style-type: none;
+      display: inline;
+      margin: 0;
+      padding-right: 10px;
+      a {
+        color: $gold !important;
+      }
+      &:last-child { margin-right: 0; }
+    }
+  }
+
+
   .all-rights {
     @include breakpoint($small) {
       margin-bottom: $gutter;
@@ -67,6 +90,11 @@ footer {
         display: inline;
         margin: 0;
         padding-right: 5px;
+        a.links {
+          color: $gold;
+          margin-right: 20px;
+          vertical-align: super;
+        }
         img { width: 30px; }
       }
     }

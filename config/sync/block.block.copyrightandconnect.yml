@@ -11,7 +11,7 @@ dependencies:
 id: copyrightandconnect
 theme: beaker
 region: footer_bottom
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:bcb90312-6e97-4c7a-a5c0-5ab9f2f2b5bc'
 settings:
