@@ -6,6 +6,7 @@ footer {
     font-size: 13px;
   }
 
+  .region-footer-bottom { position: relative; }
 
   .amazee-accredit {
     text-align: center;
@@ -38,6 +39,27 @@ footer {
     }
   }
 
+
+
+  .language-switcher-language-url{
+    position: absolute;
+    right: $gutter*8;
+    bottom: 12px;
+
+    li{
+      list-style-type: none;
+      display: inline;
+      margin: 0;
+      padding-right: 10px;
+      a{
+        color: $gold !important;
+        &:hover{
+          opacity: 0.4;
+        }
+      }
+      &:last-child{ margin-right: 0; }
+    }
+  }
 
 
   .all-rights {
