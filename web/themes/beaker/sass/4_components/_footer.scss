@@ -6,6 +6,10 @@ footer {
     font-size: 13px;
   }
 
+  a {
+    &:hover{ opacity: 0.4; }
+  }
+
   .region-footer-bottom { position: relative; }
 
   .amazee-accredit {
@@ -46,18 +50,15 @@ footer {
     right: $gutter*8;
     bottom: 12px;
 
-    li{
+    li {
       list-style-type: none;
       display: inline;
       margin: 0;
       padding-right: 10px;
-      a{
+      a {
         color: $gold !important;
-        &:hover{
-          opacity: 0.4;
-        }
       }
-      &:last-child{ margin-right: 0; }
+      &:last-child { margin-right: 0; }
     }
   }
 
