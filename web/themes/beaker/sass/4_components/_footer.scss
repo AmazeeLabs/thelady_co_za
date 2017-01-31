@@ -67,6 +67,11 @@ footer {
         display: inline;
         margin: 0;
         padding-right: 5px;
+        a.links {
+          color: $gold;
+          margin-right: 20px;
+          vertical-align: super;
+        }
         img { width: 30px; }
       }
     }
