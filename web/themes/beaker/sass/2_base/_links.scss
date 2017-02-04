@@ -3,14 +3,15 @@
 a,
 a:link,
 a:visited {
-  transition: all 0.5s ease 0s;
+  @include transition(all 0.5s ease);
   line-height: inherit;
   text-decoration: none;
   color: $black;
-  &:hover {
-    color: $gold;
-    img{
-      @include opacity(0.75);
-    }
+}
+
+a:hover{
+  color: lighten($gold, 10%);
+  img{
+    @include opacity(0.75);
   }
 }
