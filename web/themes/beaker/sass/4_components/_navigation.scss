@@ -15,6 +15,7 @@ nav.menu--main {
         &:hover, &:active {
           color: $gold !important;
           border-bottom: 4px solid $gold;
+          transform: translateY(-100%);
         }
       }
     }
