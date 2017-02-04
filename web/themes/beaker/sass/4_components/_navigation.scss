@@ -1,14 +1,21 @@
-nav.menu--main{
-
-  ul{
+nav.menu--main {
+  border-bottom: 2px solid $design-black;
+  ul {
     margin-left: 0;
-    li{
+    padding-bottom: 10px;
+    li {
       display: inline;
       padding: 0;
       margin: 0 $gutter;
-      a{
-        font-weight: 600;
+      a {
+        font-weight: 700;
         font-size: 20px;
+        padding-bottom: 8px;
+        transition: none;
+        &:hover, &:active {
+          color: $gold !important;
+          border-bottom: 4px solid $gold;
+        }
       }
     }
   }
