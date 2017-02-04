@@ -1,3 +1,15 @@
+nav.menu--main{
 
-// NAVIGATION STYLES
-// =============================================================================
+  ul{
+    margin-left: 0;
+    li{
+      display: inline;
+      padding: 0;
+      margin: 0 $gutter;
+      a{
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+}
