@@ -1,0 +1,25 @@
+uuid: 1efcee3a-52fb-4155-acfa-acb96a1ab00f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+  module:
+    - block_content
+  theme:
+    - beaker
+id: connectmobile
+theme: beaker
+region: header_right
+weight: -6
+provider: null
+plugin: 'block_content:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+settings:
+  id: 'block_content:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+  label: 'Connect Mobile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
