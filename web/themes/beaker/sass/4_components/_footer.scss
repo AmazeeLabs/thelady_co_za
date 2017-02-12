@@ -40,33 +40,13 @@ footer {
   }
 
 
-
-  .language-switcher-language-url{
-    position: absolute;
-    right: $gutter*8;
-    bottom: 12px;
-
-    li {
-      list-style-type: none;
-      display: inline;
-      margin: 0;
-      padding-right: 10px;
-      a {
-        color: $gold !important;
-      }
-      &:last-child { margin-right: 0; }
-    }
-  }
-
-
   .all-rights {
     @include breakpoint($small) {
       margin-bottom: $gutter;
     }
 
-    .copyright,
-    .connect {
-      @include breakpoint($small) {
+    .copyright{
+      @include breakpoint($tablet) {
         float: none !important;
         display: block;
         text-align: center;
@@ -75,25 +55,29 @@ footer {
     .copyright {
       float: left;
     }
-    .connect {
-      float: right;
-      margin-top: $gutter;
-      @include breakpoint($small) {
-        margin-top: 0;
-      }
-      li {
-        list-style-type: none;
-        display: inline;
-        margin: 0;
-        padding-right: 5px;
-        a.links {
-          color: $gold;
-          margin-right: 20px;
-          vertical-align: super;
-        }
-        img { width: 30px; }
-      }
-    }
   }
 
+}
+
+
+// Global Connect Styling
+.connect {
+  float: right;
+  margin-top: $gutter;
+
+  @include breakpoint($tablet) {
+    display: none;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding-right: 5px;
+    a.links {
+      color: $gold;
+      margin-right: 20px;
+      vertical-align: super;
+    }
+    img { width: 30px; }
+  }
 }
