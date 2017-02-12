@@ -6,6 +6,7 @@
   @include breakpoint($tablet) {
     display: none;
   }
+
   li {
     list-style-type: none;
     display: inline;
