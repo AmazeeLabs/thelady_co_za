@@ -11,7 +11,7 @@ dependencies:
 id: beaker_main_menu
 theme: beaker
 region: header_right
-weight: -5
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:
