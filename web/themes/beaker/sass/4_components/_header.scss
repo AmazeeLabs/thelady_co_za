@@ -24,4 +24,18 @@ header {
 .region-header-right {
   width: 24%;
   float: right;
+
+  .language-switcher-language-url {
+    display: none;
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
+
+  .connect{
+    display: none;
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
 }
