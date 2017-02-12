@@ -62,7 +62,7 @@ $susy: (
 */
 .inner{
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 $gutter;
 
   .layout-main{
     width: 100%;
