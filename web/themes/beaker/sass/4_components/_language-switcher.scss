@@ -1,0 +1,16 @@
+.language-switcher-language-url{
+  position: absolute;
+  right: $gutter*8;
+  bottom: 12px;
+
+  li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding-right: 10px;
+    a {
+      color: $gold !important;
+    }
+    &:last-child { margin-right: 0; }
+  }
+}
