@@ -45,9 +45,8 @@ footer {
       margin-bottom: $gutter;
     }
 
-    .copyright,
-    .connect {
-      @include breakpoint($small) {
+    .copyright{
+      @include breakpoint($tablet) {
         float: none !important;
         display: block;
         text-align: center;
@@ -65,8 +64,9 @@ footer {
 .connect {
   float: right;
   margin-top: $gutter;
-  @include breakpoint($small) {
-    margin-top: 0;
+
+  @include breakpoint($tablet) {
+    display: none;
   }
   li {
     list-style-type: none;
