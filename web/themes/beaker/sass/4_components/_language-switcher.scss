@@ -3,6 +3,9 @@
   right: $gutter*8;
   bottom: 12px;
 
+  @include breakpoint($tablet) {
+    display: none;
+  }
   li {
     list-style-type: none;
     display: inline;
