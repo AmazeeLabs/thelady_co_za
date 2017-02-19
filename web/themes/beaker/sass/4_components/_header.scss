@@ -12,7 +12,7 @@ header {
   }
 
   span {
-    @include breakpoint($desktop-up) { display: none !important; }
+    @include breakpoint($tablet-up) { display: none !important; }
     text-indent: -9999px;
     top: 31px;
     right: 25px;
