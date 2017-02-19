@@ -4,12 +4,6 @@ nav.menu--main {
 
   @include breakpoint($mobile) {
     float: none;
-    /*
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;*/
   }
   ul {
     margin-left: 0;
