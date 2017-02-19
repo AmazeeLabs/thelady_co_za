@@ -27,7 +27,7 @@
     list-style-type: none;
     a { color: $gold; }
   }
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     display: block;
     position: absolute;
     left: 20px;
