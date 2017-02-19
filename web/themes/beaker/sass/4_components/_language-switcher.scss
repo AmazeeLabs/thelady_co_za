@@ -23,7 +23,10 @@
 
 #block-languageswitcher-mobile {
   display: none;
-  li { list-style-type: none; }
+  li {
+    list-style-type: none;
+    a { color: $gold; }
+  }
   @include breakpoint($tablet) {
     display: block;
     position: absolute;
