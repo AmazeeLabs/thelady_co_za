@@ -57,27 +57,25 @@ footer {
     }
   }
 
-}
+  .connect {
+    float: right;
+    margin-top: $gutter;
 
-
-// Global Connect Styling
-.connect {
-  float: right;
-  margin-top: $gutter;
-
-  @include breakpoint($tablet) {
-    display: none;
-  }
-  li {
-    list-style-type: none;
-    display: inline;
-    margin: 0;
-    padding-right: 5px;
-    a.links {
-      color: $gold;
-      margin-right: 20px;
-      vertical-align: super;
+    @include breakpoint($tablet) {
+      display: none;
     }
-    img { width: 30px; }
+    li {
+      list-style-type: none;
+      display: inline;
+      margin: 0;
+      padding-right: 5px;
+      a.links {
+        color: $gold;
+        margin-right: 20px;
+        vertical-align: super;
+      }
+      img { width: 30px; }
+    }
   }
+
 }
