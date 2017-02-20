@@ -10,6 +10,49 @@ header {
   &.sticky {
 
   }
+
+  span {
+    @include breakpoint($tablet-up) { display: none !important; }
+    text-indent: -9999px;
+    top: 31px;
+    right: 25px;
+
+    &:before {
+      top: -9px;
+    }
+
+    &:after {
+      top: 9px;
+    }
+  }
+
+  span, span:before, span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    height: 4px;
+    width: 30px;
+    background: $design-black;
+    @include transition(all 0.1s ease-in-out);
+  }
+
+  &.sf-expanded {
+    span {
+      background-color: transparent;
+      &:before, &:after {
+        top: 0px;
+      }
+
+      &:before {
+        @include rotate(-45deg);
+      }
+
+      &:after {
+        @include rotate(45deg);
+      }
+    }
+  }
 }
 
 
@@ -23,46 +66,63 @@ header {
   }
 }
 
+
 .region-header-right {
   width: 60%;
   float: right;
+
+  .h-wrapper{
+    @include breakpoint($mobile) {
+      background-color: $white;
+      position: absolute;
+      width: 100%;
+      height: 380px;
+      display: block;
+      top: 100px;
+      left: 0;
+    }
+  }
 
   @include breakpoint($mobile) {
     float: none;
     width: 100%;
   }
 
-
   .language-switcher-language-url {
     display: none;
     @include breakpoint($mobile) {
-      display: block;
-      right: 0;
-      top: 280px;
-      left: 20px;
-      height: 100%;
-      width: 50%;
-      background-color: $white;
-      a{ font-weight: 700; }
+      a { font-weight: 700; }
     }
   }
 
-  .connect {
+  #block-connectmobile{
     display: none;
     @include breakpoint($mobile) {
       display: block;
       position: absolute;
-      top: 280px;
-      right: 20px;
-      width: 50%;
-      height: 100%;
-      margin-top: 0;
-      text-align: right;
-      background-color: $white;
+      left: 20px;
+      top: 250px;
     }
-    ul{
+    ul {
       margin-top: -8px;
-      a{ font-weight: 700; }
+      li {
+        list-style-type: none;
+        display: inline;
+        float: left;
+        &:nth-child(2) {
+          margin-left: -50px;
+          margin-right: 10px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 65px;
+        }
+      }
+      a {
+        font-weight: 700;
+        color: $gold;
+      }
     }
   }
 }
+
