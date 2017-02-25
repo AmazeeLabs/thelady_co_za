@@ -25,4 +25,21 @@
   //   }
   // };
 
+
+  Drupal.behaviors.expandHamburger = {
+    attach: function(context, settings) {
+
+      $('.sf-accordion-toggle a').click(function() {
+        console.log('clicked');
+
+        $(this).toggleClass('sf-expanded');
+        $('.h-wrapper').toggleClass('opemMenu');
+
+      });
+
+    }
+  };
+
+
+
 })(jQuery);
