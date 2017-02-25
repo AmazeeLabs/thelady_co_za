@@ -51,7 +51,7 @@ $susy: (
 /*
 * Frontpage Styling
 */
-.path-frontpage .content-wrapper{
+.path-frontpage .content-wrapper {
   max-width: 100% ;
   padding: 0 ;
 }
@@ -60,13 +60,20 @@ $susy: (
 /*
 * Main Content Styling
 */
-.inner{
-  max-width: 1140px;
-  margin: 0 $gutter;
 
-  .layout-main{
-    width: 100%;
-    float: left;
-    margin-bottom: $gutter;
+.content-wrapper {
+
+  .inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    @include breakpoint($desktop){
+      margin: 0 $gutter;
+    }
+
+    .layout-main{
+      width: 100%;
+      float: left;
+      margin-bottom: $gutter;
+    }
   }
 }
