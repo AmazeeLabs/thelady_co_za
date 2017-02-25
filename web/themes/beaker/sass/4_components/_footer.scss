@@ -46,7 +46,7 @@ footer {
     }
 
     .copyright{
-      @include breakpoint($tablet) {
+      @include breakpoint($mobile) {
         float: none !important;
         display: block;
         text-align: center;
@@ -61,7 +61,7 @@ footer {
     float: right;
     margin-top: $gutter;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($mobile) {
       display: none;
     }
     li {
