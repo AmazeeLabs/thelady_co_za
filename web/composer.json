@@ -1,0 +1,5 @@
+{
+    "require": {
+        "drupal/focal_point": "~1.0"
+    }
+}
