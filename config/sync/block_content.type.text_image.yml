@@ -1,0 +1,8 @@
+uuid: 015163dc-5501-4dff-8084-09ec19e6c931
+langcode: en
+status: true
+dependencies: {  }
+id: text_image
+label: 'Text + Image'
+revision: 1
+description: 'Creates a custom block with a text and image field'

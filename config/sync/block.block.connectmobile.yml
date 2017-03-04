@@ -1,9 +1,9 @@
-uuid: 1efcee3a-52fb-4155-acfa-acb96a1ab00f
+uuid: 6d22b306-ed0c-42a9-8916-e82888cf2d27
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+    - 'block_content:basic:37be20a8-06d1-49a3-b64d-a55551b67c45'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: connectmobile
 theme: beaker
 region: header_right
-weight: -6
+weight: 0
 provider: null
-plugin: 'block_content:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+plugin: 'block_content:37be20a8-06d1-49a3-b64d-a55551b67c45'
 settings:
-  id: 'block_content:119aff3a-aa65-47c2-9431-ff7e08b4d788'
+  id: 'block_content:37be20a8-06d1-49a3-b64d-a55551b67c45'
   label: 'Connect Mobile'
   provider: block_content
   label_display: '0'

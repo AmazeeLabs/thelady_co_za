@@ -1,0 +1,7 @@
+uuid: a7b2e374-0a02-4fc0-b52d-566e2229327e
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_large
+label: 'Landscape Large (1920x900)'
+effects: {  }
