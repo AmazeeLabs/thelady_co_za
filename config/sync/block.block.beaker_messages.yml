@@ -9,7 +9,7 @@ dependencies:
 id: beaker_messages
 theme: beaker
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:
