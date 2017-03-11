@@ -1,0 +1,6 @@
+uuid: 1b42053b-deb4-46a3-b96b-6bd78ef4c01d
+langcode: en
+status: true
+dependencies: {  }
+id: standard_text
+label: 'Standard Text'

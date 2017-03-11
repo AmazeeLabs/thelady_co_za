@@ -1,0 +1,21 @@
+uuid: cf088e47-94d3-44fb-a2e3-cf01cc67c359
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_textarea
+    - paragraphs.paragraphs_type.standard_text
+  module:
+    - text
+id: paragraph.standard_text.field_textarea
+field_name: field_textarea
+entity_type: paragraph
+bundle: standard_text
+label: Textarea
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

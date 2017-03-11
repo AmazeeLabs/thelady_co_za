@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e12659165a3e455b93b08995cd36c8e5",
-    "content-hash": "5b8bffce9285fecff2593703ced7094d",
+    "hash": "356321da16f75ee23c4dfe5464a31f01",
+    "content-hash": "bb1bcff41675fb52d839ed426456e670",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2087,6 +2087,43 @@
             },
             "type": "drupal-module",
             "time": "2016-02-26 12:54:16"
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/video_embed_field",
+                "reference": "418b6e9e35949a9d0c3ccbf1f76c0fe7b2c4ddb9"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/video_embed_media": "self.version",
+                "drupal/video_embed_wysiwyg": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/video_embed_media, drupal/video_embed_wysiwyg",
+                "drupal/media_entity": "Required by drupal/video_embed_media"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "package": "Field types",
+                    "version": "8.x-1.x"
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a field type for displaying videos from 3rd party providers such as YouTube and Vimeo.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "time": "2017-01-24 07:31:41"
         },
         {
             "name": "drush/drush",
@@ -5210,7 +5247,8 @@
     "stability-flags": {
         "cweagans/composer-patches": 20,
         "drupal/varnish": 20,
-        "drupal/focal_point": 20
+        "drupal/focal_point": 20,
+        "drupal/video_embed_field": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

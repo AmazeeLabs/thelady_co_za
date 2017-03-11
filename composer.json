@@ -47,7 +47,8 @@
         "drupal/entity_reference_revisions": "~8.0",
         "drupal/config_installer": "~8.0",
         "drupal/varnish": "dev-amazee",
-        "drupal/focal_point": "8.1.x-dev"
+        "drupal/focal_point": "8.1.x-dev",
+        "drupal/video_embed_field": "8.x-1.x-dev"
     },
     "conflict": {
         "drupal/drupal": "*"

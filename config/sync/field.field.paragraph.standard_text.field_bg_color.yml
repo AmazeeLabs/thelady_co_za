@@ -1,0 +1,23 @@
+uuid: 702084c1-3c2b-4302-b2f4-4ea5ed56bff2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.standard_text
+  module:
+    - options
+id: paragraph.standard_text.field_bg_color
+field_name: field_bg_color
+entity_type: paragraph
+bundle: standard_text
+label: 'Background Color'
+description: 'Select text background '
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
