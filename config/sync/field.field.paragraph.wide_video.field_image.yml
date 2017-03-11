@@ -1,0 +1,38 @@
+uuid: 80972de6-ca85-41c1-a4e5-5d1b7b41c0d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.wide_video
+  module:
+    - image
+id: paragraph.wide_video.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: wide_video
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/paragraphs/video
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: 1500x500
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

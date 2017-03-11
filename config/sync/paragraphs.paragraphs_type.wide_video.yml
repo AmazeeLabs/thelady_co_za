@@ -1,0 +1,6 @@
+uuid: 1941e447-4061-4f3e-88bb-228a9bed158d
+langcode: en
+status: true
+dependencies: {  }
+id: wide_video
+label: 'Wide Video'

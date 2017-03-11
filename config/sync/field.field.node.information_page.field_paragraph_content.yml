@@ -1,0 +1,24 @@
+uuid: a0dfcacd-b4ae-4139-ac73-6f5e642f1637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_content
+    - node.type.information_page
+  module:
+    - entity_reference_revisions
+id: node.information_page.field_paragraph_content
+field_name: field_paragraph_content
+entity_type: node
+bundle: information_page
+label: 'Paragraph Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+field_type: entity_reference_revisions

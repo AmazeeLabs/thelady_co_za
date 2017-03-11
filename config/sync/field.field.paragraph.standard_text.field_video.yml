@@ -1,0 +1,25 @@
+uuid: c12c0eac-5fe0-49e5-b4a5-414fc4e38b87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.standard_text
+  module:
+    - video_embed_field
+id: paragraph.standard_text.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: standard_text
+label: Video
+description: 'Add a vimeo video url'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field
