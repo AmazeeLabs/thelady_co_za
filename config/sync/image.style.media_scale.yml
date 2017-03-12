@@ -1,0 +1,15 @@
+uuid: 4866fe32-a888-481e-bd8c-698a67275115
+langcode: en
+status: true
+dependencies: {  }
+name: media_scale
+label: 'Media (960xY)'
+effects:
+  aede032b-c36a-4246-aab5-b0408e7f6b54:
+    uuid: aede032b-c36a-4246-aab5-b0408e7f6b54
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false

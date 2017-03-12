@@ -1,0 +1,15 @@
+uuid: 4665e4be-169b-4e21-b09b-f66a15f1a18e
+langcode: en
+status: true
+dependencies: {  }
+name: small
+label: 'Small (250xY)'
+effects:
+  48a34c31-081d-4258-8c98-57793c35ab3d:
+    uuid: 48a34c31-081d-4258-8c98-57793c35ab3d
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false

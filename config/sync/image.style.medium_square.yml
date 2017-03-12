@@ -1,0 +1,16 @@
+uuid: 7a37aea2-d36d-4c61-a747-2d48bb4eb29a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_square
+label: 'Medium Square (350x350)'
+effects:
+  48566577-764a-4e15-a8b1-01fbc1472a79:
+    uuid: 48566577-764a-4e15-a8b1-01fbc1472a79
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 350
