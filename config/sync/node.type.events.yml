@@ -1,4 +1,4 @@
-uuid: 66fdca4c-8e5b-44b7-a000-b60eda3a5f3e
+uuid: ce5a87e6-8888-45e1-9eb0-e420b770f3cf
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: News
-type: article
-description: 'Use <em>News</em> for time-sensitive content like news, press releases or blog posts.'
+name: Events
+type: events
+description: 'Use <em>Events</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
 new_revision: false
 preview_mode: 1

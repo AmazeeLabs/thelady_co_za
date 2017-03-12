@@ -1,22 +1,22 @@
-uuid: 7b533dab-aca3-49eb-9f2d-452dc778edec
+uuid: 31d012ba-1503-4b3c-92e5-508b130964d3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.field_image
-    - field.field.node.article.field_paragraph_content
-    - field.field.node.article.field_tags
+    - field.field.node.events.body
+    - field.field.node.events.field_image
+    - field.field.node.events.field_paragraph_content
+    - field.field.node.events.field_tags
     - image.style.thumbnail
-    - node.type.article
+    - node.type.events
   module:
     - image
     - paragraphs
     - path
     - text
-id: node.article.default
+id: node.events.default
 targetEntityType: node
-bundle: article
+bundle: events
 mode: default
 content:
   body:
@@ -33,12 +33,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
     weight: 3
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
   field_paragraph_content:
     weight: 4
     settings:
@@ -50,13 +50,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
   field_tags:
-    type: entity_reference_autocomplete_tags
     weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
   langcode:
     type: language_select
     weight: 0
