@@ -1,0 +1,6 @@
+uuid: d15cfed0-e8c4-4ec7-80d5-8c61ad9b7f0e
+langcode: en
+status: true
+dependencies: {  }
+id: full_width_image
+label: 'Full Width Image'

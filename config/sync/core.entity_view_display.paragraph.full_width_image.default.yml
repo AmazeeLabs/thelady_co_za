@@ -1,0 +1,33 @@
+uuid: 979e73cd-73c1-4f59-9857-0afb23d439ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_image.field_image
+    - field.field.paragraph.full_width_image.field_title
+    - paragraphs.paragraphs_type.full_width_image
+  module:
+    - image
+id: paragraph.full_width_image.default
+targetEntityType: paragraph
+bundle: full_width_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true
