@@ -1,0 +1,38 @@
+uuid: ba6e8b6f-5dea-4fab-8d17-a44a4a1830c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.full_width_image
+  module:
+    - image
+id: paragraph.full_width_image.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: full_width_image
+label: Image
+description: 'Upload a full width image on the article node type'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/paragraphs/fullwidthimage
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: 1500x500
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,81 @@
+footer {
+
+  background-color: $design-black;
+  p {
+    color: $gold;
+    font-size: 13px;
+  }
+
+  .region-footer-bottom { position: relative; }
+
+  .amazee-accredit {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    @include breakpoint($small) {
+      width: 50%;
+      margin-bottom: $gutter;
+    }
+    span {
+      color: $gold;
+      font-size: 13px;
+      display: block;
+      margin-bottom: $gutter/2;
+    }
+    .left, .right {
+      display: inline-block;
+    }
+    .left {
+      margin-right: $gutter;
+      margin-top: $gutter;
+      @include breakpoint($small) {
+        margin-bottom: $gutter;
+        margin-right: 0;
+      }
+      img{ width: 150px; }
+    }
+    .right {
+      img { width: 62px; }
+    }
+  }
+
+
+  .all-rights {
+    @include breakpoint($small) {
+      margin-bottom: $gutter;
+    }
+
+    .copyright{
+      @include breakpoint($mobile) {
+        float: none !important;
+        display: block;
+        text-align: center;
+      }
+    }
+    .copyright {
+      float: left;
+    }
+  }
+
+  .connect {
+    float: right;
+    margin-top: $gutter;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
+    li {
+      list-style-type: none;
+      display: inline;
+      margin: 0;
+      padding-right: 5px;
+      a.links {
+        color: $gold;
+        margin-right: 20px;
+        vertical-align: super;
+      }
+      img { width: 30px; }
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+uuid: 69453fb6-5b43-4ed2-a0bd-f46a28ffdc91
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact Form'
+recipients:
+  - dineo06.moseki@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

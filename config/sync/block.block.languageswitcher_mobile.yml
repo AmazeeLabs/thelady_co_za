@@ -1,0 +1,20 @@
+uuid: eb8ccf0a-0772-45c6-a2d3-edc1cd8cdf1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - beaker
+id: languageswitcher_mobile
+theme: beaker
+region: header_right
+weight: -7
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

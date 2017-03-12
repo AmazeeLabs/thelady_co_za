@@ -1,0 +1,69 @@
+form {
+
+  max-width: 700px;
+  margin: 40px auto 0;
+
+  label {
+    text-align: center;
+    width: 100%;
+    @include font-bold;
+    margin-bottom: 5px;
+  }
+
+  .js-form-type-textarea {
+    > label {
+      &:before {
+        content: '.';
+        display: inline-block;
+        position: relative;
+        left: 78px;
+      }
+      &:after {
+        left: 5px;
+        position: relative;
+      }
+    }
+  }
+
+  .description { text-align: center; }
+
+  .form-required:after {
+    background-image: url(../images/required.svg);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    margin: 0 0 5px;
+  }
+
+  #edit-preview { display: none; }
+  #edit-submit {
+    color: $white;
+    padding: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    @include font-bold;
+    transition: all 0.5s ease;
+    border: none;
+    background-color: $gold;
+    &:hover{
+      background-color: darken($gold, 5%);
+    }
+  }
+
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+  }
+
+  label, input, textarea {
+    display: block;
+    border-color: $design-black;
+  }
+}

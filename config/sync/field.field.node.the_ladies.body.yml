@@ -1,0 +1,22 @@
+uuid: b6b67100-e042-45c4-bb65-220c41bfc99d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.the_ladies
+  module:
+    - text
+id: node.the_ladies.body
+field_name: body
+entity_type: node
+bundle: the_ladies
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

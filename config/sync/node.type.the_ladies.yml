@@ -1,0 +1,18 @@
+uuid: 3e734645-3703-48fd-abba-635c316a4b2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'The Ladies'
+type: the_ladies
+description: 'Use <em>The Ladies</em> for content like news, press releases or blog posts about The Lady.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

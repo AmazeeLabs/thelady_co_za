@@ -1,0 +1,30 @@
+nav.menu--main {
+  padding: 15px 0;
+  float: right;
+
+  @include breakpoint($mobile) {
+    float: none;
+  }
+  ul {
+    margin-left: 0;
+    padding-bottom: 10px;
+    li {
+      display: inline;
+      padding: 0;
+      margin: 0 $gutter;
+      @include breakpoint($mobile) {
+        display: block;
+        margin: $gutter;
+      }
+      a {
+        font-weight: 700;
+        font-size: 20px;
+        padding-bottom: 8px;
+        &:hover, &:active {
+          color: $gold !important;
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+uuid: a0dfcacd-b4ae-4139-ac73-6f5e642f1637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_content
+    - node.type.information_page
+    - paragraphs.paragraphs_type.full_width_image
+    - paragraphs.paragraphs_type.standard_text
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.wide_video
+  module:
+    - entity_reference_revisions
+id: node.information_page.field_paragraph_content
+field_name: field_paragraph_content
+entity_type: node
+bundle: information_page
+label: 'Paragraph Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      full_width_image: full_width_image
+      video: video
+      standard_text: standard_text
+      wide_video: wide_video
+    target_bundles_drag_drop:
+      full_width_image:
+        enabled: true
+        weight: -9
+      video:
+        enabled: true
+        weight: -8
+      standard_text:
+        enabled: true
+        weight: -7
+      wide_video:
+        enabled: true
+        weight: -6
+field_type: entity_reference_revisions

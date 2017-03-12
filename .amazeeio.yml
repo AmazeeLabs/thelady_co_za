@@ -1,0 +1,24 @@
+sitegroup: thelady_co_za
+deploy_tasks:
+  development:
+    before_deploy:
+      - composer install
+      - npm install
+      - npm update
+      - npm run gulp -- compile
+    after_deploy:
+      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cr
+  production:
+    before_deploy:
+      - composer install -o --prefer-dist
+      - npm install --production
+      - npm run gulp -- compile --env=prod
+      - rm -rf node_modules
+    after_deploy:
+      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cr
+shared:
+  production:
+    - src: files
+      dst: web/sites/default/files

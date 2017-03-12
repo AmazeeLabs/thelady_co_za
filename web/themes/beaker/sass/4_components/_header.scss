@@ -1,0 +1,172 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background-color: $white;
+  border-bottom: 1px solid $design-black;
+  .inner { margin: $gutter auto; }
+  &.sticky {
+
+  }
+
+
+  .sf-accordion-toggle {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    height: 70px;
+
+    a {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      float: right;
+      width: 80px;
+      height: 70px;
+      padding: 0 27px;
+      @include transition(all 0.25s ease);
+
+
+      span, span:before, span:after {
+        content: '';
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        height: 4px;
+        width: 30px;
+        background: $design-black;
+        @include transition(all 0.1s ease-in-out);
+      }
+
+      &.sf-expanded {
+        span:before, span:after {
+          background: $design-black;
+        }
+      }
+
+      span {
+        @include breakpoint($tablet-up) { display: none !important; }
+        text-indent: -9999px;
+        top: 31px;
+        right: 25px;
+
+        &:before {
+          top: -9px;
+        }
+
+        &:after {
+          top: 9px;
+        }
+      }
+
+      &:hover {
+        span {
+          &:before {
+            top: -11px;
+          }
+
+          &:after {
+            top: 11px;
+          }
+        }
+      }
+
+      &.sf-expanded {
+        span {
+          background-color: transparent;
+          &:before, &:after {
+            top: 0px;
+          }
+
+          &:before {
+            @include rotate(-45deg);
+          }
+
+          &:after {
+            @include rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.region-header-left {
+  width: 40%;
+  float: left;
+
+  .site-logo {
+    display: block;
+    width: 210px;
+  }
+}
+
+
+.region-header-right {
+  width: 60%;
+  float: right;
+
+  .h-wrapper {
+
+    @include breakpoint($mobile) {
+      display: none;
+      background-color: $white;
+      position: absolute;
+      width: 100%;
+      height: 380px;
+      top: 100px;
+      left: 0;
+      border-bottom: 4px solid $design-black;
+    }
+
+    &.opemMenu {
+      display: block;
+    }
+  }
+
+  @include breakpoint($mobile) {
+    float: none;
+    width: 100%;
+  }
+
+  .language-switcher-language-url {
+    display: none;
+    @include breakpoint($mobile) {
+      a { font-weight: 700; }
+    }
+  }
+
+  #block-connectmobile {
+    display: none;
+    @include breakpoint($mobile) {
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 250px;
+    }
+    ul {
+      margin-top: -8px;
+      li {
+        list-style-type: none;
+        display: inline;
+        float: left;
+        &:nth-child(2) {
+          margin-left: -50px;
+          margin-right: 10px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 65px;
+        }
+      }
+      a {
+        font-weight: 700;
+        color: $gold;
+      }
+    }
+  }
+}
+

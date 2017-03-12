@@ -1,0 +1,17 @@
+// LINK STYLES
+// =============================================================================
+a,
+a:link,
+a:visited {
+  @include transition(all 0.5s ease);
+  line-height: inherit;
+  text-decoration: none;
+  color: $black;
+}
+
+a:hover{
+  color: lighten($gold, 10%);
+  img{
+    @include opacity(0.75);
+  }
+}

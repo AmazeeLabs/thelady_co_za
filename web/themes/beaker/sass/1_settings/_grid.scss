@@ -1,0 +1,79 @@
+// BORDER BOX
+// =============================================================================
+@include border-box-sizing;
+
+// CONFIGURE SUSY 2 GLOBAL DEFAULTS
+// =============================================================================
+
+$susy: (
+  columns: 12,
+  gutters: 20px/40px,
+  column-width: 40px,
+  container: 1920px !important,
+  // gutter-position: inside-static,
+  debug: (
+    image: show-columns,
+    color: rgba($red,0.1),
+    // output: overlay,
+    // toggle: bottom right,
+  ),
+);
+
+
+// GENERAL BREAKPOINTS
+// =============================================================================
+.grid {
+  background-image: none !important;
+  padding: 0 15px;
+  @include breakpoint($tablet-up) {
+    @include container($susy);
+    padding: 0 40px;
+  }
+
+  @include breakpoint($wide) {
+    @include container($wide);
+  }
+
+  @include breakpoint($tablet) {
+    @include container(8);
+  }
+
+  @include breakpoint($mobile) {
+    @include container(6);
+  }
+
+  @include breakpoint($small) {
+    @include container(4);
+  }
+}
+
+
+/*
+* Frontpage Styling
+*/
+.path-frontpage .content-wrapper {
+  max-width: 100% ;
+  padding: 0 ;
+}
+
+
+/*
+* Main Content Styling
+*/
+
+.content-wrapper {
+
+  .inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    @include breakpoint($desktop){
+      margin: 0 $gutter;
+    }
+
+    .layout-main{
+      width: 100%;
+      float: left;
+      margin-bottom: $gutter;
+    }
+  }
+}
