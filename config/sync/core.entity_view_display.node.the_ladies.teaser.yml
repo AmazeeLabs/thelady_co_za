@@ -1,18 +1,18 @@
-uuid: 562b2e1b-96c4-4a46-9541-eaebe9c83e73
+uuid: 0c90163e-d78a-4c85-9379-41624484b392
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.information_page.body
-    - field.field.node.information_page.field_paragraph_content
-    - node.type.information_page
+    - field.field.node.the_ladies.body
+    - field.field.node.the_ladies.field_paragraph_content
+    - node.type.the_ladies
   module:
     - text
     - user
-id: node.information_page.teaser
+id: node.the_ladies.teaser
 targetEntityType: node
-bundle: information_page
+bundle: the_ladies
 mode: teaser
 content:
   body:
@@ -22,7 +22,10 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_paragraph_content: true
   langcode: true
-  links: true

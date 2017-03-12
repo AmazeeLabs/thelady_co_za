@@ -1,18 +1,22 @@
-uuid: 2685f86f-c914-41ea-b2c9-d05ddffa1f24
+uuid: 31d012ba-1503-4b3c-92e5-508b130964d3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.information_page.body
-    - field.field.node.information_page.field_paragraph_content
-    - node.type.information_page
+    - field.field.node.events.body
+    - field.field.node.events.field_image
+    - field.field.node.events.field_paragraph_content
+    - field.field.node.events.field_tags
+    - image.style.thumbnail
+    - node.type.events
   module:
+    - image
     - paragraphs
     - path
     - text
-id: node.information_page.default
+id: node.events.default
 targetEntityType: node
-bundle: information_page
+bundle: events
 mode: default
 content:
   body:
@@ -25,19 +29,34 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 7
     settings: {  }
     third_party_settings: {  }
-  field_paragraph_content:
-    type: entity_reference_paragraphs
+  field_image:
     weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_paragraph_content:
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
+    type: entity_reference_paragraphs
+  field_tags:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
   langcode:
     type: language_select
     weight: 0
@@ -45,20 +64,20 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 10
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 8
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 9
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -69,7 +88,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete_tags
-    weight: 4
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
