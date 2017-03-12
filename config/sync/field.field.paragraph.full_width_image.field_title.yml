@@ -1,0 +1,19 @@
+uuid: c0369616-8264-4d5b-b198-7bedf105a0ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.full_width_image
+id: paragraph.full_width_image.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: full_width_image
+label: 'Sub Title'
+description: 'Add a caption for the image'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
