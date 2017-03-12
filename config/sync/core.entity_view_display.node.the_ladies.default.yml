@@ -1,0 +1,37 @@
+uuid: a7fd1a6f-34c5-4d1f-b883-1e3c63097069
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.the_ladies.body
+    - field.field.node.the_ladies.field_paragraph_content
+    - node.type.the_ladies
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.the_ladies.default
+targetEntityType: node
+bundle: the_ladies
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

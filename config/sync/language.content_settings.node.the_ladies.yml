@@ -1,0 +1,11 @@
+uuid: 22b9c2e3-31ee-4e3c-9ac0-98f21ba0f113
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.the_ladies
+id: node.the_ladies
+target_entity_type_id: node
+target_bundle: the_ladies
+default_langcode: site_default
+language_alterable: true
