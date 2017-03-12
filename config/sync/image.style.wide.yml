@@ -1,0 +1,15 @@
+uuid: d11d9158-d50e-47e6-8bac-a40072c54d3d
+langcode: en
+status: true
+dependencies: {  }
+name: wide
+label: 'Wide (1500xY)'
+effects:
+  7bd3b6c4-da0a-469f-9e00-cd8c96c9ea35:
+    uuid: 7bd3b6c4-da0a-469f-9e00-cd8c96c9ea35
+    id: image_scale
+    weight: 1
+    data:
+      width: 1500
+      height: null
+      upscale: false

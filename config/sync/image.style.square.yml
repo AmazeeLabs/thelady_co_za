@@ -1,0 +1,16 @@
+uuid: fa581e15-e548-4f31-8779-9c97ae007144
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square
+label: 'Square (150x150)'
+effects:
+  526284a8-e7db-4154-8445-1e9059ae48c0:
+    uuid: 526284a8-e7db-4154-8445-1e9059ae48c0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150

@@ -1,0 +1,16 @@
+uuid: 7d5e6b17-40d6-4562-b8fd-ea81b19d62cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_medium
+label: 'Landscape Medium (960x450)'
+effects:
+  e0c7c6c8-0848-4d8f-8a28-3e1ee701c2d9:
+    uuid: e0c7c6c8-0848-4d8f-8a28-3e1ee701c2d9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 450
