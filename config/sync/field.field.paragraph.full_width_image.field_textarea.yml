@@ -1,0 +1,21 @@
+uuid: 59499484-81d4-445e-950f-dca33e2261dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_textarea
+    - paragraphs.paragraphs_type.full_width_image
+  module:
+    - text
+id: paragraph.full_width_image.field_textarea
+field_name: field_textarea
+entity_type: paragraph
+bundle: full_width_image
+label: Description
+description: 'Add short description of describing the image'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

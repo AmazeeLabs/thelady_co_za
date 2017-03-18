@@ -15,3 +15,7 @@ permissions:
   - 'skip comment approval'
   - 'access site-wide contact form'
   - 'access shortcuts'
+  - 'view paragraph content full_width_image'
+  - 'view paragraph content standard_text'
+  - 'view paragraph content video'
+  - 'view paragraph content wide_video'

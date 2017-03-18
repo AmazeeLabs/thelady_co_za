@@ -1,0 +1,16 @@
+uuid: 17016d1e-9051-410a-ab07-ff402d9cad5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_small
+label: 'Landscape Small (480x225)'
+effects:
+  d7bda2cd-46dc-4e38-9042-02f7ffd6d3a3:
+    uuid: d7bda2cd-46dc-4e38-9042-02f7ffd6d3a3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 225

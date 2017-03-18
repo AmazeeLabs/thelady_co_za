@@ -1,0 +1,16 @@
+uuid: a5ad8f0d-5f88-4974-943c-99c6728b7e67
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: mobi
+label: 'Mobi (480x230)'
+effects:
+  af5ada12-f096-43e7-aa40-28c657787d5c:
+    uuid: af5ada12-f096-43e7-aa40-28c657787d5c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 230
