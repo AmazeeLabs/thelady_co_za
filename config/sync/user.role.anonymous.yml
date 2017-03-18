@@ -12,3 +12,7 @@ permissions:
   - 'use text format restricted_html'
   - 'access comments'
   - 'access site-wide contact form'
+  - 'view paragraph content full_width_image'
+  - 'view paragraph content standard_text'
+  - 'view paragraph content video'
+  - 'view paragraph content wide_video'
