@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.full_width_image.field_image
+    - field.field.paragraph.full_width_image.field_textarea
     - field.field.paragraph.full_width_image.field_title
     - paragraphs.paragraphs_type.full_width_image
   module:
     - image
+    - text
 id: paragraph.full_width_image.default
 targetEntityType: paragraph
 bundle: full_width_image
@@ -21,6 +23,12 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_textarea:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_title:
     weight: 1
     label: hidden

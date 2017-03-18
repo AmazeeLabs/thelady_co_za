@@ -5,10 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.full_width_image.field_image
+    - field.field.paragraph.full_width_image.field_textarea
     - field.field.paragraph.full_width_image.field_title
     - paragraphs.paragraphs_type.full_width_image
   module:
     - image
+    - text
 id: paragraph.full_width_image.preview
 targetEntityType: paragraph
 bundle: full_width_image
@@ -22,6 +24,12 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_textarea:
+    type: text_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_title:
     weight: 1
     label: hidden
