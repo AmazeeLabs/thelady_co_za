@@ -37,3 +37,19 @@ function beaker_preprocess_html(&$variables) {
     }
   }
 }
+
+
+/**
+ * Implements hook_preprocess_paragraph.
+ */
+function beaker_preprocess_paragraph(&$variables) {
+
+  // Create variable for Image with text's image with image style.
+  if ($variables['paragraph']->bundle() == 'full_width_image') {
+    $paragraph = $variables['paragraph'];
+    if ($paragraph->field_image_s && !empty($paragraph->field_image_s->entity)) {
+      $small_image_url = file_url_transform_relative(ImageStyle::load('extra_large')->buildUrl($paragraph->field_image_s->entity->getFileUri()));
+      $variables['background_image_small'] = $small_image_url;
+    }
+  }
+}
