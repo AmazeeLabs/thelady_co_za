@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "356321da16f75ee23c4dfe5464a31f01",
-    "content-hash": "bb1bcff41675fb52d839ed426456e670",
+    "hash": "b035246ffada7e20870396e22fcae4b5",
+    "content-hash": "62be0e452c78f0d6b55c80318c7b93a2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2076,6 +2076,31 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "time": "2016-09-20 10:19:14"
+        },
+        {
+            "name": "drupal/twig_field_value",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twig_field_value.git",
+                "reference": "1026279e9475380000a9a9d6b0fa66e53c0b5968"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Twig filters for value(s) and label.",
+            "homepage": "https://www.drupal.org/project/twig_field_value",
+            "time": "2016-09-16 14:48:02"
         },
         {
             "name": "drupal/varnish",
@@ -5248,7 +5273,8 @@
         "cweagans/composer-patches": 20,
         "drupal/varnish": 20,
         "drupal/focal_point": 20,
-        "drupal/video_embed_field": 20
+        "drupal/video_embed_field": 20,
+        "drupal/twig_field_value": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
