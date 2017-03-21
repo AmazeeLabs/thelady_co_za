@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.standard_text.field_image
     - field.field.paragraph.standard_text.field_text_width
     - field.field.paragraph.standard_text.field_textarea
+    - field.field.paragraph.standard_text.field_video
     - paragraphs.paragraphs_type.standard_text
   module:
     - image
@@ -46,4 +47,5 @@ content:
     type: text_default
 hidden:
   created: true
+  field_video: true
   uid: true

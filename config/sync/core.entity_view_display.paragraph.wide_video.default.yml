@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.wide_video.field_image
     - field.field.paragraph.wide_video.field_title
     - field.field.paragraph.wide_video.field_video
+    - image.style.landscape_large
     - paragraphs.paragraphs_type.wide_video
   module:
     - image
@@ -19,7 +20,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: landscape_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -34,8 +35,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      width: 960
-      height: 720
+      width: 1920
+      height: 900
       autoplay: false
       responsive: false
     third_party_settings: {  }
