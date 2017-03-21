@@ -59,14 +59,14 @@ set classes = [
             </a>
             <div class="video-overlay js-video-overlay button-wrapper">
               <a href="#" class="video-close-button js-close-button">Close</a>
-              <h2>{{ content.field_title }}</h2>
-              {{ content.field_video }}
+              <h2>{{ content.field_title|field_value }}</h2>
+              {{ content.field_video|field_value }}
             </div>
 
           </div>
-          <h2>{{ content.field_title }}</h2>
+          <h2>{{ content.field_title|field_value }}</h2>
       </div>
     </div>
-    {{ content.field_image }}
+    {{ content.field_image|field_value }}
   </div>
 </div>
