@@ -49,12 +49,12 @@ set classes = [
 
 <section {{ attributes.addClass(classes) }}>
   <div class="inner">
-    {{ content.field_text_width }}
-    {{ content.field_bg_color }}
-    <div class="text-wrapper">
-      {{ content.field_textarea }}
+    <div class="field__body">
+      {{ content.field_textarea|field_value }}
     </div>
-    {{ content.field_image }}
-    {{ content.field_video  }}
+    <div class="field__image">
+      {{ content.field_image|field_value }}
+    </div>
+    {{ content.field_video|field_value  }}
   </div>
 </section>

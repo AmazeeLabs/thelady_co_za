@@ -56,7 +56,7 @@
 </style>
 <section class="section--full-width-image">
   <div class="paragraph__content">
-    <h2 class="field__title">{{ content.field_title }}</h2>
-    <div class="field__body">{{ content.field_textarea }}</div>
+    <h2 class="field__title">{{ content.field_title|field_value }}</h2>
+    <div class="field__body">{{ content.field_textarea|field_value }}</div>
   </div>
 </section>

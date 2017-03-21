@@ -38,22 +38,24 @@
 #}
 
 {%
-set classes = [
-'paragraph',
-'paragraph--type--' ~ paragraph.bundle|clean_class,
-view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-]
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
 %}
 
 <section {{ attributes.addClass(classes) }}>
-  <div class="video-wrapper">
-    <div class="image-box">
-      {{ content.field_image }}
+  <div class="video__wrapper">
+    <div class="image__box">
+      <div class="field__image">
+        {{ content.field_image|field_value }}
+      </div>
     </div>
-    <div class="video" style="display: none;">{{ content.field_video }}</div>
-    <div class="text-box">
-      <div class="video-icon"></div>
-      <h3>{{ content.field_title }}</h4>
+    <div class="field__video" style="display: none;">{{ content.field_video|field_value }}</div>
+    <div class="text__box">
+      <div class="field__video-icon"></div>
+      <h3>{{ content.field_title|field_value }}</h3>
     </div>
   </div>
 </section>
