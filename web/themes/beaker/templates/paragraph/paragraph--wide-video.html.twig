@@ -49,16 +49,16 @@ set classes = [
 
 {% set paragraphID = content.field_title[0]['#context']['value']|clean_class|trim|lower|replace({' ': "-" }) %}
 
-<div{{ attributes.addClass(classes) }} id="{{ paragraphID }}">
-  <div class="video-wrapper parallax-wrapper">
+<section { attributes.addClass(classes) }} id="{{ paragraphID }}">
+  <div class="video__wrapper parallax__wrapper">
     <div class="inner">
       <div class="content">
-          <div class="js-video-container button-wrapper">
-            <a href="#" class="video-play-button js-video-button">
-               <div class="play-button"></div>
+          <div class="js__video-container button__wrapper">
+            <a href="#" class="video__play-button js__video-button">
+               <div class="play__button"></div>
             </a>
-            <div class="video-overlay js-video-overlay button-wrapper">
-              <a href="#" class="video-close-button js-close-button">Close</a>
+            <div class="video__overlay js__video-overlay button__wrapper">
+              <a href="#" class="video__close-button js__close-button">Close</a>
               <h2>{{ content.field_title|field_value }}</h2>
               {{ content.field_video|field_value }}
             </div>
@@ -69,4 +69,4 @@ set classes = [
     </div>
     {{ content.field_image|field_value }}
   </div>
-</div>
+</section>
