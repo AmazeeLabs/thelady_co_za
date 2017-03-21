@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.standard_text.field_text_width
     - field.field.paragraph.standard_text.field_textarea
     - field.field.paragraph.standard_text.field_video
+    - image.style.landscape_medium
     - paragraphs.paragraphs_type.standard_text
   module:
     - image
@@ -29,7 +30,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: landscape_medium
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -47,12 +48,12 @@ content:
     type: text_default
   field_video:
     weight: 4
-    label: above
+    label: hidden
     settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: true
+      width: 960
+      height: 720
+      autoplay: false
+      responsive: false
     third_party_settings: {  }
     type: video_embed_field_video
 hidden:

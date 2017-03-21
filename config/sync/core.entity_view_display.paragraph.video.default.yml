@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
+    - image.style.landscape_medium
     - paragraphs.paragraphs_type.video
   module:
     - image
@@ -19,7 +20,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: landscape_medium
       image_link: ''
     third_party_settings: {  }
     type: image
