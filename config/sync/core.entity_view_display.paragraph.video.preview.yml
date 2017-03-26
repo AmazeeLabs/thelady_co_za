@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.video
   module:
     - image
@@ -20,7 +21,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -35,8 +36,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      width: 353
-      height: 204
+      width: 960
+      height: 720
       autoplay: false
       responsive: false
     third_party_settings: {  }
