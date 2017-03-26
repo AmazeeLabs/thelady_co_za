@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.standard_text.field_text_width
     - field.field.paragraph.standard_text.field_textarea
     - field.field.paragraph.standard_text.field_video
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.standard_text
   module:
     - image
@@ -20,28 +21,28 @@ bundle: standard_text
 mode: preview
 content:
   field_bg_color:
-    weight: 0
-    label: above
+    weight: 1
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_image:
-    weight: 1
-    label: above
+    weight: 2
+    label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image
   field_text_width:
-    weight: 3
-    label: above
+    weight: 0
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_textarea:
-    weight: 2
-    label: above
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

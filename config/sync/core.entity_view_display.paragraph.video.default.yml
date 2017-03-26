@@ -6,10 +6,10 @@ dependencies:
     - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
-    - image.style.landscape_medium
     - paragraphs.paragraphs_type.video
+    - responsive_image.styles.landscape
   module:
-    - image
+    - responsive_image
     - video_embed_field
 id: paragraph.video.default
 targetEntityType: paragraph
@@ -20,10 +20,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: landscape_medium
+      responsive_image_style: landscape
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
   field_title:
     weight: 1
     label: hidden

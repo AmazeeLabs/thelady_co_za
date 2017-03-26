@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.full_width_image.field_image
     - field.field.paragraph.full_width_image.field_textarea
     - field.field.paragraph.full_width_image.field_title
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.full_width_image
   module:
     - image
@@ -20,7 +21,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image
