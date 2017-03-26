@@ -37,6 +37,17 @@
  */
 #}
 
+{%
+set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  'section--full-width-image',
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  content.field_bg_color[0]['#markup']|clean_class,
+  content.field_text_width[0]['#markup']|clean_class,
+]
+%}
+
 {% set background_image = file_url(paragraph.field_image.entity.fileuri) %}
 
 <style>
@@ -54,9 +65,9 @@
     }
   }
 </style>
-<section class="section--full-width-image">
+<section {{ attributes.addClass(classes) }}>
   <div class="paragraph__content">
-    <h2 class="field__title">{{ content.field_title }}</h2>
-    <div class="field__body">{{ content.field_textarea }}</div>
+    <h2 class="field__title">{{ content.field_title|field_value }}</h2>
+    <div class="field__body">{{ content.field_textarea|field_value }}</div>
   </div>
 </section>
