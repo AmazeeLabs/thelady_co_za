@@ -1,0 +1,21 @@
+.content-wrapper {
+  width: 100%;
+  display: inline-block;
+  min-height: calc(25vh);
+  margin: 150px auto 100px;
+}
+
+.path-user .block-local-tasks-block,
+.path-user .block-page-title-block {
+  max-width: 700px;
+  margin: 40px auto 0;
+  a {
+    color: $design-black;
+    &:hover {
+      background-color: lighten($design-golden-brown, 60%);
+    }
+    &.is-active {
+      background-color: lighten($design-golden-brown, 60%);
+    }
+  }
+}
