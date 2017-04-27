@@ -1,5 +1,5 @@
 footer {
-
+  width: 100%;
   background-color: $design-black;
   p {
     color: $gold;
@@ -59,7 +59,7 @@ footer {
 
   .connect {
     float: right;
-    margin-top: $gutter;
+    margin-top: 2px;
 
     @include breakpoint($mobile) {
       display: none;
