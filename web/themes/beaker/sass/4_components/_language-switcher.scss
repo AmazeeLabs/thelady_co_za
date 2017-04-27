@@ -3,7 +3,7 @@
   right: $gutter*8;
   bottom: $gutter/2;
 
-  @include breakpoint($mobile) {
+  @include breakpoint($tablet) {
     display: none;
   }
 
