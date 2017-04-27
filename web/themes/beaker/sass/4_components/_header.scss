@@ -5,10 +5,31 @@ header {
   height: 100px;
   z-index: 10;
   background-color: $white;
+  transition: all 0.5s ease-in-out;
   border-bottom: 1px solid $design-black;
   .inner { margin: $gutter auto; }
-  &.sticky {
 
+  @include breakpoint($tablet) {
+    height: 80px;
+  }
+  &.slim-header {
+
+    @include breakpoint($tablet-up) {
+      height: 80px;
+    }
+    img {
+      display: block;
+      @include breakpoint($tablet) {
+         width: 140px;
+      }
+      @include breakpoint($desktop-up) {
+         width: 160px;
+      }
+    }
+
+    nav.menu--main {
+      padding: 5px 0;
+    }
   }
 
 
@@ -47,7 +68,7 @@ header {
       }
 
       span {
-        @include breakpoint($tablet-up) { display: none !important; }
+        @include breakpoint($desktop-up) { display: none !important; }
         text-indent: -9999px;
         top: 31px;
         right: 25px;
@@ -97,10 +118,14 @@ header {
 .region-header-left {
   width: 40%;
   float: left;
-
-  .site-logo {
+  img {
     display: block;
     width: 210px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+    @include breakpoint($tablet) {
+      width: 150px;
+    }
   }
 }
 
@@ -111,15 +136,15 @@ header {
 
   .h-wrapper {
 
-    @include breakpoint($mobile) {
+    @include breakpoint($tablet) {
       display: none;
-      background-color: $white;
+      background-color: $design-black;
       position: absolute;
       width: 100%;
       height: 380px;
-      top: 100px;
+      top: 80px;
       left: 0;
-      border-bottom: 4px solid $design-black;
+      border-bottom: 4px solid $gold;
     }
 
     &.opemMenu {
@@ -127,44 +152,51 @@ header {
     }
   }
 
-  @include breakpoint($mobile) {
+  @include breakpoint($tablet) {
     float: none;
     width: 100%;
   }
 
   .language-switcher-language-url {
     display: none;
-    @include breakpoint($mobile) {
+    @include breakpoint($tablet) {
       a { font-weight: 700; }
     }
   }
 
   #block-connectmobile {
     display: none;
-    @include breakpoint($mobile) {
+    @include breakpoint($tablet) {
       display: block;
       position: absolute;
-      left: 20px;
-      top: 250px;
+      bottom: 0;
+      padding-top: 50px;
+      background-color: #252525;
+      width: 100%;
     }
     ul {
-      margin-top: -8px;
+      margin-left: $gutter;
       li {
         list-style-type: none;
         display: inline;
         float: left;
-        &:nth-child(2) {
-          margin-left: -50px;
-          margin-right: 10px;
+        @include breakpoint($tablet) {
+          margin-left: 0;
         }
-        &:nth-child(2),
+        &:nth-child(1) {
+          margin-top: -48px;
+        }
         &:nth-child(3) {
-          margin-top: 65px;
+          margin-left: 10px;
         }
       }
       a {
         font-weight: 700;
         color: $gold;
+        img {
+          width: 35px;
+          padding-bottom: $gutter/2;
+        }
       }
     }
   }

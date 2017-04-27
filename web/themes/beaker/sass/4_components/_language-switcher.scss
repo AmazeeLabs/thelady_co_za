@@ -23,14 +23,22 @@
 
 #block-languageswitcher-mobile {
   display: none;
-  li {
-    list-style-type: none;
-    a { color: $gold; }
-  }
-  @include breakpoint($mobile) {
-    display: block;
+  @include breakpoint($tablet) {
     position: absolute;
-    left: 20px;
-    top: 150px;
+    bottom: 95px;
+    padding: $gutter/2 0;
+    width: 100%;
+    display: block;
+    background-color: #252525;
+  }
+  ul.links {
+    margin-left: $gutter;
+    li {
+      list-style-type: none;
+      @include breakpoint($tablet) {
+        margin-left: 0;
+      }
+      a { color: $gold; }
+    }
   }
 }

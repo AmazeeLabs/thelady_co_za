@@ -40,6 +40,21 @@
     }
   };
 
+  /*
+  * Window Scroll event
+  * - On scroll, decrease size of the logo
+  */
+  Drupal.behaviors.stickyHeader = {
+    attach: function (context, settings) {
+
+      $(window).on('scroll touchmove', function () {
+        $('.header').toggleClass('slim-header', $(document).scrollTop() > $('header').outerHeight());
+      });
+
+    }
+  };
+
+
 
 
 })(jQuery);
