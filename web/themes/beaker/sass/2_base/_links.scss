@@ -6,12 +6,15 @@ a:visited {
   @include transition(all 0.5s ease);
   line-height: inherit;
   text-decoration: none;
-  color: $black;
-}
+  color: $gold;
 
-a:hover{
-  color: lighten($gold, 10%);
-  img{
-    @include opacity(0.75);
+  &:hover{
+    text-decoration: none;
+    color: lighten($gold, 10%);
+    img{
+      transition: all 0.5s ease-out;
+      @include opacity(0.75);
+    }
   }
+
 }

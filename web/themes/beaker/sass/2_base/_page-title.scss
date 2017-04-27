@@ -1,8 +1,0 @@
-.block-page-title-block {
-  h1 {
-    text-align: center;
-    @include breakpoint($small) {
-      font-size: 32px;
-    }
-  }
-}
