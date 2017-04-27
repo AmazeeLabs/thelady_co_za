@@ -68,7 +68,7 @@ header {
       }
 
       span {
-        @include breakpoint($tablet-up) { display: none !important; }
+        @include breakpoint($desktop-up) { display: none !important; }
         text-indent: -9999px;
         top: 31px;
         right: 25px;
@@ -144,7 +144,7 @@ header {
       height: 380px;
       top: 80px;
       left: 0;
-      border-bottom: 4px solid $design-black;
+      border-bottom: 4px solid $gold;
     }
 
     &.opemMenu {
@@ -169,27 +169,34 @@ header {
     @include breakpoint($tablet) {
       display: block;
       position: absolute;
-      left: 20px;
-      top: 250px;
+      bottom: 0;
+      padding-top: 50px;
+      background-color: #252525;
+      width: 100%;
     }
     ul {
-      margin-top: -8px;
+      margin-left: $gutter;
       li {
         list-style-type: none;
         display: inline;
         float: left;
-        &:nth-child(2) {
-          margin-left: -50px;
-          margin-right: 10px;
+        @include breakpoint($tablet) {
+          margin-left: 0;
         }
-        &:nth-child(2),
+        &:nth-child(1) {
+          margin-top: -48px;
+        }
         &:nth-child(3) {
-          margin-top: 65px;
+          margin-left: 10px;
         }
       }
       a {
         font-weight: 700;
         color: $gold;
+        img {
+          width: 35px;
+          padding-bottom: $gutter/2;
+        }
       }
     }
   }
