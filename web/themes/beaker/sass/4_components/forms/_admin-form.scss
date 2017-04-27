@@ -38,6 +38,9 @@ form {
     border: 1px solid;
     padding: 10px;
     margin: 0 0 5px;
+    &:focus {
+      border-color: $gold;
+    }
   }
 
   #edit-preview { display: none; }
