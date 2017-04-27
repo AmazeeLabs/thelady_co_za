@@ -53,3 +53,37 @@ function beaker_preprocess_paragraph(&$variables) {
     }
   }
 }
+
+
+/**
+ * Implements hook_form_alter() for contact forms.
+ */
+function beaker_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // For the contact message forms, where we do not display the labels, we will
+  // just use them as placeholders for text elements.
+  if(substr($form_id, 0, 15) === 'contact_message') {
+    beaker_attach_placeholders_from_title($form);
+  }
+}
+
+/**
+ * Searches through a set of nested form elements and uses the title of the
+ * elements as value for the placeholder attribute.
+ *
+ * @param array $elements
+ *  An array of form elements.
+ */
+function beaker_attach_placeholders_from_title(&$elements) {
+  if (!is_array($elements)) {
+    return ;
+  }
+  // The placeholder makes sense only for text elements, but it should not hurt
+  // if we attach it to all of them. In that case, it will just not be used.
+  if (!empty($elements['#type']) && !empty($elements['#title'])) {
+    $elements['#placeholder'] = $elements['#title'];
+  }
+  // Recursively search through all the children of the elements.
+  foreach (Element::children($elements) as $key) {
+    beaker_attach_placeholders_from_title($elements[$key]);
+  }
+}
