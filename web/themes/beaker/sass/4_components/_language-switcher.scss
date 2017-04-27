@@ -1,7 +1,7 @@
 #block-languageswitcher {
   position: absolute;
   right: $gutter*8;
-  bottom: 12px;
+  bottom: $gutter/2;
 
   @include breakpoint($mobile) {
     display: none;
@@ -29,7 +29,7 @@
     padding: $gutter/2 0;
     width: 100%;
     display: block;
-    background-color: #252525;
+    background-color: $design-golden-brown;
   }
   ul.links {
     margin-left: $gutter;
