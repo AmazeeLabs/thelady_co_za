@@ -1,0 +1,37 @@
+nav.menu--main {
+  padding: 15px 0;
+  float: right;
+  transition: all 0.5s ease-in-out;
+  @include breakpoint($tablet) {
+    float: none;
+  }
+  @include breakpoint($tablet) {
+    padding: 5px 0;
+  }
+  ul {
+    margin-left: 0;
+    padding-bottom: 10px;
+    li {
+      display: inline;
+      padding: 0;
+      margin: 0 $gutter;
+      @include breakpoint($tablet) {
+        display: block;
+        margin: $gutter;
+      }
+      a {
+        font-weight: 700;
+        font-size: 20px;
+        color: $design-black;
+        padding-bottom: 8px;
+        @include breakpoint($tablet) {
+          color: $gold;
+        }
+        &:hover, &:active {
+          color: $gold;
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+}
