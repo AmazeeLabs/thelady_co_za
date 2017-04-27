@@ -30,7 +30,6 @@
     attach: function(context, settings) {
 
       $('.sf-accordion-toggle a').click(function() {
-        console.log('clicked');
 
         $(this).toggleClass('sf-expanded');
         $('.h-wrapper').toggleClass('opemMenu');
@@ -51,6 +50,24 @@
         $('.header').toggleClass('slim-header', $(document).scrollTop() > $('header').outerHeight());
       });
 
+    }
+  };
+
+  /*
+  * - On Scroll, remove the opened menu
+  */
+  Drupal.behaviors.scrollCloseElements = {
+    attach: function (context, settings) {
+
+      checkOrientationMenu = function () {
+        $('.region-header-right .h-wrapper').removeClass('opemMenu');
+        //$('.region-header-right .h-wrapper').hide();
+        $('.sf-accordion-toggle a').removeClass('sf-expanded');
+      }
+
+      $(window).scroll(function () {
+        checkOrientationMenu();
+      });
     }
   };
 

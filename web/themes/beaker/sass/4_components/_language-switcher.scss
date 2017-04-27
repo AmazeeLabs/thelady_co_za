@@ -25,7 +25,7 @@
   display: none;
   @include breakpoint($tablet) {
     position: absolute;
-    bottom: 95px;
+    bottom: 100px;
     padding: $gutter/2 0;
     width: 100%;
     display: block;
