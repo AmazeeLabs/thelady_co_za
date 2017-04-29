@@ -1,4 +1,4 @@
-.content-wrapper:not(.path-contact) {
+.content-wrapper {
   width: 100%;
   display: inline-block;
   min-height: calc(25vh);
@@ -10,6 +10,12 @@
   display: inline-block;
   min-height: calc(25vh);
   margin: 100px auto 100px;
+}
+
+.path-contact {
+  .content-wrapper {
+    margin: 0 auto $gutter*5;
+  }
 }
 
 .path-user .block-local-tasks-block,
