@@ -5,10 +5,10 @@
   .contact-page {
     p {
       color: $grey;
-      a {
-        clear: both;
-        margin-top: $gutter;
-      }
+    }
+    a {
+      clear: both;
+      margin-top: $gutter;
     }
     .top-region-wrapper {
       max-width: 1100px;
@@ -19,6 +19,9 @@
           width: 66.66667%;
           float: left;
           padding: 5.55556%;
+          @include breakpoint($tablet){
+            width: 100%;
+          }
           .inner {
 
             h2 { font-size: 50px; }
@@ -35,6 +38,9 @@
           float: left;
           padding: 5.55556%;
           border-left: 1px solid rgba(115, 115, 115, 0.4);
+          @include breakpoint($tablet){
+            width: 100%;
+          }
           .inner {
             &:after {
               content: "";
@@ -47,6 +53,9 @@
             p {
               font-size: 13px;
               line-height: 27px;
+              @include breakpoint($tablet) {
+                font-size: 18px;
+              }
             }
             &:last-child{
               &:after { display: none; }
