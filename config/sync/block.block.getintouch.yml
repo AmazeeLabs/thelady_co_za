@@ -20,7 +20,7 @@ settings:
   id: 'block_content:b20218cb-6314-45f7-bb21-fb961e4df293'
   label: 'Get in touch'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
