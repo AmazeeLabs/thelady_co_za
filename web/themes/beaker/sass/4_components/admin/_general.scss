@@ -1,8 +1,15 @@
-.content-wrapper {
+.content-wrapper:not(.path-contact) {
   width: 100%;
   display: inline-block;
   min-height: calc(25vh);
   margin: 150px auto 100px;
+}
+
+.content-top{
+  width: 100%;
+  display: inline-block;
+  min-height: calc(25vh);
+  margin: 100px auto 100px;
 }
 
 .path-user .block-local-tasks-block,
