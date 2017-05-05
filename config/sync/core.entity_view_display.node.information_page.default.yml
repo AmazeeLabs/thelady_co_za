@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.information_page.body
     - field.field.node.information_page.field_image
     - field.field.node.information_page.field_paragraph_content
     - field.field.node.information_page.field_teaser
@@ -25,7 +24,6 @@ content:
       link: ''
     third_party_settings: {  }
 hidden:
-  body: true
   field_image: true
   field_teaser: true
   langcode: true

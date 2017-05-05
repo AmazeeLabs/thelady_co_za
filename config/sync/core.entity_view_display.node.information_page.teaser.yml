@@ -4,29 +4,33 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.information_page.body
     - field.field.node.information_page.field_image
     - field.field.node.information_page.field_paragraph_content
     - field.field.node.information_page.field_teaser
     - node.type.information_page
   module:
-    - text
+    - responsive_image
     - user
 id: node.information_page.teaser
 targetEntityType: node
 bundle: information_page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
+  field_image:
+    type: responsive_image
     weight: 0
+    label: hidden
     settings:
-      trim_length: 600
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: basic_string
+    weight: 1
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden:
-  field_image: true
   field_paragraph_content: true
-  field_teaser: true
   langcode: true
   links: true
