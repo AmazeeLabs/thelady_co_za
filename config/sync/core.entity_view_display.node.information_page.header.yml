@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header
+    - field.field.node.information_page.field_box_position
     - field.field.node.information_page.field_image
     - field.field.node.information_page.field_paragraph_content
     - field.field.node.information_page.field_teaser
     - node.type.information_page
     - responsive_image.styles.landscape
   module:
+    - options
     - responsive_image
     - user
 id: node.information_page.header
@@ -17,6 +19,12 @@ targetEntityType: node
 bundle: information_page
 mode: header
 content:
+  field_box_position:
+    type: list_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     type: responsive_image
     weight: 0
@@ -27,7 +35,7 @@ content:
     third_party_settings: {  }
   field_teaser:
     type: basic_string
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
