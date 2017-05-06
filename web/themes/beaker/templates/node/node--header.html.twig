@@ -80,9 +80,13 @@
 {{ attach_library('classy/node') }}
 
 <article{{ attributes.addClass(classes) }} data-view-mode="{{ view_mode|clean_class }}">
-  <div class="field-image parallax">{{ content.field_image|field_value }}</div>
-  <div class="box-wrapper">
-    <h2>{{ label|field_value }}</h2>
-    <div class="field-desc">{{ content.field_teaser|field_value }}</div>
+  <div class="inner-wrapper">
+    <div class="field-image parallax">{{ content.field_image|field_value }}</div>
+    <div class="box-wrapper">
+      <div class="text">
+        <h1>{{ label|field_value }}</h1>
+        <p>{{ content.field_teaser|field_value }}</p>
+      </div>
+    </div>
   </div>
 </article>

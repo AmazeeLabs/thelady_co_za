@@ -9,10 +9,9 @@ dependencies:
     - field.field.node.information_page.field_paragraph_content
     - field.field.node.information_page.field_teaser
     - node.type.information_page
-    - responsive_image.styles.landscape
   module:
+    - image_url_formatter
     - options
-    - responsive_image
     - user
 id: node.information_page.header
 targetEntityType: node
@@ -26,11 +25,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: responsive_image
+    type: image_url
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: landscape
+      url_type: '0'
+      image_style: landscape_large
       image_link: ''
     third_party_settings: {  }
   field_teaser:
