@@ -1,21 +1,21 @@
-uuid: d0331ee0-3d63-4302-8cf0-1973f4d5b2cf
+uuid: 5c64d19b-50f2-4f37-9927-c4b80f379f10
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header
-    - field.field.node.information_page.field_box_position
-    - field.field.node.information_page.field_image
-    - field.field.node.information_page.field_paragraph_content
-    - field.field.node.information_page.field_teaser
-    - node.type.information_page
+    - field.field.node.the_ladies.field_box_position
+    - field.field.node.the_ladies.field_image
+    - field.field.node.the_ladies.field_paragraph_content
+    - field.field.node.the_ladies.field_teaser
+    - node.type.the_ladies
   module:
     - image_url_formatter
     - options
     - user
-id: node.information_page.header
+id: node.the_ladies.header
 targetEntityType: node
-bundle: information_page
+bundle: the_ladies
 mode: header
 content:
   field_box_position:

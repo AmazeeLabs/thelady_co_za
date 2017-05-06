@@ -1,0 +1,23 @@
+uuid: b1bc8f1a-5492-49be-be18-a8753af81337
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box_position
+    - node.type.events
+  module:
+    - options
+id: node.events.field_box_position
+field_name: field_box_position
+entity_type: node
+bundle: events
+label: 'Box Position'
+description: 'Select the position of the Box containing description e.g ''left'''
+required: true
+translatable: true
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

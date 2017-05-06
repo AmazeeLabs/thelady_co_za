@@ -3,35 +3,38 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.the_ladies.body
+    - field.field.node.the_ladies.field_box_position
+    - field.field.node.the_ladies.field_image
     - field.field.node.the_ladies.field_paragraph_content
+    - field.field.node.the_ladies.field_tags
+    - field.field.node.the_ladies.field_teaser
     - node.type.the_ladies
   module:
     - entity_reference_revisions
-    - text
     - user
 id: node.the_ladies.default
 targetEntityType: node
 bundle: the_ladies
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
   field_paragraph_content:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-  links:
-    weight: 2
-    settings: {  }
+  field_tags:
+    weight: 1
+    label: above
+    settings:
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
 hidden:
+  field_box_position: true
+  field_image: true
+  field_teaser: true
   langcode: true
+  links: true

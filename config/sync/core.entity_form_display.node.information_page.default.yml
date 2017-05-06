@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.information_page.field_box_position
     - field.field.node.information_page.field_image
     - field.field.node.information_page.field_paragraph_content
+    - field.field.node.information_page.field_tags
     - field.field.node.information_page.field_teaser
     - image.style.thumbnail
     - node.type.information_page
@@ -63,6 +64,14 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
+  field_tags:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_teaser:
     weight: 4
     settings:

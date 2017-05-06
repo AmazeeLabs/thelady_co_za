@@ -1,0 +1,19 @@
+uuid: ddb94b2c-9531-4dc1-98ba-d2073cce6faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.events
+id: node.events.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: events
+label: Introduction
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

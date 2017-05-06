@@ -1,45 +1,47 @@
-uuid: d0331ee0-3d63-4302-8cf0-1973f4d5b2cf
+uuid: 243e6798-71fb-4671-990d-4ccb9eff4129
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header
-    - field.field.node.information_page.field_box_position
-    - field.field.node.information_page.field_image
-    - field.field.node.information_page.field_paragraph_content
-    - field.field.node.information_page.field_teaser
-    - node.type.information_page
+    - field.field.node.article.field_box_position
+    - field.field.node.article.field_image
+    - field.field.node.article.field_paragraph_content
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser
+    - node.type.article
   module:
     - image_url_formatter
     - options
     - user
-id: node.information_page.header
+id: node.article.header
 targetEntityType: node
-bundle: information_page
+bundle: article
 mode: header
 content:
   field_box_position:
-    type: list_default
     weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: list_default
   field_image:
     type: image_url
     weight: 1
-    label: hidden
     settings:
       url_type: '0'
       image_style: landscape_large
       image_link: ''
     third_party_settings: {  }
+    label: hidden
   field_teaser:
-    type: basic_string
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: basic_string
 hidden:
   field_paragraph_content: true
+  field_tags: true
   langcode: true
   links: true
