@@ -73,15 +73,11 @@
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
-    'news-node',
   ]
 %}
 
 {{ attach_library('classy/node') }}
 
 <article{{ attributes.addClass(classes) }} data-view-mode="{{ view_mode|clean_class }}">
-
-  {{ content.body }}
   {{ content.field_paragraph_content }}
-
 </article>
