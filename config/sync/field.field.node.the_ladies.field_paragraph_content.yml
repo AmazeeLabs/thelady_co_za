@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.full_width_image
     - paragraphs.paragraphs_type.standard_text
     - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.wide_video
   module:
     - entity_reference_revisions
 id: node.the_ladies.field_paragraph_content
@@ -27,6 +28,7 @@ settings:
       full_width_image: full_width_image
       standard_text: standard_text
       video: video
+      wide_video: wide_video
     target_bundles_drag_drop:
       full_width_image:
         enabled: true
@@ -38,6 +40,6 @@ settings:
         enabled: true
         weight: 7
       wide_video:
+        enabled: true
         weight: 8
-        enabled: false
 field_type: entity_reference_revisions

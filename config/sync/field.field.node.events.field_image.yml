@@ -12,8 +12,8 @@ field_name: field_image
 entity_type: node
 bundle: events
 label: Image
-description: 'Upload an image'
-required: false
+description: 'Upload main image of the node'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -22,9 +22,9 @@ settings:
   file_extensions: 'png gif jpg jpeg'
   max_filesize: 2MB
   max_resolution: ''
-  min_resolution: 750x450
+  min_resolution: 1500x700
   alt_field: true
-  alt_field_required: false
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:
