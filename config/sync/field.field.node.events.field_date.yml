@@ -1,0 +1,24 @@
+uuid: d1b6a966-6282-4975-883b-4df7f47bd2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.events
+  module:
+    - datetime
+id: node.events.field_date
+field_name: field_date
+entity_type: node
+bundle: events
+label: Date
+description: 'Date format is 17 July 2017'
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

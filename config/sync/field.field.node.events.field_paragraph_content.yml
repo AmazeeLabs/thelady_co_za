@@ -5,9 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_paragraph_content
     - node.type.events
-    - paragraphs.paragraphs_type.full_width_image
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image_row
     - paragraphs.paragraphs_type.standard_text
-    - paragraphs.paragraphs_type.wide_video
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.events.field_paragraph_content
@@ -24,20 +25,27 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      full_width_image: full_width_image
       standard_text: standard_text
-      wide_video: wide_video
+      image_row: image_row
+      video: video
+      gallery: gallery
     target_bundles_drag_drop:
-      full_width_image:
-        enabled: true
-        weight: 5
       standard_text:
         enabled: true
-        weight: 6
+        weight: -13
+      image_row:
+        enabled: true
+        weight: -12
       video:
-        weight: 7
+        enabled: true
+        weight: -11
+      gallery:
+        enabled: true
+        weight: -10
+      full_width_image:
+        weight: -9
         enabled: false
       wide_video:
-        enabled: true
-        weight: 8
+        weight: -8
+        enabled: false
 field_type: entity_reference_revisions

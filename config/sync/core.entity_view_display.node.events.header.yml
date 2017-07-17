@@ -1,12 +1,15 @@
 uuid: 7b83d2d4-43ca-438b-a164-043049d2f91b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.header
+    - field.field.node.events.field_background_color
     - field.field.node.events.field_box_position
+    - field.field.node.events.field_date
     - field.field.node.events.field_image
     - field.field.node.events.field_paragraph_content
+    - field.field.node.events.field_sub_title
     - field.field.node.events.field_tags
     - field.field.node.events.field_teaser
     - node.type.events
@@ -41,7 +44,10 @@ content:
     third_party_settings: {  }
     type: basic_string
 hidden:
+  field_background_color: true
+  field_date: true
   field_paragraph_content: true
+  field_sub_title: true
   field_tags: true
   langcode: true
   links: true
