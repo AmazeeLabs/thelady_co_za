@@ -73,11 +73,28 @@
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
+    content.field_background_color[0]['#markup']|trim|lower|replace({' ': "-" }),
+    content.field_box_position[0]['#markup']|trim|lower|replace({' ': "-" }),
+
   ]
 %}
 
 {{ attach_library('classy/node') }}
 
-<article{{ attributes.addClass(classes) }} data-view-mode="{{ view_mode|clean_class }}">
-  {{ content.field_paragraph_content }}
+<article{{ attributes.addClass(classes) }}>
+
+  <section class="left-hs">
+      {{ content.field_image|field_value }}
+  </section>
+  <section class="right-hs">
+
+    <div class="info-wrapper">
+        <span class="field-date">{{ content.field_date|field_value }}</span>
+        <h2>{{ label|field_value }}</h2>
+        <h3>{{ content.field_sub_title|field_value }}</h3>
+        <div class="field-para">{{ content.field_paragraph_content }}</div>
+        <div class="field-tags">{{ content.field_tags|field_value }}</div>
+    </div>
+
+  </section>
 </article>
