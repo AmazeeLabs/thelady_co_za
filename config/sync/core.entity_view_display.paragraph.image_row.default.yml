@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.image_row.field_bg_color
     - field.field.paragraph.image_row.field_image
     - field.field.paragraph.image_row.field_title
-    - image.style.square
+    - image.style.medium_square
     - paragraphs.paragraphs_type.image_row
   module:
     - image
@@ -26,7 +26,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: square
+      image_style: medium_square
       image_link: ''
     third_party_settings: {  }
     type: image

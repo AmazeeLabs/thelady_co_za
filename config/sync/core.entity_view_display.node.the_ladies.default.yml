@@ -3,23 +3,35 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.the_ladies.field_background_color
     - field.field.node.the_ladies.field_box_position
+    - field.field.node.the_ladies.field_date
     - field.field.node.the_ladies.field_image
     - field.field.node.the_ladies.field_paragraph_content
+    - field.field.node.the_ladies.field_sub_title
     - field.field.node.the_ladies.field_tags
     - field.field.node.the_ladies.field_teaser
+    - image.style.landscape_medium
     - node.type.the_ladies
   module:
     - datetime
     - entity_reference_revisions
+    - image
+    - options
     - user
 id: node.the_ladies.default
 targetEntityType: node
 bundle: the_ladies
 mode: default
 content:
-  field_paragraph_content:
+  field_background_color:
     weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_date:
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -31,7 +43,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: medium_square
+      image_style: landscape_medium
       image_link: ''
     third_party_settings: {  }
   field_paragraph_content:
@@ -42,16 +54,22 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+  field_sub_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_tags:
-    weight: 1
-    label: above
+    weight: 5
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
 hidden:
   field_box_position: true
-  field_image: true
   field_teaser: true
   langcode: true
   links: true

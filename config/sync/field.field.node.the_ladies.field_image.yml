@@ -11,7 +11,7 @@ id: node.the_ladies.field_image
 field_name: field_image
 entity_type: node
 bundle: the_ladies
-label: Image
+label: 'Main Image'
 description: 'Upload an image'
 required: true
 translatable: true
