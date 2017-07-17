@@ -1,0 +1,19 @@
+uuid: b8e25a85-4226-4564-af53-3d7dffb85ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.image_row
+id: paragraph.image_row.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: image_row
+label: Caption
+description: 'Add a description about the image'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

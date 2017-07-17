@@ -17,9 +17,6 @@ settings:
     -
       value: '2'
       label: Right
-    -
-      value: '3'
-      label: Center
   allowed_values_function: ''
 module: options
 locked: false

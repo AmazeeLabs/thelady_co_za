@@ -16,3 +16,5 @@ permissions:
   - 'view paragraph content standard_text'
   - 'view paragraph content video'
   - 'view paragraph content wide_video'
+  - 'view paragraph content gallery'
+  - 'view paragraph content image_row'
