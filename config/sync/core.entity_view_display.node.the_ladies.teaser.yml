@@ -4,19 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-<<<<<<< HEAD
-    - field.field.node.the_ladies.field_background_color
-    - field.field.node.the_ladies.field_box_position
-    - field.field.node.the_ladies.field_date
-    - field.field.node.the_ladies.field_image
-    - field.field.node.the_ladies.field_paragraph_content
-    - field.field.node.the_ladies.field_sub_title
-    - field.field.node.the_ladies.field_tags
-=======
     - field.field.node.the_ladies.field_box_position
     - field.field.node.the_ladies.field_image
     - field.field.node.the_ladies.field_paragraph_content
->>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     - field.field.node.the_ladies.field_teaser
     - node.type.the_ladies
   module:
@@ -31,18 +21,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-<<<<<<< HEAD
-  field_background_color: true
-  field_box_position: true
-  field_date: true
-  field_image: true
-  field_paragraph_content: true
-  field_sub_title: true
-  field_tags: true
-=======
   field_box_position: true
   field_image: true
   field_paragraph_content: true
->>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
   field_teaser: true
   langcode: true
