@@ -1,16 +1,15 @@
 uuid: 7d5e6b17-40d6-4562-b8fd-ea81b19d62cc
 langcode: en
 status: true
-dependencies:
-  module:
-    - focal_point
+dependencies: {  }
 name: landscape_medium
-label: 'Landscape Medium (960x450)'
+label: 'Full Half (900xY)'
 effects:
-  e0c7c6c8-0848-4d8f-8a28-3e1ee701c2d9:
-    uuid: e0c7c6c8-0848-4d8f-8a28-3e1ee701c2d9
-    id: focal_point_scale_and_crop
+  3590e1a2-8cf1-4277-9564-17e5fd0032d0:
+    uuid: 3590e1a2-8cf1-4277-9564-17e5fd0032d0
+    id: image_scale
     weight: 1
     data:
-      width: 960
-      height: 450
+      width: 900
+      height: null
+      upscale: false
