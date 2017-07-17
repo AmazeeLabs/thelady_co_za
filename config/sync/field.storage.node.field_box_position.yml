@@ -17,12 +17,6 @@ settings:
     -
       value: '2'
       label: Right
-<<<<<<< HEAD
-=======
-    -
-      value: '3'
-      label: Center
->>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
   allowed_values_function: ''
 module: options
 locked: false
