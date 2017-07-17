@@ -1,0 +1,38 @@
+uuid: 562b2e1b-96c4-4a46-9541-eaebe9c83e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.information_page.field_box_position
+    - field.field.node.information_page.field_image
+    - field.field.node.information_page.field_paragraph_content
+    - field.field.node.information_page.field_teaser
+    - node.type.information_page
+  module:
+    - responsive_image
+    - user
+id: node.information_page.teaser
+targetEntityType: node
+bundle: information_page
+mode: teaser
+content:
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: basic_string
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_box_position: true
+  field_paragraph_content: true
+  langcode: true
+  links: true

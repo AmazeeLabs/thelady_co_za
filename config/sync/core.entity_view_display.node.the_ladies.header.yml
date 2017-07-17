@@ -1,5 +1,6 @@
 uuid: 5c64d19b-50f2-4f37-9927-c4b80f379f10
 langcode: en
+<<<<<<< HEAD
 status: false
 dependencies:
   config:
@@ -11,6 +12,15 @@ dependencies:
     - field.field.node.the_ladies.field_paragraph_content
     - field.field.node.the_ladies.field_sub_title
     - field.field.node.the_ladies.field_tags
+=======
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.header
+    - field.field.node.the_ladies.field_box_position
+    - field.field.node.the_ladies.field_image
+    - field.field.node.the_ladies.field_paragraph_content
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     - field.field.node.the_ladies.field_teaser
     - node.type.the_ladies
   module:
@@ -44,10 +54,14 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+<<<<<<< HEAD
   field_background_color: true
   field_date: true
   field_paragraph_content: true
   field_sub_title: true
   field_tags: true
+=======
+  field_paragraph_content: true
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
   langcode: true
   links: true

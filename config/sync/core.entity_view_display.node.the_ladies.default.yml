@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+<<<<<<< HEAD
     - field.field.node.the_ladies.field_background_color
     - field.field.node.the_ladies.field_box_position
     - field.field.node.the_ladies.field_date
@@ -12,18 +13,29 @@ dependencies:
     - field.field.node.the_ladies.field_tags
     - field.field.node.the_ladies.field_teaser
     - image.style.medium_square
+=======
+    - field.field.node.the_ladies.field_box_position
+    - field.field.node.the_ladies.field_image
+    - field.field.node.the_ladies.field_paragraph_content
+    - field.field.node.the_ladies.field_tags
+    - field.field.node.the_ladies.field_teaser
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     - node.type.the_ladies
   module:
     - datetime
     - entity_reference_revisions
+<<<<<<< HEAD
     - image
     - options
+=======
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     - user
 id: node.the_ladies.default
 targetEntityType: node
 bundle: the_ladies
 mode: default
 content:
+<<<<<<< HEAD
   field_background_color:
     weight: 0
     label: hidden
@@ -32,6 +44,10 @@ content:
     type: list_default
   field_date:
     weight: 1
+=======
+  field_paragraph_content:
+    weight: 0
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     label: hidden
     settings:
       timezone_override: ''
@@ -54,6 +70,7 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+<<<<<<< HEAD
   field_sub_title:
     weight: 2
     label: hidden
@@ -64,12 +81,21 @@ content:
   field_tags:
     weight: 5
     label: inline
+=======
+  field_tags:
+    weight: 1
+    label: above
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
 hidden:
   field_box_position: true
+<<<<<<< HEAD
+=======
+  field_image: true
+>>>>>>> b05526cbf3b4cbda085935bfd56d6d866b42d8c9
   field_teaser: true
   langcode: true
   links: true
