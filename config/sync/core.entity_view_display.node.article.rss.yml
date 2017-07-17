@@ -4,10 +4,11 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - field.field.node.article.body
+    - field.field.node.article.field_box_position
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraph_content
     - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser
     - node.type.article
   module:
     - user
@@ -19,8 +20,9 @@ content:
   links:
     weight: 100
 hidden:
-  body: true
+  field_box_position: true
   field_image: true
   field_paragraph_content: true
   field_tags: true
+  field_teaser: true
   langcode: true

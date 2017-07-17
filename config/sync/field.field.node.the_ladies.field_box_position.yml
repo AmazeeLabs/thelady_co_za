@@ -1,0 +1,23 @@
+uuid: 608e647a-4e0a-47ac-9956-0415a167e3e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box_position
+    - node.type.the_ladies
+  module:
+    - options
+id: node.the_ladies.field_box_position
+field_name: field_box_position
+entity_type: node
+bundle: the_ladies
+label: 'Box Position'
+description: 'Select the position of the Box containing description e.g ''left'''
+required: true
+translatable: true
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
