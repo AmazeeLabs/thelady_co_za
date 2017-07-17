@@ -65,17 +65,11 @@
       }
     }
   }
-  &:after {
-    content: '';
-    position: absolute;
-    left: $gutter*2;
-    width: 20%;
-    height: 20rem;
-    bottom: -14rem;
-    background-image: url(../images/background/paint-splash.png);
-    background-position: left center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
+
+.path-contact {
+  h1.page-title {
+    text-align: center;
+  }
+}
