@@ -4,27 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.video
   module:
-    - image
     - video_embed_field
 id: paragraph.video.preview
 targetEntityType: paragraph
 bundle: video
 mode: preview
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   field_title:
     weight: 1
     label: hidden
