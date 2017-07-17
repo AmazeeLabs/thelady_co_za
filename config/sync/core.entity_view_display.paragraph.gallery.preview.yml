@@ -1,26 +1,27 @@
-uuid: a0e2c264-97d9-430c-b6c1-74d75bea12c1
+uuid: 47ac9e4d-fc84-42f5-8cb4-dc79bafcb3d2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.gallery.field_images
     - image.style.small
     - paragraphs.paragraphs_type.gallery
   module:
     - image
-id: paragraph.gallery.default
+id: paragraph.gallery.preview
 targetEntityType: paragraph
 bundle: gallery
-mode: default
+mode: preview
 content:
   field_images:
     weight: 1
+    label: inline
     settings:
-      preview_image_style: small
-      progress_indicator: throbber
+      image_style: small
+      image_link: ''
     third_party_settings: {  }
-    type: image_image
+    type: image
 hidden:
   created: true
-  status: true
   uid: true
