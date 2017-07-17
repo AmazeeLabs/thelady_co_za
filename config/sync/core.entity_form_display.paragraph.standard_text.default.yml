@@ -3,39 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.standard_text.field_bg_color
-    - field.field.paragraph.standard_text.field_image
-    - field.field.paragraph.standard_text.field_text_width
     - field.field.paragraph.standard_text.field_textarea
-    - field.field.paragraph.standard_text.field_video
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.standard_text
   module:
-    - image
     - text
-    - video_embed_field
 id: paragraph.standard_text.default
 targetEntityType: paragraph
 bundle: standard_text
 mode: default
 content:
-  field_bg_color:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-  field_image:
-    weight: 3
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-  field_text_width:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
   field_textarea:
     weight: 0
     settings:
@@ -43,11 +19,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-  field_video:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: video_embed_field_textfield
 hidden:
   created: true
   status: true
