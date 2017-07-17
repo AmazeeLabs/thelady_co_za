@@ -1,0 +1,23 @@
+uuid: 531f15e9-6b50-42e2-b437-a26fe399491e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_color
+    - node.type.article
+  module:
+    - options
+id: node.article.field_background_color
+field_name: field_background_color
+entity_type: node
+bundle: article
+label: 'Background Color'
+description: 'Choose a background color for the body text'
+required: false
+translatable: true
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

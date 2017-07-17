@@ -1,12 +1,15 @@
 uuid: 243e6798-71fb-4671-990d-4ccb9eff4129
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.header
+    - field.field.node.article.field_background_color
     - field.field.node.article.field_box_position
+    - field.field.node.article.field_date
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraph_content
+    - field.field.node.article.field_sub_title
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser
     - node.type.article
@@ -41,7 +44,10 @@ content:
     third_party_settings: {  }
     type: basic_string
 hidden:
+  field_background_color: true
+  field_date: true
   field_paragraph_content: true
+  field_sub_title: true
   field_tags: true
   langcode: true
   links: true
