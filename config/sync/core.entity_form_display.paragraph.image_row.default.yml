@@ -1,0 +1,40 @@
+uuid: f920a044-42cb-40c8-aec0-66ee405ea03a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_row.field_bg_color
+    - field.field.paragraph.image_row.field_image
+    - field.field.paragraph.image_row.field_title
+    - image.style.square
+    - paragraphs.paragraphs_type.image_row
+  module:
+    - image
+id: paragraph.image_row.default
+targetEntityType: paragraph
+bundle: image_row
+mode: default
+content:
+  field_bg_color:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: square
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

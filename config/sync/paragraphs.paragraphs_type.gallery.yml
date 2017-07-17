@@ -1,0 +1,6 @@
+uuid: 13451ad0-4026-4a15-887e-411514e4b6c3
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery

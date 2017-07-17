@@ -1,28 +1,28 @@
-uuid: f6102e7e-cd7a-44ab-ba2b-431d2dbf5c60
+uuid: 8106f9c7-b3a9-43f5-b0b5-a3d29b965c85
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.image_row
   module:
     - image
-id: node.article.field_image
+id: paragraph.image_row.field_image
 field_name: field_image
-entity_type: node
-bundle: article
+entity_type: paragraph
+bundle: image_row
 label: Image
-description: 'Upload main image of the node'
+description: 'Upload an image'
 required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/news
+  file_directory: images/paragraphs/image_ROW
   file_extensions: 'png gif jpg jpeg'
   max_filesize: 2MB
   max_resolution: ''
-  min_resolution: 1500x700
+  min_resolution: ''
   alt_field: true
   alt_field_required: true
   title_field: false

@@ -1,25 +1,22 @@
-uuid: bf01d661-bb01-4b16-94f6-a3f642061543
+uuid: 0a9b66d2-4159-4087-a946-d7dc09897d35
 langcode: en
 status: true
 dependencies:
   module:
+    - node
     - options
-    - paragraphs
-id: paragraph.field_bg_color
-field_name: field_bg_color
-entity_type: paragraph
+id: node.field_box_position
+field_name: field_box_position
+entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
       value: '1'
-      label: black
+      label: left
     -
       value: '2'
-      label: white
-    -
-      value: '3'
-      label: gold
+      label: Right
   allowed_values_function: ''
 module: options
 locked: false

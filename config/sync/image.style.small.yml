@@ -1,15 +1,16 @@
 uuid: 4665e4be-169b-4e21-b09b-f66a15f1a18e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: small
-label: 'Small (250xY)'
+label: 'Cubes (100x100)'
 effects:
-  48a34c31-081d-4258-8c98-57793c35ab3d:
-    uuid: 48a34c31-081d-4258-8c98-57793c35ab3d
-    id: image_scale
-    weight: 1
+  65cb978e-486a-4b8c-a797-6ee9a27872a0:
+    uuid: 65cb978e-486a-4b8c-a797-6ee9a27872a0
+    id: focal_point_scale_and_crop
+    weight: 2
     data:
-      width: 250
-      height: null
-      upscale: false
+      width: 100
+      height: 100

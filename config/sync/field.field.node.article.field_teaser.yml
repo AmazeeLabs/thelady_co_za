@@ -1,18 +1,18 @@
-uuid: 9a2bd607-04b0-45fc-bb00-cf379448bb8c
+uuid: 7d38b4b0-de3e-445e-a1d1-edfc30d9f5e0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_teaser
-    - node.type.information_page
-id: node.information_page.field_teaser
+    - node.type.article
+id: node.article.field_teaser
 field_name: field_teaser
 entity_type: node
-bundle: information_page
+bundle: article
 label: Introduction
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

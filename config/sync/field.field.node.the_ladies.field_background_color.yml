@@ -1,0 +1,23 @@
+uuid: 74ce1fa8-a969-4aa8-bece-1cb2efcf4ef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_color
+    - node.type.the_ladies
+  module:
+    - options
+id: node.the_ladies.field_background_color
+field_name: field_background_color
+entity_type: node
+bundle: the_ladies
+label: 'Background Color'
+description: 'Choose a background color for the body text'
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

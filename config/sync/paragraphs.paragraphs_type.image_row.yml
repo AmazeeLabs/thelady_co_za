@@ -1,0 +1,6 @@
+uuid: bf773334-3861-4c41-9076-4fde6c98b590
+langcode: en
+status: true
+dependencies: {  }
+id: image_row
+label: 'Image Row'

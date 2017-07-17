@@ -1,0 +1,23 @@
+uuid: 6dc3aa69-dfc8-4381-a710-88cedd02d297
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.image_row
+  module:
+    - options
+id: paragraph.image_row.field_bg_color
+field_name: field_bg_color
+entity_type: paragraph
+bundle: image_row
+label: 'Border Color'
+description: 'Choose the color for the border-bottom of the caption'
+required: true
+translatable: true
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
