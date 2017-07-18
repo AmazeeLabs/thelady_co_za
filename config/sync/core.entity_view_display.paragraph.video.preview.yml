@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
@@ -33,4 +34,5 @@ content:
     type: video_embed_field_video
 hidden:
   created: true
+  field_image: true
   uid: true
