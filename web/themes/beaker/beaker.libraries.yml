@@ -5,9 +5,13 @@ base:
       css/styles.css: {}
       css/animate.css: {}
       css/magnific-popup.css: {}
+      css/owl.carousel.css: {}
+      css/owl.theme.css: {}
+      css/owl.transitions.css: {}
   js:
     js/behaviors.js: {}
     js/jquery.magnific-popup.min.js: {}
+    js/owl.carousel.js: {}
   dependencies:
     - core/jquery
     - core/drupal
