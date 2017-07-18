@@ -93,7 +93,9 @@
         <h2>{{ label|field_value }}</h2>
         <h3>{{ content.field_sub_title|field_value }}</h3>
         <div class="field-para">{{ content.field_paragraph_content }}</div>
-        <div class="field-tags">{{ content.field_tags|field_value }}</div>
+        {% if content.field_tags|render %}
+          <div class="field-tags">{{ content.field_tags|field_value }}</div>
+        {% endif %}
     </div>
 
   </section>
