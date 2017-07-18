@@ -2,19 +2,62 @@
 .node--type-events,
 .node--type-article {
 
+  /*
+  * - General styling
+  */
+  h2 {
+    &:after {
+      content: "";
+      display: block;
+      width: 200px;
+      padding-top: $gutter;
+    }
+  }
+   h3 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  time {
+    @include font-regular;
+    font-size: 20px;
+    line-height: 18px;
+    color: $white;
+  }
+
+
+  /*
+  * - Based on body background
+  */
   &.black {
 
     .info-wrapper {
-      padding: 40px;
+      padding: $gutter*2;
       background-color: $design-golden-brown;
+
+      time {
+        color: $white;
+      }
+
+      h2 {
+        &:after {
+          border-bottom: 1px solid $white;
+        }
+      }
+
+      h3 {
+        color: $light-grey;
+      }
+
     }
   }
+
   &.white {
     .info-wrapper {
       padding: 40px;
       background-color: $white;
     }
   }
+
   &.gold {
     .info-wrapper {
       padding: 40px;
