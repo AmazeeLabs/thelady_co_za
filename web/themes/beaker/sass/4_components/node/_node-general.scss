@@ -1,0 +1,35 @@
+.node--type-the-ladies,
+.node--type-events,
+.node--type-article {
+
+  &.black {
+
+    .info-wrapper {
+      padding: 40px;
+      background-color: $design-golden-brown;
+    }
+  }
+  &.white {
+    .info-wrapper {
+      padding: 40px;
+      background-color: $white;
+    }
+  }
+  &.gold {
+    .info-wrapper {
+      padding: 40px;
+      background-color: $gold;
+    }
+  }
+
+  section.left-hs {
+    width: 60%;
+    height: 100%;
+    float: left;
+  }
+  section.right-hs {
+    width: 40%;
+    height: 100%;
+    float: left;
+  }
+}
