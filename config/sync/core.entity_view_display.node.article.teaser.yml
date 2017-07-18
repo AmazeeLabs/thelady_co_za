@@ -7,30 +7,19 @@ dependencies:
     - field.field.node.article.field_background_color
     - field.field.node.article.field_box_position
     - field.field.node.article.field_date
-    - field.field.node.article.field_image
     - field.field.node.article.field_main_gallery
     - field.field.node.article.field_paragraph_content
     - field.field.node.article.field_sub_title
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser
-    - image.style.medium
     - node.type.article
   module:
-    - image
     - user
 id: node.article.teaser
 targetEntityType: node
 bundle: article
 mode: teaser
-content:
-  field_image:
-    type: image
-    weight: 0
-    settings:
-      image_style: medium
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
   field_background_color: true
   field_box_position: true

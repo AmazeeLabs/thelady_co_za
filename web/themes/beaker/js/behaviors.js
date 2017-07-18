@@ -128,7 +128,35 @@
   };
 
 
+  /*
+  * - Main Gallery Images (News & Events)
+  */
+  Drupal.behaviors.mainGalleryCarousels = {
+    attach: function (context, settings) {
 
+      $('.node--type-events .field-gallery',context).owlCarousel({
+          loop: true,
+          nav: true,
+          items: 1,
+          transitionStyle: 'fade',
+          addClassActive: true,
+          slideSpeed: 300,
+          paginationSpeed: 400,
+      })
+
+
+      $('.node--type-article .field-gallery',context).owlCarousel({
+          loop: true,
+          nav: true,
+          items: 1,
+          transitionStyle: 'fade',
+          addClassActive: true,
+          slideSpeed: 300,
+          paginationSpeed: 400,
+      })
+
+    }
+  };
 
 
 })(jQuery);
