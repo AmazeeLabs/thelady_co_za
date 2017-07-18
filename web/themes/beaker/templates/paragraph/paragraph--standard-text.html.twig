@@ -44,17 +44,14 @@ set classes = [
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   content.field_bg_color[0]['#markup']|clean_class,
   content.field_text_width[0]['#markup']|clean_class,
+  'clearfix'
 ]
 %}
 
 <section {{ attributes.addClass(classes) }}>
   <div class="inner">
-    <div class="field__body">
+    <div class="field-body">
       {{ content.field_textarea|field_value }}
     </div>
-    <div class="field__image">
-      {{ content.field_image|field_value }}
-    </div>
-    {{ content.field_video|field_value  }}
   </div>
 </section>
