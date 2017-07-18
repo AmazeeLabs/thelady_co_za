@@ -13,7 +13,7 @@ entity_type: node
 bundle: article
 label: 'Main Image'
 description: 'Upload an image'
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
