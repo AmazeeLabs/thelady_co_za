@@ -5,12 +5,12 @@ dependencies:
   module:
     - focal_point
 name: medium_square
-label: 'Medium Square (525x588)'
+label: 'Medium Square (735x551)'
 effects:
   48566577-764a-4e15-a8b1-01fbc1472a79:
     uuid: 48566577-764a-4e15-a8b1-01fbc1472a79
     id: focal_point_scale_and_crop
     weight: 1
     data:
-      width: 525
-      height: 588
+      width: 735
+      height: 551

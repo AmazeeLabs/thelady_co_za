@@ -1,0 +1,29 @@
+.paragraph--type--image-row {
+
+  /*
+  * - General styling
+  */
+
+  .caption {
+    text-align: right;
+    margin-right: 25px;
+    &:after {
+      content: "";
+      display: block;
+      float: right;
+    }
+  }
+
+  &.white {
+
+    .caption {
+      &:after {
+        width: 50%;
+        border-bottom: 1px solid $gold;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+}
