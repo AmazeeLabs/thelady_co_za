@@ -1,30 +1,30 @@
-uuid: f6102e7e-cd7a-44ab-ba2b-431d2dbf5c60
+uuid: 22f0593a-00c4-4eb3-b725-85313fd187cb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.node.field_main_gallery
     - node.type.article
   module:
     - image
-id: node.article.field_image
-field_name: field_image
+id: node.article.field_main_gallery
+field_name: field_main_gallery
 entity_type: node
 bundle: article
-label: 'Main Image'
-description: 'Upload an image'
-required: false
+label: 'Main Gallery'
+description: 'Upload a number of images'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/news
+  file_directory: images/main_gallery
   file_extensions: 'png gif jpg jpeg'
   max_filesize: 2MB
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

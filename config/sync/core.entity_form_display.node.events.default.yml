@@ -7,34 +7,18 @@ dependencies:
     - field.field.node.events.field_box_position
     - field.field.node.events.field_date
     - field.field.node.events.field_image
+    - field.field.node.events.field_main_gallery
     - field.field.node.events.field_paragraph_content
     - field.field.node.events.field_sub_title
     - field.field.node.events.field_tags
     - field.field.node.events.field_teaser
-    - image.style.square
+    - image.style.small
     - node.type.events
   module:
     - datetime
     - image
     - paragraphs
     - path
-third_party_settings:
-  field_group:
-    group_header_information:
-      children:
-        - field_box_position
-        - title
-        - field_image
-        - field_teaser
-      parent_name: ''
-      weight: 1
-      label: 'Header Information'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -42,16 +26,16 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
   field_background_color:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
   field_box_position:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -67,8 +51,15 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image
+  field_main_gallery:
+    weight: 6
+    settings:
+      preview_image_style: small
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
   field_paragraph_content:
-    weight: 8
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -85,7 +76,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
   field_tags:
-    weight: 9
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -106,20 +97,20 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 14
+    weight: 15
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 14
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -130,7 +121,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
