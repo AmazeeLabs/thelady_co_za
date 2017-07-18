@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.field_box_position
     - field.field.node.article.field_date
     - field.field.node.article.field_image
+    - field.field.node.article.field_main_gallery
     - field.field.node.article.field_paragraph_content
     - field.field.node.article.field_sub_title
     - field.field.node.article.field_tags
@@ -34,6 +35,7 @@ hidden:
   field_background_color: true
   field_box_position: true
   field_date: true
+  field_main_gallery: true
   field_paragraph_content: true
   field_sub_title: true
   field_tags: true
