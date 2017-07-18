@@ -36,20 +36,30 @@
     .info-wrapper {
       padding: $gutter*2;
       background-color: $design-golden-brown;
-      time {
-        color: $white;
-      }
+      position: relative;
+      .node-info {
+        &:before {
+          content: "";
+          display: block;
+          height: 140px;
+          left: 0;
+          position: absolute;
+          border-left: 3px solid $gold;
+        }
+        time {
+          color: $white;
+        }
 
-      h2 {
-        &:after {
-          border-bottom: 1px solid $white;
+        h2 {
+          &:after {
+            border-bottom: 1px solid $white;
+          }
+        }
+
+        h3 {
+          color: $light-grey;
         }
       }
-
-      h3 {
-        color: $light-grey;
-      }
-
     }
   }
 
