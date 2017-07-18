@@ -48,9 +48,7 @@
 
 <section {{ attributes.addClass(classes) }}>
   <div class="video-wrapper">
-    <div class="image-box">
-      {{ content.field_image|field_value }}
-    </div>
+    {{ content.field_image|field_value }}
     <div class="field-video">{{ content.field_video|field_value }}</div>
     <div class="text-box">
       <div class="video-icon"></div>
