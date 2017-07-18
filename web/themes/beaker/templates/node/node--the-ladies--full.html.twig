@@ -75,7 +75,6 @@
     not node.isPublished() ? 'node--unpublished',
     content.field_background_color[0]['#markup']|trim|lower|replace({' ': "-" }),
     content.field_box_position[0]['#markup']|trim|lower|replace({' ': "-" }),
-
   ]
 %}
 
@@ -89,11 +88,13 @@
   <section class="right-hs">
 
     <div class="info-wrapper">
-        <span class="field-date">{{ content.field_date|field_value }}</span>
-        <h2>{{ label|field_value }}</h2>
-        <h3>{{ content.field_sub_title|field_value }}</h3>
-        <div class="field-para">{{ content.field_paragraph_content }}</div>
+      <span class="field-date">{{ content.field_date|field_value }}</span>
+      <h2>{{ label|field_value }}</h2>
+      <h3>{{ content.field_sub_title|field_value }}</h3>
+      <div class="field-para">{{ content.field_paragraph_content }}</div>
+      {% if content.field_tags|render %}
         <div class="field-tags">{{ content.field_tags|field_value }}</div>
+      {% endif %}
     </div>
 
   </section>
