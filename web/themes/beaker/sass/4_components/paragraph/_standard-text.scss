@@ -1,0 +1,24 @@
+/*
+* - Based on the background color of the left-hs inner-wrapper
+* - the colro of the standard text will be different
+*/
+
+.node--type-the-ladies,
+.node--type-events,
+.node--type-article {
+
+  &.black {
+
+    .paragraph--type--standard-text {
+      p { color: $white; }
+    }
+  }
+
+  &.white,
+  &.gold {
+    .paragraph--type--standard-text {
+      p { color: $design-black; }
+    }
+  }
+}
+
