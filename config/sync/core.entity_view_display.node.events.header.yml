@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.events.field_background_color
     - field.field.node.events.field_box_position
     - field.field.node.events.field_date
-    - field.field.node.events.field_image
     - field.field.node.events.field_main_gallery
     - field.field.node.events.field_paragraph_content
     - field.field.node.events.field_sub_title
@@ -15,7 +14,6 @@ dependencies:
     - field.field.node.events.field_teaser
     - node.type.events
   module:
-    - image_url_formatter
     - options
     - user
 id: node.events.header
@@ -29,15 +27,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
-  field_image:
-    weight: 1
-    label: hidden
-    settings:
-      url_type: '0'
-      image_style: landscape_large
-      image_link: ''
-    third_party_settings: {  }
-    type: image_url
   field_teaser:
     weight: 2
     label: hidden

@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.events.field_background_color
     - field.field.node.events.field_box_position
     - field.field.node.events.field_date
-    - field.field.node.events.field_image
     - field.field.node.events.field_main_gallery
     - field.field.node.events.field_paragraph_content
     - field.field.node.events.field_sub_title
@@ -15,21 +14,12 @@ dependencies:
     - field.field.node.events.field_teaser
     - node.type.events
   module:
-    - image
     - user
 id: node.events.teaser
 targetEntityType: node
 bundle: events
 mode: teaser
-content:
-  field_image:
-    type: image
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
+content: {  }
 hidden:
   field_background_color: true
   field_box_position: true

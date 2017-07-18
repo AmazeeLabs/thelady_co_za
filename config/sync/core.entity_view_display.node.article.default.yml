@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.article.field_background_color
     - field.field.node.article.field_box_position
     - field.field.node.article.field_date
-    - field.field.node.article.field_image
     - field.field.node.article.field_main_gallery
     - field.field.node.article.field_paragraph_content
     - field.field.node.article.field_sub_title
@@ -38,15 +37,6 @@ content:
       format_type: event_dates
     third_party_settings: {  }
     type: datetime_default
-  field_image:
-    type: image_url
-    weight: 3
-    label: hidden
-    settings:
-      image_style: landscape_medium
-      image_link: ''
-      url_type: ''
-    third_party_settings: {  }
   field_main_gallery:
     weight: 2
     label: hidden
