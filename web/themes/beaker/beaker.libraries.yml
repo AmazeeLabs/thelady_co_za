@@ -3,6 +3,7 @@ base:
   css:
     theme:
       css/styles.css: {}
+      css/animate.css: {}
   js:
     js/behaviors.js: {}
   dependencies:
