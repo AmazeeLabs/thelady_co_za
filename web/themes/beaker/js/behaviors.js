@@ -61,7 +61,6 @@
 
       checkOrientationMenu = function () {
         $('.region-header-right .h-wrapper').removeClass('opemMenu');
-        //$('.region-header-right .h-wrapper').hide();
         $('.sf-accordion-toggle a').removeClass('sf-expanded');
       }
 
@@ -71,6 +70,16 @@
     }
   };
 
+
+  /*
+  * - On Scroll, slowly Fadein paragrapgh content
+  */
+  Drupal.behaviors.scrollInContent = {
+    attach: function (context, settings) {
+
+
+    }
+  };
 
 
 
