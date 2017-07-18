@@ -6,9 +6,10 @@ dependencies:
     - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
+    - image.style.medium_square
     - paragraphs.paragraphs_type.video
   module:
-    - image_url_formatter
+    - image
     - video_embed_field
 id: paragraph.video.default
 targetEntityType: paragraph
@@ -19,11 +20,10 @@ content:
     weight: 1
     label: hidden
     settings:
-      url_type: '0'
       image_style: medium_square
       image_link: ''
     third_party_settings: {  }
-    type: image_url
+    type: image
   field_title:
     weight: 0
     label: hidden
