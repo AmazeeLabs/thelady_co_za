@@ -7,24 +7,40 @@
   */
 
   .info-wrapper {
+
     height: 1056px;
-    h2 {
-      &:after {
-        content: "";
-        display: block;
-        width: 200px;
-        padding-top: $gutter;
+    overflow: hidden;
+    .node-info {
+      h2 {
+        &:after {
+          content: "";
+          display: block;
+          width: 200px;
+          padding-top: $gutter;
+        }
+      }
+       h3 {
+        font-size: 16px;
+        font-weight: 100;
+      }
+      time {
+        @include font-regular;
+        font-size: 20px;
+        line-height: 18px;
       }
     }
-     h3 {
-      font-size: 16px;
-      font-weight: 100;
+
+    .field-para {
+
     }
-    time {
-      @include font-regular;
-      font-size: 20px;
-      line-height: 18px;
+
+    .field--name-field-paragraph-content {
+
+      .field__item {
+
+      }
     }
+
   }
 
 
