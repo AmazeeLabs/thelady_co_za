@@ -4,8 +4,10 @@ base:
     theme:
       css/styles.css: {}
       css/animate.css: {}
+      css/magnific-popup.css: {}
   js:
     js/behaviors.js: {}
+    js/jquery.magnific-popup.min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
