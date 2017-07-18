@@ -5,23 +5,26 @@
   /*
   * - General styling
   */
-  h2 {
-    &:after {
-      content: "";
-      display: block;
-      width: 200px;
-      padding-top: $gutter;
+
+  .info-wrapper {
+    height: 1056px;
+    h2 {
+      &:after {
+        content: "";
+        display: block;
+        width: 200px;
+        padding-top: $gutter;
+      }
     }
-  }
-   h3 {
-    font-size: 16px;
-    font-weight: 100;
-  }
-  time {
-    @include font-regular;
-    font-size: 20px;
-    line-height: 18px;
-    color: $white;
+     h3 {
+      font-size: 16px;
+      font-weight: 100;
+    }
+    time {
+      @include font-regular;
+      font-size: 20px;
+      line-height: 18px;
+    }
   }
 
 
@@ -33,7 +36,6 @@
     .info-wrapper {
       padding: $gutter*2;
       background-color: $design-golden-brown;
-
       time {
         color: $white;
       }
@@ -55,6 +57,7 @@
     .info-wrapper {
       padding: 40px;
       background-color: $white;
+      border-left: 3px solid $gold;
     }
   }
 
