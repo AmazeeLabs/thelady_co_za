@@ -3,18 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.video.field_image
     - field.field.paragraph.video.field_title
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
   module:
+    - image_url_formatter
     - video_embed_field
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
 mode: default
 content:
-  field_title:
+  field_image:
     weight: 1
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: medium_square
+      image_link: ''
+    third_party_settings: {  }
+    type: image_url
+  field_title:
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
@@ -24,8 +35,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      width: 960
-      height: 720
+      width: 735
+      height: 551
       autoplay: false
       responsive: false
     third_party_settings: {  }
