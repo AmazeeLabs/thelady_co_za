@@ -82,5 +82,53 @@
   };
 
 
+  /*
+  * - Video Overlays (site wide)
+  */
+  Drupal.behaviors.videoOverlays = {
+    attach: function (context, settings) {
+
+      $('.paragraph--type--video', context).each(function (index, item) {
+
+        var $this = $(this),
+            $button = $this.find('a'),
+            $overlay = $this.find('.js-video-overlay'),
+            $iframesrc = $this.find('.field--name-field-video iframe').attr('src');
+            $iframesrc = $iframesrc.replace("autoplay=0", "autoplay=1");
+
+        // popup code for youtube videos
+        $button.magnificPopup({
+          items: {
+            src: ''
+          },
+          type: 'iframe',
+          iframe: {
+            markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<div class="mfp-title">Some caption</div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '</div>'
+          },
+          callbacks: {
+            markupParse: function (template, values, item) {
+              values.title = $overlay.find('h2').text();
+            },
+            open: function () {
+              $(this.content).find('iframe').attr('src', $iframesrc);
+              dataLayer.push(
+                {'event': 'youtubeStarted'}
+              );
+            }
+          }
+        });
+
+
+      });
+    }
+  };
+
+
+
+
 
 })(jQuery);

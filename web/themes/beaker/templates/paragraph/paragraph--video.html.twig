@@ -49,10 +49,16 @@
 <section {{ attributes.addClass(classes) }}>
   <div class="video-wrapper">
     {{ content.field_image|field_value }}
-    <div class="field-video">{{ content.field_video|field_value }}</div>
+
+    <div class="video-overlay js-video-overlay">
+      <a href="#" class="video-close-button js-close-button">Close</a>
+      <h2>{{ content.field_title|field_value }}</h2>
+      {{ content.field_video }}
+    </div>
     <div class="text-box">
-      <div class="video-icon"></div>
+      <a href="#" class="js-video-button"><div class="video-icon"></div></a>
       <h3>{{ content.field_title|field_value }}</h3>
     </div>
+
   </div>
 </section>
