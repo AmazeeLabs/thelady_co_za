@@ -23,9 +23,13 @@
           border-radius: 50%;
           background-size: 35px auto;
           display: inline-block;
+          @include transition(all 0.5s ease);
           cursor: pointer;
           height: 35px;
           width: 35px;
+          &:hover {
+            background-color: light($design-black, 10%);
+          }
         }
         .owl-prev {
           margin-right: 5px;
@@ -41,7 +45,9 @@
       }
     }
   }
+
   section.right-hs {
+
 
   }
 }
