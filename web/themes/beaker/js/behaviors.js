@@ -161,7 +161,7 @@
 
       $('.paragraph--type--gallery .field--name-field-images').magnificPopup({
 
-        delegate: '.field__item',
+        delegate: 'a',
         type: 'image',
         mainClass: 'mfp-img-mobile',
         gallery: {
