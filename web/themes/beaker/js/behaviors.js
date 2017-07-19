@@ -77,7 +77,8 @@
   Drupal.behaviors.scrollInContent = {
     attach: function (context, settings) {
 
-
+      window.sr = ScrollReveal();
+      sr.reveal('.field--name-field-paragraph-content');
     }
   };
 
