@@ -1,0 +1,22 @@
+.paragraph--type--gallery {
+
+  .field--name-field-images {
+    display: inline-block;
+    padding-bottom: 25px;
+    width: 100%;
+    padding-top: 25px;
+    .field__item {
+      line-height: 0;
+      padding: 0 $gutter/2 $gutter/2 0;
+      float: left;
+      width: $gutter*5;
+      height: auto;
+      &:nth-child(4n) {
+        padding-right: 0;
+        img{
+          padding-right: $gutter/2;
+        }
+      }
+    }
+  }
+}
