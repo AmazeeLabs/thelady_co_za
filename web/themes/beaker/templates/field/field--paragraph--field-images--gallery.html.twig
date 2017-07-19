@@ -55,7 +55,7 @@
 
 <div{{ attributes.addClass(classes) }}>
  {% for item in items %}
-   <a href="#" class="field__item">{{ item.content }}</a>
+   <a href="{{ file_url(item.content['#item'].entity.uri.value) }}" class="field__item">{{ item.content }}</a>
  {% endfor %}
 </div>
 
