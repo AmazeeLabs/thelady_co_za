@@ -1,0 +1,30 @@
+uuid: 6d80f72c-41b4-4101-8283-70ed452cfffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_blocks
+  module:
+    - system
+    - views
+  theme:
+    - beaker
+id: views_block__content_blocks_block_2
+theme: beaker
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_blocks-block_2'
+settings:
+  id: 'views_block:content_blocks-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/3
+    negate: false
+    context_mapping: {  }
