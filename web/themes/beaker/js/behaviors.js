@@ -164,9 +164,8 @@
 
       $('.paragraph--type--gallery .field--name-field-images').magnificPopup({
 
-        delegate: 'a.field__item',
+        delegate: 'a',
         type: 'image',
-        tLoading: 'Loading image #%curr%...',
         mainClass: 'mfp-img-mobile',
         gallery: {
           enabled: true,
@@ -176,7 +175,7 @@
         image: {
           tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
           titleSrc: function(item) {
-            return item.el.attr('alt');
+            return item;
           }
         }
       });
