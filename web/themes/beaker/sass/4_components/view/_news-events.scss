@@ -1,0 +1,11 @@
+.node--type-article,
+.node--type-events {
+
+  &.node--view-mode-teaser {
+
+    .banner-images {
+      height: 251px;
+      width: 380px;
+    }
+  }
+}
