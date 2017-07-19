@@ -153,4 +153,33 @@
   };
 
 
+  /*
+  * - Gallery Images (The ladies node pages)
+  */
+  Drupal.behaviors.imageOverlays = {
+    attach: function (context, settings) {
+
+      $('.paragraph--type--gallery .field--name-field-images').magnificPopup({
+
+        delegate: '.field__item',
+        type: 'image',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1]
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+            return item.el.attr('title');
+          }
+        }
+      });
+
+    }
+  };
+
+
+
 })(jQuery);
