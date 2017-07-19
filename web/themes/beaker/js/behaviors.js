@@ -139,16 +139,18 @@
           loop: true,
           nav: true,
           items: 1,
-          animateOut: 'fadeOut',
-          addClassActive: true
+          animateIn: 'fadeIn',
+          animateOut: 'fadeInDown',
+          smartSpeed:250
       });
 
       $('.node--type-article .field-gallery',context).owlCarousel({
           loop: true,
           nav: true,
           items: 1,
-          animateOut: 'fadeOut',
-          addClassActive: true
+          animateIn: 'fadeIn',
+          animateOut: 'fadeInDown',
+          smartSpeed: 250
       });
     }
   };
