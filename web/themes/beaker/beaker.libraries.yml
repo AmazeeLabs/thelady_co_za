@@ -10,6 +10,7 @@ base:
       css/owl.transitions.css: {}
   js:
     js/behaviors.js: {}
+    js/scrollreveal.min.js: {}
     js/jquery.magnific-popup.min.js: {}
     js/owl.carousel.js: {}
   dependencies:
