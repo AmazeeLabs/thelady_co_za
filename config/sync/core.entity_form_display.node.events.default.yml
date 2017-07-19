@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.events.field_background_color
     - field.field.node.events.field_box_position
     - field.field.node.events.field_date
+    - field.field.node.events.field_image
     - field.field.node.events.field_main_gallery
     - field.field.node.events.field_paragraph_content
     - field.field.node.events.field_sub_title
@@ -15,27 +16,9 @@ dependencies:
     - node.type.events
   module:
     - datetime
-    - field_group
     - image
     - paragraphs
     - path
-third_party_settings:
-  field_group:
-    group_header_information:
-      children:
-        - field_box_position
-        - title
-        - field_image
-        - field_teaser
-      parent_name: ''
-      weight: 1
-      label: 'Header Information'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -61,6 +44,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_image:
+    weight: 5
+    settings:
+      preview_image_style: square
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
   field_main_gallery:
     weight: 6
     settings:
