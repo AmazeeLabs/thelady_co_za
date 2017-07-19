@@ -111,6 +111,10 @@
     width: 60%;
     height: 100%;
     float: left;
+
+    .banner-images {
+      height: 1056px;
+    }
   }
   section.right-hs {
     width: 40%;
@@ -131,10 +135,10 @@
       .field--name-field-paragraph-content {
         &:after {
           content: '';
-          background: linear-gradient(#000,rgba(0,0,0,0));
+          background: linear-gradient($design-black,rgba(0,0,0,0));
           transition: all 1s ease;
           position: fixed;
-          bottom: 180px;
+          bottom: 0;
           transform: rotate(180deg);
           right: 0;
           left: 0;
