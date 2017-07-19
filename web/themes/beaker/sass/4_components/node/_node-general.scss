@@ -95,7 +95,7 @@
       }
 
       h3 {
-        color: $design-black;
+        color: $gold;
       }
     }
   }
@@ -104,6 +104,20 @@
     .info-wrapper {
       padding: 40px;
       background-color: $gold;
+
+      time {
+        color: $design-black;
+      }
+
+      h2 {
+        &:after {
+          border-bottom: 1px solid $design-black;
+        }
+      }
+
+      h3 {
+        color: $design-golden-brown;
+      }
     }
   }
 
