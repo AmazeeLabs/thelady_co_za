@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_background_color
     - field.field.node.article.field_box_position
     - field.field.node.article.field_date
+    - field.field.node.article.field_image
     - field.field.node.article.field_main_gallery
     - field.field.node.article.field_paragraph_content
     - field.field.node.article.field_sub_title
@@ -15,6 +16,7 @@ dependencies:
   module:
     - datetime
     - entity_reference_revisions
+    - image
     - image_url_formatter
     - options
     - user
@@ -37,6 +39,14 @@ content:
       format_type: event_dates
     third_party_settings: {  }
     type: datetime_default
+  field_image:
+    weight: 7
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   field_main_gallery:
     weight: 2
     label: hidden
