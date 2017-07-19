@@ -16,6 +16,7 @@
     overflow: hidden;
     .node-info {
       h2 {
+        color: $design-brown;
         &:after {
           content: "";
           display: block;
