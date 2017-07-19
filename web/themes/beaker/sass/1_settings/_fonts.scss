@@ -69,7 +69,7 @@ $merriweather: 'Merriweather', serif;
 @mixin h2 {
   @include font-bold;
   font-size: rem(34px);
-  line-height: 40px;
+  line-height: 32px;
 }
 
 @mixin h3 {
