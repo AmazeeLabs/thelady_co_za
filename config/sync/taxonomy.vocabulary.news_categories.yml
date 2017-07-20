@@ -1,0 +1,9 @@
+uuid: 6e579e97-5474-4710-b534-ba99c621701c
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Categories'
+vid: news_categories
+description: 'Tags related to news'
+hierarchy: 0
+weight: 0
