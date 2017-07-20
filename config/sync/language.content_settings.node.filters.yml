@@ -1,0 +1,11 @@
+uuid: b1fb70cc-992c-43a9-9780-9bbd3acd50c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.filters
+id: node.filters
+target_entity_type_id: node
+target_bundle: filters
+default_langcode: site_default
+language_alterable: true

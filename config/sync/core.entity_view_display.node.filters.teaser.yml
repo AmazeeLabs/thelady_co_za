@@ -1,0 +1,39 @@
+uuid: 3767a006-f821-4390-b612-dff0e4808a11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.filters.field_filter
+    - field.field.node.filters.field_link
+    - node.type.filters
+  module:
+    - link
+    - user
+id: node.filters.teaser
+targetEntityType: node
+bundle: filters
+mode: teaser
+content:
+  field_filter:
+    type: entity_reference_entity_view
+    weight: 1
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true
