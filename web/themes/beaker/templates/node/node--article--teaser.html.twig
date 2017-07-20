@@ -79,12 +79,14 @@
 
 {{ attach_library('classy/node') }}
 
-<article{{ attributes.addClass(classes) }}>
-  <div class="inner-wrapper">
-    {{ content.field_image|field_value }}
-    <div class="text-row">
-      <h5>{{ content.field_sub_title|field_value }}</h5>
-      <p>{{ content.field_teaser|field_value }}</p>
+<a href="{{ url }}">
+  <article{{ attributes.addClass(classes) }}>
+    <div class="inner-wrapper">
+      {{ content.field_image|field_value }}
+      <div class="text-row">
+        <h5>{{ content.field_sub_title|field_value }}</h5>
+        <p>{{ content.field_teaser|field_value }}</p>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</a>

@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.events.field_teaser
     - node.type.events
   module:
+    - datetime
     - image_url_formatter
     - user
 id: node.events.teaser
@@ -22,6 +23,14 @@ targetEntityType: node
 bundle: events
 mode: teaser
 content:
+  field_date:
+    type: datetime_default
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: event_dates
+    third_party_settings: {  }
   field_image:
     type: image_url
     weight: 0
@@ -33,21 +42,20 @@ content:
     third_party_settings: {  }
   field_sub_title:
     type: string
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_teaser:
     type: basic_string
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_background_color: true
   field_box_position: true
-  field_date: true
   field_main_gallery: true
   field_paragraph_content: true
   field_tags: true
