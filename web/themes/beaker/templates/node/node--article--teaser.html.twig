@@ -79,13 +79,13 @@
 
 {{ attach_library('classy/node') }}
 
-<a href="{{ url }}">
+<a href="{{ url }}" target="_blank">
   <article{{ attributes.addClass(classes) }}>
     <div class="inner-wrapper">
-      {{ content.field_image|field_value }}
+      <div class="field-image">{{ content.field_image|field_value }}</div>
       <div class="text-row">
+        <h4>{{ content.field_date }}</h4>
         <h5>{{ content.field_sub_title|field_value }}</h5>
-        <p>{{ content.field_teaser|field_value }}</p>
       </div>
     </div>
   </article>
