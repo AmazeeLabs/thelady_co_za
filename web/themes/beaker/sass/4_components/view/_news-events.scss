@@ -6,14 +6,14 @@
       width: 31.1111%;
       float: left;
       margin: 0 $gutter $gutter 0;
-
+      cursor: pointer;
       .node--view-mode-teaser {
         position: relative;
         .field-image {
-
+          overflow: hidden;
           .banner-images {
             height: 251px;
-            opacity: 1;
+            transform: scale(1.5);
             @include transition(opacity 0.35s, transform 0.35s);
           }
         }
@@ -28,14 +28,13 @@
           padding: $gutter;
           overflow: hidden;
           @include transition(all 0.5s ease);
-
           h4, h5 {
             color: $white;
           }
           &:before {
             content: "";
             display: block;
-            height: 140px;
+            height: 90px;
             left: 0;
             position: absolute;
             border-left: 4px solid $gold;
@@ -44,12 +43,10 @@
       }
 
       &:hover {
-
         .text-row {
-          opacity: 0.88;
+          opacity: 0.9;
         }
         .banner-images {
-          opacity: 0.5;
           transform: scale(1);
         }
       }
