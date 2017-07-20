@@ -458,6 +458,8 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        header: false
+        css_class: false
       row:
         type: fields
         options:
@@ -466,7 +468,7 @@ display:
           separator: ''
           hide_empty: false
       block_description: 'News Filter'
-      title: Filters
+      title: ''
       fields:
         field_filter:
           id: field_filter
@@ -651,6 +653,21 @@ display:
         groups:
           1: AND
       rendering_language: '***LANGUAGE_language_interface***'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h4>Filters</h4>'
+            format: basic_html
+          plugin_id: text
+      css_class: news-filter
     cache_metadata:
       max-age: -1
       contexts:
@@ -668,7 +685,7 @@ display:
       display_extenders: {  }
       display_description: ''
       block_description: 'Events Filters'
-      title: Filters
+      title: ''
       defaults:
         title: false
         fields: false
@@ -676,6 +693,8 @@ display:
         filter_groups: false
         style: false
         row: false
+        header: false
+        css_class: false
       fields:
         field_filter:
           id: field_filter
@@ -876,6 +895,21 @@ display:
           separator: ''
           hide_empty: false
       rendering_language: '***LANGUAGE_language_interface***'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h4>Filters</h4>'
+            format: basic_html
+          plugin_id: text
+      css_class: event-filter
     cache_metadata:
       max-age: -1
       contexts:
