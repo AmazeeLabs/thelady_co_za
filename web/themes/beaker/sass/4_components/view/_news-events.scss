@@ -2,18 +2,15 @@
 .event-teasers {
   width: 80%;
   float: left;
-}
-
-
-.news-list,
-.event-list {
   margin: $gutter 0;
-  ul {
-    li {
+  .view-content{
+    .news-item,
+    .event-item {
       width: 31.1111%;
       float: left;
       margin: 0 $gutter $gutter 0;
       cursor: pointer;
+      display: block;
       .node--view-mode-teaser {
         position: relative;
         .field-image {
@@ -60,5 +57,3 @@
     }
   }
 }
-
-

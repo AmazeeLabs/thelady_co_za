@@ -261,14 +261,12 @@ display:
       display_description: ''
       block_description: 'News Teasers'
       style:
-        type: html_list
+        type: default
         options:
+          grouping: {  }
           row_class: 'news-item {{ field_tags }}'
           default_row_class: false
           uses_fields: true
-          type: ul
-          wrapper_class: news-list
-          class: ''
       defaults:
         style: false
         row: false
@@ -428,15 +426,12 @@ display:
       display_description: ''
       block_description: 'Event Teasers'
       style:
-        type: html_list
+        type: default
         options:
           grouping: {  }
           row_class: 'event-item {{ field_tags }}'
           default_row_class: false
           uses_fields: true
-          type: ul
-          wrapper_class: event-list
-          class: ''
       defaults:
         style: false
         row: false
@@ -651,14 +646,11 @@ display:
       display_extenders: {  }
       display_description: ''
       style:
-        type: html_list
+        type: default
         options:
           grouping: {  }
           row_class: 'filter-row {{ field_filter }}'
           default_row_class: false
-          type: ul
-          wrapper_class: filter-list
-          class: ''
       defaults:
         style: false
         row: false
@@ -752,7 +744,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="#{{ field_filter }}">{{ title }}</a>'
+            text: '<a href="#{{ field_filter }}" rel="{{ field_filter }}">{{ title }}</a>'
             make_link: false
             path: '#{{ field_filter }}'
             absolute: false
@@ -978,7 +970,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="#{{ field_filter }}">{{ title }}</a>'
+            text: '<a href="#{{ field_filter }}" rel="{{ field_filter }}">{{ title }}</a>'
             make_link: false
             path: '#{{ field_filter }}'
             absolute: false
@@ -1087,14 +1079,11 @@ display:
         groups:
           1: AND
       style:
-        type: html_list
+        type: default
         options:
           grouping: {  }
           row_class: 'filter-row {{ field_filter }}'
           default_row_class: false
-          type: ul
-          wrapper_class: filter-list
-          class: ''
       row:
         type: fields
         options:
