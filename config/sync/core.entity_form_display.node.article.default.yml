@@ -19,6 +19,23 @@ dependencies:
     - image
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_header_information:
+      children:
+        - title
+        - field_teaser
+        - field_image
+        - field_box_position
+      parent_name: ''
+      weight: 1
+      label: 'Header Information'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
 id: node.article.default
 targetEntityType: node
 bundle: article
