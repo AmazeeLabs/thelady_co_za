@@ -1,7 +1,12 @@
-.news-list,
-.event-list {
+.news-teasers,
+.event-teasers {
   width: 80%;
   float: left;
+}
+
+
+.news-list,
+.event-list {
   margin: $gutter 0;
   ul {
     li {
