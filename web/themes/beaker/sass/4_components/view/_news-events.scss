@@ -1,12 +1,12 @@
 .news-teasers,
 .event-teasers {
-  width: 80%;
+  width: 100%;
   float: left;
-  margin: $gutter 0;
+  margin: $gutter;
   .view-content{
     .news-item,
     .event-item {
-      width: 31.1111%;
+      width: 23.1111%;
       float: left;
       margin: 0 $gutter $gutter 0;
       cursor: pointer;
