@@ -184,5 +184,14 @@
   };
 
 
+  /*
+  * - Filters (News & Events)
+  */
+  Drupal.behaviors.filters = {
+    attach: function (context, settings) {
+
+
+    }
+  };
 
 })(jQuery);
