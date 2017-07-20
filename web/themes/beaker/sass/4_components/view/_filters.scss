@@ -1,17 +1,42 @@
 .news-filter,
 .event-filter {
-  width: 20%;
-  float: left;
+  position: fixed;
+  width: 20vw;
+  height: 100vw;
+  background: rgba(255,255,255,.89);
+  z-index: 2;
+  transform: translateX(-92%);
+  transition: transform 1s cubic-bezier(.19,1,.22,1);
   .view-header {
     text-align: center;
     height: 100%;
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    right: 0;
+    cursor: pointer;
     h4 {
+      opacity: 1;
+      transform: rotate(-90deg) translateX(-50%) translateY(70%);
+      transform-origin: 50% 100%;
+      position: relative;
+      text-transform: uppercase;
+      top: 30%;
+      color: $design-black;
       @include rotate(-90deg);
     }
   }
 
   .view-content {
+    position: absolute;
+    left: 5%;
+    width: 80%;
+    top: 10vw;
+    text-align: left;
+  }
 
-    //display: none;
+  &:hover {
+    .view-header h4 { opacity: 0; }
+    transform: translateX(-14%);
   }
 }
