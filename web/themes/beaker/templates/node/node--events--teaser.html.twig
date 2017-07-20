@@ -77,11 +77,9 @@
   ]
 %}
 
-{% set tag_link = content.field_tags[0]['#context']['value']|clean_class %}
-
 {{ attach_library('classy/node') }}
 
-<a href="{{ url }}" target="_blank" class="{{ tag_link }}">
+<a href="{{ url }}" target="_blank">
   <article{{ attributes.addClass(classes) }}>
     <div class="inner-wrapper">
       <div class="field-image">{{ content.field_image|field_value }}</div>
