@@ -12,7 +12,7 @@ entity_type: node
 bundle: article
 label: 'News Category'
 description: 'Select the tag that best describes the news category'
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
