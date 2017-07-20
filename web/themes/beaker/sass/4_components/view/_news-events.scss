@@ -1,5 +1,7 @@
 .news-list,
 .event-list {
+  width: 80%;
+  float: left;
   margin: $gutter 0;
   ul {
     li {
