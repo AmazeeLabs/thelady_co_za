@@ -1,4 +1,4 @@
-uuid: 99855b3f-7468-4315-99d7-89c5e5d1cf93
+uuid: 4d04e2d8-8d56-4e83-8632-35ec2210f897
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - beaker
-id: views_block__content_blocks_block_3
+id: views_block__content_blocks_block_4
 theme: beaker
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'views_block:content_blocks-block_3'
+plugin: 'views_block:content_blocks-block_4'
 settings:
-  id: 'views_block:content_blocks-block_3'
+  id: 'views_block:content_blocks-block_4'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node/4
+    pages: /node/3
     negate: false
     context_mapping: {  }
