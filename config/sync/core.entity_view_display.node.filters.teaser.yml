@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.filters.field_filter
     - field.field.node.filters.field_link
-    - field.field.node.filters.field_news
     - node.type.filters
   module:
     - link
@@ -15,6 +15,14 @@ targetEntityType: node
 bundle: filters
 mode: teaser
 content:
+  field_filter:
+    type: entity_reference_entity_view
+    weight: 1
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   field_link:
     type: link
     weight: 0
@@ -25,14 +33,6 @@ content:
       url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
-  field_news:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
 hidden:
   langcode: true

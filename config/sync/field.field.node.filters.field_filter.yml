@@ -1,0 +1,30 @@
+uuid: 84351390-323e-4b10-8400-e66e5179164b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filter
+    - node.type.filters
+    - taxonomy.vocabulary.events_categories
+    - taxonomy.vocabulary.news_categories
+id: node.filters.field_filter
+field_name: field_filter
+entity_type: node
+bundle: filters
+label: Filter
+description: 'Add a filter from events or news categories'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      events_categories: events_categories
+      news_categories: news_categories
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: events_categories
+field_type: entity_reference
