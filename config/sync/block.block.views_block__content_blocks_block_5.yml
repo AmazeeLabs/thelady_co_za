@@ -1,4 +1,4 @@
-uuid: 99855b3f-7468-4315-99d7-89c5e5d1cf93
+uuid: 991ed897-c64d-496a-a814-ecd0d1151519
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - beaker
-id: views_block__content_blocks_block_3
+id: views_block__content_blocks_block_5
 theme: beaker
 region: content
-weight: -5
+weight: -6
 provider: null
-plugin: 'views_block:content_blocks-block_3'
+plugin: 'views_block:content_blocks-block_5'
 settings:
-  id: 'views_block:content_blocks-block_3'
+  id: 'views_block:content_blocks-block_5'
   label: ''
   provider: views
   label_display: '0'

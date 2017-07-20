@@ -466,7 +466,7 @@ display:
           separator: ''
           hide_empty: false
       block_description: 'News Filter'
-      title: ''
+      title: Filters
       fields:
         field_filter:
           id: field_filter
