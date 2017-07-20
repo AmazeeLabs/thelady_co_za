@@ -13,6 +13,7 @@ base:
     js/scrollreveal.min.js: {}
     js/jquery.magnific-popup.min.js: {}
     js/owl.carousel.js: {}
+    js/isotope.pkgd.min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
