@@ -1,0 +1,9 @@
+uuid: e68c42fb-1c73-484d-a65c-3058d98328ac
+langcode: en
+status: true
+dependencies: {  }
+name: 'Events Categories'
+vid: events_categories
+description: 'Tags related to events'
+hierarchy: 0
+weight: 0
