@@ -228,13 +228,13 @@
 
           if($(this).hasClass('active')){
 
-            $event_container.isotope( {filter: ''});
+            $events_container.isotope( {filter: ''});
             $(this).removeClass('active').css({'color':'#dbbc90'});
           }
           else{
 
             $('.event-filter .view-content .filter-row a').removeClass('active').css({'color':'#dbbc90'});;
-            $event_container.isotope( {filter: '.' + $(this).attr('rel')});
+            $events_container.isotope( {filter: '.' + $(this).attr('rel')});
             $(this).addClass('active').css({'color':'#dbbc90'});
           }
       });
