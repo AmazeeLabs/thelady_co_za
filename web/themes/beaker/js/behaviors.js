@@ -187,11 +187,61 @@
   /*
   * - Filters (News & Events)
   */
-  Drupal.behaviors.filters = {
+  Drupal.behaviors.filtersNewsEvents = {
     attach: function (context, settings) {
+
+      var $news_isotope = $('.news-teasers .view-content').isotope({
+         itemSelector: '.news-item',
+         layoutMode: 'fitRows'
+      });
+
+      var $events_isotope = $('.event-teasers .view-content').isotope({
+         itemSelector: '.event-item',
+         layoutMode: 'fitRows'
+      });
+
+      $news_container = $('.news-teasers .view-content', context);
+      $events_container = $('.event-teasers .view-content', context);
+
+      /*
+      * - News filter
+      */
+      $('.news-filter .view-content .filter-row a', context).bind('click',function(){
+
+          if($(this).hasClass('active')){
+
+            $news_container.isotope( {filter: ''});
+            $(this).removeClass('active').css({'color':'#dbbc90'});
+          }
+          else{
+
+            $('.news-filter .view-content .filter-row a').removeClass('active').css({'color':'#dbbc90'});
+            $news_container.isotope( {filter: '.' + $(this).attr('rel')});
+            $(this).addClass('active').css({'color':'#dbbc90'});
+          }
+      });
+
+      /*
+      * - Events Filter
+      */
+      $('.event-filter .view-content .filter-row a', context).bind('click',function(){
+
+          if($(this).hasClass('active')){
+
+            $event_container.isotope( {filter: ''});
+            $(this).removeClass('active').css({'color':'#dbbc90'});
+          }
+          else{
+
+            $('.event-filter .view-content .filter-row a').removeClass('active').css({'color':'#dbbc90'});;
+            $event_container.isotope( {filter: '.' + $(this).attr('rel')});
+            $(this).addClass('active').css({'color':'#dbbc90'});
+          }
+      });
 
 
     }
   };
+
 
 })(jQuery);
