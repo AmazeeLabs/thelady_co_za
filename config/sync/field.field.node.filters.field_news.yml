@@ -1,0 +1,30 @@
+uuid: 73a4fe5f-f6e2-4a13-9cc8-f42adea54123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.article
+    - node.type.events
+    - node.type.filters
+id: node.filters.field_news
+field_name: field_news
+entity_type: node
+bundle: filters
+label: News
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      events: events
+      article: article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: events
+field_type: entity_reference

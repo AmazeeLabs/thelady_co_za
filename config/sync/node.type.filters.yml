@@ -1,0 +1,17 @@
+uuid: e1c049dd-a8e3-46d1-b4d2-60cdc4c2b4fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Filters
+type: filters
+description: 'Use <em>filters</em> for your events & news content to filter by tags in Events & News Categories.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

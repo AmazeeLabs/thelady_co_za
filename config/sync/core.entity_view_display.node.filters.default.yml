@@ -1,0 +1,37 @@
+uuid: 9dad1714-8326-4cd4-b15c-829d9f239654
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.filters.field_link
+    - field.field.node.filters.field_news
+    - node.type.filters
+  module:
+    - link
+    - user
+id: node.filters.default
+targetEntityType: node
+bundle: filters
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_news:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  langcode: true
+  links: true
