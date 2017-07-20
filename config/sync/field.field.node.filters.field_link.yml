@@ -1,0 +1,23 @@
+uuid: 849093fb-07f8-449a-92d8-b227199bd087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.filters
+  module:
+    - link
+id: node.filters.field_link
+field_name: field_link
+entity_type: node
+bundle: filters
+label: Link
+description: 'Add url '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link
