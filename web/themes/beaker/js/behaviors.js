@@ -212,11 +212,11 @@
           if($(this).hasClass('active')){
 
             $news_container.isotope( {filter: ''});
-            $(this).removeClass('active').css({'color':'#dbbc90'});
+            $(this).removeClass('active').css({'color':'#252525'});
           }
           else{
 
-            $('.news-filter .view-content .filter-row a').removeClass('active').css({'color':'#dbbc90'});
+            $('.news-filter .view-content .filter-row a').removeClass('active').css({'color':'#bdbdbd'});
             $news_container.isotope( {filter: '.' + $(this).attr('rel')});
             $(this).addClass('active').css({'color':'#dbbc90'});
           }
@@ -234,7 +234,7 @@
           }
           else{
 
-            $('.event-filter .view-content .filter-row a').removeClass('active').css({'color':'#dbbc90'});;
+            $('.event-filter .view-content .filter-row a').removeClass('active').css({'color':'#bdbdbd'});;
             $events_container.isotope( {filter: '.' + $(this).attr('rel')});
             $(this).addClass('active').css({'color':'#dbbc90'});
           }
