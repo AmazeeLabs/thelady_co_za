@@ -190,18 +190,19 @@
   Drupal.behaviors.filtersNewsEvents = {
     attach: function (context, settings) {
 
-      var $news_isotope = $('.news-teasers .view-content').isotope({
+      var $news_container = $('.news-teaser .view-content').isotope({
          itemSelector: '.news-item',
          layoutMode: 'fitRows'
       });
 
-      var $events_isotope = $('.event-teasers .view-content').isotope({
+      var $events_container = $('.event-teaser .view-content').isotope({
          itemSelector: '.event-item',
          layoutMode: 'fitRows'
       });
 
       $news_container = $('.news-teasers .view-content', context);
       $events_container = $('.event-teasers .view-content', context);
+
 
       /*
       * - News filter
