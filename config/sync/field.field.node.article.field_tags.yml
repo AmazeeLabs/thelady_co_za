@@ -1,17 +1,17 @@
-uuid: 6f3ed7bb-909d-48f9-8b1f-31804b529183
+uuid: be988e60-a1e5-4abb-9466-565839549bc5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_tags
     - node.type.article
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.news_categories
 id: node.article.field_tags
 field_name: field_tags
 entity_type: node
 bundle: article
-label: Tags
-description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
+label: 'News Category'
+description: 'Select the tag that best describes the news category'
 required: false
 translatable: true
 default_value: {  }
@@ -20,8 +20,9 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      news_categories: news_categories
     sort:
       field: _none
     auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference
