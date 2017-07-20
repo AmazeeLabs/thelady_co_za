@@ -1,0 +1,16 @@
+.news-filter,
+.event-filter {
+  width: 20%;
+  float: left;
+  .view-header {
+    text-align: center;
+    height: 100%;
+    h4 {
+      @include rotate(-90deg);
+    }
+  }
+
+  .view-content {
+    //display: none;
+  }
+}
