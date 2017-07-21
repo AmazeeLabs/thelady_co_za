@@ -1226,7 +1226,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<div class="view-all"><span>View All</span></div>'
+            value: '<div class="view-all"><span id="js-more-btn">View All</span></div>'
             format: full_html
           plugin_id: text
     cache_metadata:
