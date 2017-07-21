@@ -1,0 +1,10 @@
+uuid: bcd80805-4bb5-4c36-838a-b5111e073330
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mini_teasers
+label: 'Mini Teasers'
+targetEntityType: node
+cache: true
