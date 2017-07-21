@@ -1,0 +1,47 @@
+uuid: 3ebc4fd4-8f36-42c1-aae1-9f15ceba9248
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_blocks
+  module:
+    - ctools
+    - language
+    - system
+    - views
+  theme:
+    - beaker
+id: views_block__content_blocks_block_7
+theme: beaker
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'views_block:content_blocks-block_7'
+settings:
+  id: 'views_block:content_blocks-block_7'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      the_ladies: the_ladies
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  language:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }
