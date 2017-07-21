@@ -866,7 +866,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4>Filters</h4>'
+            value: '<h5>Filters</h5>'
             format: basic_html
           plugin_id: text
       css_class: news-filter
@@ -1105,7 +1105,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4>Filters</h4>'
+            value: '<h5>Filters</h5>'
             format: basic_html
           plugin_id: text
       css_class: event-filter
