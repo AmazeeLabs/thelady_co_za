@@ -37,8 +37,6 @@
 
     .field-para {
 
-
-
     }
 
   }
@@ -74,6 +72,27 @@
 
         h3 {
           color: $light-grey;
+        }
+      }
+    }
+
+    .field-para {
+      overflow: hidden;
+      .field--name-field-paragraph-content {
+        &:after {
+          content: '';
+          background: linear-gradient($design-black,rgba(0,0,0,0));
+          transition: all 1s ease;
+          position: fixed;
+          bottom: 0;
+          transform: rotate(180deg);
+          right: 0;
+          left: 0;
+          opacity: 1;
+          z-index: 1;
+          height: 30vh;
+          width: 100%;
+          pointer-events: none;
         }
       }
     }
@@ -135,6 +154,7 @@
     width: 40%;
     height: 100%;
     float: left;
+
   }
 }
 
@@ -145,25 +165,6 @@
 .node--type-the-ladies {
   section.right-hs {
 
-    .field-para {
-      overflow: hidden;
-      .field--name-field-paragraph-content {
-        &:after {
-          content: '';
-          background: linear-gradient($design-black,rgba(0,0,0,0));
-          transition: all 1s ease;
-          position: fixed;
-          bottom: 0;
-          transform: rotate(180deg);
-          right: 0;
-          left: 0;
-          opacity: 1;
-          z-index: 1;
-          height: 30vh;
-          width: 100%;
-          pointer-events: none;
-        }
-      }
-    }
+
   }
 }
