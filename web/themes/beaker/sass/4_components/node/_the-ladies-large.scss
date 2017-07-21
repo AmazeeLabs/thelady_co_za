@@ -1,5 +1,5 @@
 .node--type-the-ladies {
-
+  position: relative;
   &.node--view-mode-teaser {
 
     .field-image {
@@ -52,7 +52,7 @@
             position: absolute;
             display: block;
             cursor: pointer;
-            height: 4px;
+            height: 1px;
             width: 30px;
             background: $gold;
           }
