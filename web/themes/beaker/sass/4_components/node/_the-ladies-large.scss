@@ -13,13 +13,60 @@
     }
     section.info-box {
       width: 40%;
+      padding: $gutter*3;
       max-width: 550px;
       position: absolute;
       right: 0;
-      bottom: 5%;
+      bottom: 12%;
       z-index: 2;
       background-color: $design-black;
       border-left: 4px solid $gold;
+      h4 {
+        color: $white;
+        margin-bottom: $gutter/2;
+        &:after {
+          content: "";
+          display: block;
+          padding-bottom: $gutter/2;
+          width: 40%;
+          border-bottom: 1px solid $white;
+        }
+      }
+      h5 {
+        color: $white;
+      }
+      p {
+        color: $gold;
+      }
+      a {
+        position: absolute;
+        right: 0;
+        span {
+          font-size: 0;
+          position: absolute;
+          bottom: 45px;
+          &:before ,
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            height: 4px;
+            width: 30px;
+            background: $gold;
+          }
+
+          &:before {
+            top: 13px;
+            @include rotate(-90deg);
+          }
+
+          &:after {
+            top: 13px;
+            @include rotate(0deg);
+          }
+        }
+      }
       &.info-icon {
 
       }
