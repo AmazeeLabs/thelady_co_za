@@ -277,4 +277,26 @@
     }
   };
 
+
+
+  /*
+  * - The Ladies (Large Teasers)
+  * - large owl carousel
+  */
+
+  Drupal.behaviors.theLadiesLarge = {
+    attach: function (context, settings) {
+
+      $('.the-ladies .view-content',context).owlCarousel({
+          loop: true,
+          nav: true,
+          items: 1,
+          animateIn: 'fadeIn',
+          animateOut: 'fadeOut',
+          smartSpeed:250
+      });
+    }
+  };
+
+
 })(jQuery);
