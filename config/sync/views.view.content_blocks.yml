@@ -10,6 +10,7 @@ dependencies:
     - node.type.article
     - node.type.events
     - node.type.filters
+    - node.type.the_ladies
   module:
     - node
     - user
@@ -1128,6 +1129,8 @@ display:
         style: false
         row: false
         css_class: false
+        filters: false
+        filter_groups: false
       display_description: ''
       block_description: 'The Ladies Teasers'
       style:
@@ -1143,6 +1146,62 @@ display:
           view_mode: teaser
       rendering_language: '***LANGUAGE_language_interface***'
       css_class: the-ladies
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            the_ladies: the_ladies
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
