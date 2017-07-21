@@ -1115,3 +1115,38 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_filter'
+  block_6:
+    display_plugin: block
+    id: block_6
+    display_title: 'The Ladies Teasers'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      title: ''
+      defaults:
+        title: false
+        style: false
+        row: false
+        css_class: false
+      display_description: ''
+      block_description: 'The Ladies Teasers'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      rendering_language: '***LANGUAGE_language_interface***'
+      css_class: the-ladies
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
