@@ -62,7 +62,7 @@ $susy: (
 */
 
 .path-contact,
-.node--type-page {
+.node--type-page:not(.node--id-2) {
   .content-wrapper{
 
     .inner {

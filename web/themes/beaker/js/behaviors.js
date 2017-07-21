@@ -277,4 +277,38 @@
     }
   };
 
+
+
+  /*
+  * - The Ladies (Large Teasers)
+  * - large owl carousel
+  */
+
+  Drupal.behaviors.theLadiesLarge = {
+    attach: function (context, settings) {
+
+      $('.the-ladies .view-content',context).owlCarousel({
+          loop: true,
+          nav: true,
+          items: 1,
+          animateIn: 'fadeIn',
+          animateOut: 'fadeOut',
+          smartSpeed:250
+      });
+    }
+  };
+
+
+   /*
+  * - Display more button & carousels on hover of the window
+  */
+
+  Drupal.behaviors.displayCarousels = {
+    attach: function (context, settings) {
+
+
+    }
+  };
+
+
 })(jQuery);
