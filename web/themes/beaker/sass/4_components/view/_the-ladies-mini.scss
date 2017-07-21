@@ -1,14 +1,36 @@
 .mini-tl-teasers {
   background-color: $design-golden-brown;
-  padding: $gutter;
+  padding: $gutter*3 0 35px 0;
   height: 100%;
   .view-header {
-    text-align: center;
+    width: 30px;
+    margin: 0 auto;
+    position: relative;
     padding-bottom: $gutter;
     span {
-      @include h3;
-      font-size: 14px;
-      color: $gold;
+      font-size: 0;
+      position: absolute;
+      bottom: 45px;
+      &:before ,
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        height: 4px;
+        width: 30px;
+        background: $gold;
+        @include transition(all 0.1s ease-in-out);
+      }
+
+      &:before {
+        top: 26px;
+        @include rotate(-45deg);
+      }
+
+      &:after {
+        @include rotate(45deg);
+      }
     }
   }
   .view-content {

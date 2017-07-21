@@ -5,7 +5,14 @@
       .banner-images {
         height: 250px;
         max-width: 400px;
+        //transform: scale(1.5);
+        //@include transition(opacity 0.35s, transform 0.35s);
       }
+    }
+  }
+  &:hover {
+    .banner-images {
+      //transform: scale(1);
     }
   }
 }
