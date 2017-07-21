@@ -1,9 +1,15 @@
+.content-bottom {
+  position: relative;
+}
+
 .mini-tl-teasers {
   background-color: $design-golden-brown;
   padding: $gutter*3 0 35px 0;
-  height: 100%;
+  width: 100%;
   z-index: 2;
+  bottom: 29%;
   display: none;
+  position: absolute;
   transform: translateY(60%);
   @include transition(all 0.5s ease);
   transition: transform 1s cubic-bezier(.19,1,.22,1);
@@ -45,8 +51,10 @@
       }
     }
     .owl-nav {
-      position: relative;
-      bottom: 160px;
+      width: 100%;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
       .owl-next, .owl-prev {
         font-size: 0;
         background-position: center center;
