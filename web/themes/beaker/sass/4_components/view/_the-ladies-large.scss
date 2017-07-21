@@ -26,13 +26,13 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 35px auto;
-        background-color: lighten($design-golden-brown, 35%);
-        @include transition(all 0.3s ease);
+        background-color: lighten($gold, 25%);
+        @include transition(all 0.5s ease);
         cursor: pointer;
         height: 35px;
         width: 35px;
         &:hover {
-          background-color: lighten($design-golden-brown, 20%);
+          background-color: lighten($gold, 20%);
         }
       }
       .owl-prev {
@@ -56,16 +56,27 @@
   */
   .view-footer {
     background-color: $design-golden-brown;
+    @include transition(all 0.5s ease);
+    z-index: 2;
+    transform: translateY(-60%);
+    transition: transform 1s cubic-bezier(.19,1,.22,1);
     padding: $gutter 0;
     text-align: center;
     width: 100%;
-    opacity: 0.8;
-    bottom: -$gutter/2;
+    bottom: 0;
     position: absolute;
+    visibility: hidden;
     span {
       @include h3;
       font-size: 14px;
       color: $gold;
+    }
+  }
+
+  &:hover {
+    .view-footer {
+      transform: translateY(-36%);
+      visibility: visible;
     }
   }
 }
