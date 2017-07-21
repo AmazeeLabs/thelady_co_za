@@ -29,14 +29,33 @@
 
   .view-content {
     position: absolute;
-    left: 5%;
-    width: 80%;
+    left: 1.5%;
+    width: 90%;
     top: 10vw;
     text-align: left;
+    .filter-row {
+      opacity: 0;
+      background-color: $white;
+      padding: $gutter/2;
+      margin: $gutter/2 0;
+      border-left: 1px solid $gold;
+      &:first-child {
+        margin-bottom: $gutter/2;
+      }
+      &:last-child {
+        margin-top: $gutter/2;
+      }
+    }
   }
 
   &:hover {
+    transform: translateX(-36%);
     .view-header h4 { opacity: 0; }
-    transform: translateX(-14%);
+    .view-content {
+      .filter-row {
+        opacity: 1;
+      }
+    }
+
   }
 }
