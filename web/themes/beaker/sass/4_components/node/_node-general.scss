@@ -12,7 +12,7 @@
 
   .info-wrapper {
 
-    height: 700px;
+    min-height: 700px;
     overflow: hidden;
     .node-info {
       h2 {
@@ -147,7 +147,7 @@
     float: left;
 
     .banner-images {
-      height: 700px;
+      min-height: 700px;
     }
   }
   section.right-hs {
