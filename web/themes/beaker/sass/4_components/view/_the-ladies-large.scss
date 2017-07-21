@@ -17,6 +17,7 @@
     }
 
     .owl-nav {
+          width: 100%;
       top: 50%;
       position: absolute;
       transform: translateY(-50%);
@@ -26,13 +27,14 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 35px auto;
-        background-color: lighten($gold, 25%);
+        background-color: $design-black;
         @include transition(all 0.5s ease);
+        opacity: 0.5;
         cursor: pointer;
         height: 35px;
         width: 35px;
         &:hover {
-          background-color: lighten($gold, 20%);
+          opacity: 0.8;
         }
       }
       .owl-prev {
@@ -58,24 +60,45 @@
     background-color: $design-golden-brown;
     @include transition(all 0.5s ease);
     z-index: 2;
-    transform: translateY(-60%);
+    transform: translateY(60%);
     transition: transform 1s cubic-bezier(.19,1,.22,1);
     padding: $gutter 0;
     text-align: center;
     width: 100%;
+    height: 60px;
     bottom: 0;
     position: absolute;
     visibility: hidden;
     span {
-      @include h3;
-      font-size: 14px;
-      color: $gold;
+      font-size: 0;
+      position: absolute;
+      bottom: 45px;
+      &:before ,
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        height: 4px;
+        width: 30px;
+        background: $gold;
+      }
+
+      &:before {
+        top: 13px;
+        @include rotate(-90deg);
+      }
+
+      &:after {
+        top: 13px;
+        @include rotate(0deg);
+      }
     }
   }
 
   &:hover {
     .view-footer {
-      transform: translateY(-36%);
+      transform: translateY(36%);
       visibility: visible;
     }
   }

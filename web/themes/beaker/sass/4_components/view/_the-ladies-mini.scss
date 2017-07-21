@@ -2,7 +2,11 @@
   background-color: $design-golden-brown;
   padding: $gutter*3 0 35px 0;
   height: 100%;
+  z-index: 2;
   display: none;
+  transform: translateY(60%);
+  @include transition(all 0.5s ease);
+  transition: transform 1s cubic-bezier(.19,1,.22,1);
   .view-header {
     width: 30px;
     margin: 0 auto;
@@ -28,7 +32,6 @@
         top: 26px;
         @include rotate(-45deg);
       }
-
       &:after {
         @include rotate(45deg);
       }

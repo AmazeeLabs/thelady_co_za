@@ -299,4 +299,16 @@
   };
 
 
+   /*
+  * - Display more button & carousels on hover of the window
+  */
+
+  Drupal.behaviors.displayCarousels = {
+    attach: function (context, settings) {
+
+
+    }
+  };
+
+
 })(jQuery);
