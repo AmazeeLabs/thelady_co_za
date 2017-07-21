@@ -1,9 +1,9 @@
-uuid: 0c90163e-d78a-4c85-9379-41624484b392
+uuid: db650fe6-57aa-4039-b749-540aaa729e4f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.mini_teasers
     - field.field.node.the_ladies.field_background_color
     - field.field.node.the_ladies.field_box_position
     - field.field.node.the_ladies.field_date
@@ -14,54 +14,29 @@ dependencies:
     - field.field.node.the_ladies.field_teaser
     - node.type.the_ladies
   module:
-    - datetime
     - image_url_formatter
-    - options
     - user
-id: node.the_ladies.teaser
+id: node.the_ladies.mini_teasers
 targetEntityType: node
 bundle: the_ladies
-mode: teaser
+mode: mini_teasers
 content:
-  field_background_color:
-    type: list_default
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_date:
-    type: datetime_custom
-    weight: 3
-    label: hidden
-    settings:
-      date_format: 'Y-m-d\TH:i:s'
-      timezone_override: ''
-    third_party_settings: {  }
   field_image:
     type: image_url
     weight: 0
     label: hidden
     settings:
       url_type: '0'
-      image_style: landscape_large
+      image_style: landscape_small
       image_link: ''
     third_party_settings: {  }
-  field_sub_title:
-    type: string
-    weight: 2
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_teaser:
-    type: basic_string
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_background_color: true
   field_box_position: true
+  field_date: true
   field_paragraph_content: true
+  field_sub_title: true
   field_tags: true
+  field_teaser: true
   langcode: true
   links: true

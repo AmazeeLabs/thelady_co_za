@@ -3,5 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: landscape_large
-label: 'Landscape Large (1920x900)'
-effects: {  }
+label: 'Landscape Large (1920xY)'
+effects:
+  f3abe286-aab0-4d84-8a47-48ce8b1886f5:
+    uuid: f3abe286-aab0-4d84-8a47-48ce8b1886f5
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

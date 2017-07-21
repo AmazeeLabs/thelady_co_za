@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header
+    - core.entity_view_mode.node.mini_teasers
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_filter
     - field.storage.node.field_tags
     - node.type.article
     - node.type.events
     - node.type.filters
+    - node.type.the_ladies
   module:
     - node
     - user
@@ -1115,3 +1117,195 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_filter'
+  block_6:
+    display_plugin: block
+    id: block_6
+    display_title: 'TL Large Teasers'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      title: ''
+      defaults:
+        title: false
+        style: false
+        row: false
+        css_class: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      block_description: 'TL Large Teasers'
+      style:
+        type: html_list
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: theladies-list
+          class: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      rendering_language: '***LANGUAGE_language_interface***'
+      css_class: the-ladies
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            the_ladies: the_ladies
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_7:
+    display_plugin: block
+    id: block_7
+    display_title: 'Mini TL Teasers'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Mini TL Teasers'
+      title: ''
+      defaults:
+        title: false
+        css_class: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      css_class: mini-tl-teasers
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          type: ul
+          wrapper_class: mini-list
+          class: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: mini_teasers
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            the_ladies: the_ladies
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      rendering_language: '***LANGUAGE_language_interface***'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
