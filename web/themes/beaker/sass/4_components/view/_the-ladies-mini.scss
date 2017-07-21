@@ -17,18 +17,17 @@
     width: 30px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: $gutter;
     span {
       font-size: 0;
       position: absolute;
-      bottom: 45px;
+      bottom: 30px;
       &:before ,
       &:after {
         content: '';
         position: absolute;
         display: block;
         cursor: pointer;
-        height: 4px;
+        height: 2px;
         width: 30px;
         background: $gold;
         @include transition(all 0.1s ease-in-out);
@@ -61,29 +60,31 @@
         background-repeat: no-repeat;
         border-radius: 50%;
         background-size: 35px auto;
-        background-color: $gold;
         @include transition(all 0.5s ease);
         border: 2px solid $gold;
         cursor: pointer;
         height: 35px;
         width: 35px;
         &:hover {
-
+          background-color: $design-black;
         }
       }
       .owl-prev {
         float: left;
-        margin-right: 5px;
-        background-image: url(../images/icons/prev-hover.png);
+        margin-left: $gutter;
+        background-image: url(../images/icons/prev.png);
       }
       .owl-next {
         float: right;
-        margin-left: 5px;
-        background-image: url(../images/icons/next-hover.png);
+        margin-right: $gutter;
+        background-image: url(../images/icons/next.png);
       }
     }
     .owl-dots {
       display: none;
     }
+  }
+  &.open-mini {
+    display: block;
   }
 }
