@@ -1334,7 +1334,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<div class="close-all"><span>Close</span></div>'
+            value: '<div class="close-all"><span id="js-close-btn">Close</span></div>'
             format: basic_html
           plugin_id: text
     cache_metadata:
