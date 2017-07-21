@@ -1,0 +1,62 @@
+.mini-tl-teasers {
+  background-color: $design-golden-brown;
+  padding: $gutter;
+  height: 100%;
+  .view-header {
+    text-align: center;
+    padding-bottom: $gutter;
+    span {
+      @include h3;
+      font-size: 14px;
+      color: $gold;
+    }
+  }
+  .view-content {
+
+    .mini-list {
+      .owl-item {
+        width: 31.1111%;
+        float: left;
+      }
+    }
+    .owl-stage {
+      .owl-item {
+        overflow: hidden;
+        display: inline-block;
+      }
+    }
+    .owl-nav {
+      position: relative;
+      bottom: 160px;
+      .owl-next, .owl-prev {
+        font-size: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: 35px auto;
+        background-color: $gold;
+        @include transition(all 0.5s ease);
+        border: 2px solid $gold;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        &:hover {
+
+        }
+      }
+      .owl-prev {
+        float: left;
+        margin-right: 5px;
+        background-image: url(../images/icons/prev-hover.png);
+      }
+      .owl-next {
+        float: right;
+        margin-left: 5px;
+        background-image: url(../images/icons/next-hover.png);
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+}

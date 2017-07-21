@@ -245,4 +245,36 @@
   };
 
 
+
+  /*
+  * - The Ladies (Mini Teasers)
+  * - mini owl carousel
+  */
+
+  Drupal.behaviors.theLadiesMini = {
+    attach: function (context, settings) {
+
+      $('.mini-tl-teasers .view-content',context).owlCarousel({
+
+          loop: true,
+          nav: true,
+          margin:10,
+          animateIn: 'fadeIn',
+          animateOut: 'fadeInDown',
+          smartSpeed:250,
+          responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+      });
+    }
+  };
+
 })(jQuery);
