@@ -1132,6 +1132,11 @@ display:
         css_class: false
         filters: false
         filter_groups: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        footer: false
       display_description: ''
       block_description: 'TL Large Teasers'
       style:
@@ -1206,6 +1211,28 @@ display:
         operator: AND
         groups:
           1: AND
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View All'
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<div class="view-all"><span>View All</span></div>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -1230,6 +1257,7 @@ display:
         row: false
         filters: false
         filter_groups: false
+        header: false
       css_class: mini-tl-teasers
       style:
         type: html_list
@@ -1302,6 +1330,20 @@ display:
         groups:
           1: AND
       rendering_language: '***LANGUAGE_language_interface***'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<div class="close-all"><span>Close</span></div>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
