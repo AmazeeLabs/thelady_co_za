@@ -1140,14 +1140,11 @@ display:
       display_description: ''
       block_description: 'TL Large Teasers'
       style:
-        type: html_list
+        type: default
         options:
-          row_class: ''
+          row_class: tl-item
           default_row_class: false
           uses_fields: false
-          type: ul
-          wrapper_class: theladies-list
-          class: ''
       row:
         type: 'entity:node'
         options:
@@ -1212,9 +1209,8 @@ display:
         groups:
           1: AND
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 1
           offset: 0
       use_more: false
       use_more_always: true
