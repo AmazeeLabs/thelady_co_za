@@ -1,0 +1,28 @@
+.node--type-the-ladies {
+
+  &.node--view-mode-teaser {
+
+    .field-image {
+      height: 100%;
+      width: 100%;
+      @include transition(all 0.5s ease);
+      .banner-images {
+        height: 1056px;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+      }
+    }
+    section.info-box {
+      width: 40%;
+      max-width: 550px;
+      position: absolute;
+      right: 0;
+      bottom: 5%;
+      background-color: $design-black;
+      border-left: 4px solid $gold;
+      &.info-icon {
+
+      }
+    }
+  }
+}
