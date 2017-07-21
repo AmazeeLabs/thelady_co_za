@@ -866,7 +866,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4>Filters</h4>'
+            value: '<h5>Filters</h5>'
             format: basic_html
           plugin_id: text
       css_class: news-filter
@@ -1105,7 +1105,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4>Filters</h4>'
+            value: '<h5>Filters</h5>'
             format: basic_html
           plugin_id: text
       css_class: event-filter
@@ -1226,7 +1226,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<div class="view-all"><span>View All</span></div>'
+            value: '<div class="view-all"><span id="js-more-btn">View All</span></div>'
             format: full_html
           plugin_id: text
     cache_metadata:
