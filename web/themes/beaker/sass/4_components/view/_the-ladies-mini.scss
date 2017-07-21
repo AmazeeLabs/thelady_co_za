@@ -2,6 +2,7 @@
   background-color: $design-golden-brown;
   padding: $gutter*3 0 35px 0;
   height: 100%;
+  display: none;
   .view-header {
     width: 30px;
     margin: 0 auto;
@@ -34,13 +35,6 @@
     }
   }
   .view-content {
-
-    .mini-list {
-      .owl-item {
-        width: 31.1111%;
-        float: left;
-      }
-    }
     .owl-stage {
       .owl-item {
         overflow: hidden;
