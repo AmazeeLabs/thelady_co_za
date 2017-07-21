@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.content_blocks
   module:
-    - ctools
     - language
     - system
     - views
@@ -25,13 +24,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      the_ladies: the_ladies
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   language:
     id: language
     langcodes:
