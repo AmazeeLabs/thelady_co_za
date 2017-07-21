@@ -1,0 +1,71 @@
+.the-ladies {
+  position: relative;
+  line-height: 0;
+
+   /*
+  * - View Co=ontent
+  */
+  .view-content {
+    position: relative;
+    line-height: 0;
+    .owl-stage {
+      overflow: hidden;
+      .owl-item {
+        overflow: hidden;
+        display: inline-block;
+      }
+    }
+
+    .owl-nav {
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      .owl-next, .owl-prev {
+        font-size: 0;
+        padding: 30px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 35px auto;
+        background-color: lighten($design-golden-brown, 35%);
+        @include transition(all 0.3s ease);
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        &:hover {
+          background-color: lighten($design-golden-brown, 20%);
+        }
+      }
+      .owl-prev {
+        float: left;
+        margin-right: 5px;
+        background-image: url(../images/icons/backward.png);
+      }
+      .owl-next {
+        float: right;
+        margin-left: 5px;
+        background-image: url(../images/icons/forward.png);
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+
+  /*
+  * - View Footer
+  */
+  .view-footer {
+    background-color: $design-golden-brown;
+    padding: $gutter 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0.8;
+    bottom: -$gutter/2;
+    position: absolute;
+    span {
+      @include h3;
+      font-size: 14px;
+      color: $gold;
+    }
+  }
+}
