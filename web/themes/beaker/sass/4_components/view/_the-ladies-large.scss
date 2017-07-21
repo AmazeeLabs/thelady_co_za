@@ -17,7 +17,7 @@
     }
 
     .owl-nav {
-          width: 100%;
+      width: 100%;
       top: 50%;
       position: absolute;
       transform: translateY(-50%);
@@ -58,7 +58,7 @@
   */
   .view-footer {
     background-color: $design-golden-brown;
-    @include transition(all 0.5s ease);
+    @include transition(all 0.5s ease-out);
     z-index: 2;
     transform: translateY(60%);
     transition: transform 1s cubic-bezier(.19,1,.22,1);
