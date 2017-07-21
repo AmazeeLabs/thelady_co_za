@@ -8,8 +8,7 @@
       @include transition(all 0.5s ease);
       .banner-images {
         height: 1056px;
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
+        width: 100%;
       }
     }
     section.info-box {
@@ -18,6 +17,7 @@
       position: absolute;
       right: 0;
       bottom: 5%;
+      z-index: 2;
       background-color: $design-black;
       border-left: 4px solid $gold;
       &.info-icon {
