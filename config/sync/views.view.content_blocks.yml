@@ -1229,6 +1229,17 @@ display:
             value: '<div class="view-all"><span id="js-more-btn">View All</span></div>'
             format: full_html
           plugin_id: text
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          view_to_insert: 'content_blocks:block_7'
+          inherit_arguments: false
+          plugin_id: view
     cache_metadata:
       max-age: -1
       contexts:
@@ -1323,20 +1334,7 @@ display:
         groups:
           1: AND
       rendering_language: '***LANGUAGE_language_interface***'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: '<div class="close-all"><span id="js-close-btn">Close</span></div>'
-            format: basic_html
-          plugin_id: text
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:
