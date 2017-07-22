@@ -300,13 +300,19 @@
 
 
    /*
-  * - Display more button & carousels on hover of the window
+  * - Display more button / close button & carousels on hover of the window
   */
 
-  Drupal.behaviors.displayCarousels = {
+  Drupal.behaviors.closeOpenBtns = {
     attach: function (context, settings) {
 
+      $('#js-more-btn').click(function() {
+        //console.log(this);
 
+        $('.the-ladies').toggleClass('open-mini');
+        //$('.info-box').toggleClass('toggle-view');
+
+      });
 
     }
   };
