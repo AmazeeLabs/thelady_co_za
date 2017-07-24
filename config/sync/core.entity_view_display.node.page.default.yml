@@ -3,15 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.body
     - node.type.page
   module:
+    - text
     - user
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
-  links:
-    weight: 101
+  body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
 hidden:
   langcode: true
+  links: true
