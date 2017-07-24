@@ -21,6 +21,8 @@
       z-index: 2;
       background-color: $design-black;
       border-left: 4px solid $gold;
+      transform: translateX(0);
+      transition: transform 1.7s cubic-bezier(.19,1,.22,1);
       h4 {
         color: $white;
         margin-bottom: $gutter/2;
@@ -46,13 +48,16 @@
           font-size: 0;
           position: absolute;
           bottom: 45px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
           &:before ,
           &:after {
             content: '';
             position: absolute;
             display: block;
             cursor: pointer;
-            height: 1px;
+            height: 2px;
             width: 30px;
             background: $gold;
           }

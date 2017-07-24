@@ -27,28 +27,30 @@
           opacity: 0;
           height: 100%;
           position: absolute;
-          background-color: $design-black;
+          background-color: $gold;
           line-height: 0;
           padding: $gutter;
           overflow: hidden;
           @include transition(all 0.5s ease);
           h4, h5 {
             color: $white;
+            font-size: 14px;
+            margin-bottom: 5px;
           }
           &:before {
             content: "";
             display: block;
-            height: 90px;
+            height: 65px;
             left: 0;
             position: absolute;
-            border-left: 4px solid $gold;
+            border-left: 4px solid $white;
           }
         }
       }
 
       &:hover {
         .text-row {
-          opacity: 0.9;
+          opacity: 0.92;
         }
         .banner-images {
           transform: scale(1);

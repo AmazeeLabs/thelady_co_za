@@ -56,36 +56,37 @@
   */
   .view-footer {
     z-index: 2;
-    transform: translateY(60%);
     background-color: $design-black;
-    transition: transform 1s cubic-bezier(.19,1,.22,1);
     text-align: center;
     width: 100%;
     height: 80px;
     bottom: $gutter;
-    position: absolute;
     visibility: hidden;
+    position: absolute;
+    transform: translateY(60%);
     @include transition(all 0.5s ease-out);
+    transition: transform 1.7s cubic-bezier(.19,1,.22,1);
     span {
       font-size: 0;
       position: absolute;
-      bottom: 55px;
+      bottom: 30px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
       &:before ,
       &:after {
         content: '';
         position: absolute;
         display: block;
         cursor: pointer;
-        height: 1px;
+        height: 2px;
         width: 30px;
         background: $gold;
       }
-
       &:before {
         top: 13px;
         @include rotate(-90deg);
       }
-
       &:after {
         top: 13px;
         @include rotate(0deg);
@@ -94,9 +95,43 @@
   }
 
   &:hover {
+    section.info-box {
+      transform: translateX(100%);
+    }
     .view-footer {
       transform: translateY(36%);
       visibility: visible;
     }
+    .mini-tl-teasers {
+      visibility: hidden;
+    }
   }
+
+  /*
+  * - On click of #js-more-btn
+  */
+  &.open-mini {
+
+    .view-footer {
+      height: 25%;
+      bottom: 23%;
+      visibility: visible;
+      span {
+        bottom: 75%;
+        &:before {
+          @include rotate(-45deg);
+        }
+
+        &:after {
+          @include rotate(45deg);
+        }
+      }
+      .mini-tl-teasers {
+        //bottom: 20%;
+        visibility: visible;
+        transform: translateY(52%);
+      }
+    }
+  }
+
 }
