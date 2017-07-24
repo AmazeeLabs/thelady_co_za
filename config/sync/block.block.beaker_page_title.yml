@@ -29,6 +29,6 @@ visibility:
       language: '@language.current_language_context:language_interface'
   request_path:
     id: request_path
-    pages: /contact
+    pages: "/contact\r\n/node/3\r\n/node/4\r\n"
     negate: false
     context_mapping: {  }

@@ -1,3 +1,18 @@
 
 // BASIC PAGE STYLES
 // =============================================================================
+
+.node--type-page {
+
+  h1.page-title {
+    text-align: center;
+    margin-bottom: $gutter;
+  }
+
+  .field--name-body {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
