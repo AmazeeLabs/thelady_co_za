@@ -276,6 +276,10 @@ display:
         filter_groups: false
         css_class: false
         fields: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       row:
         type: 'entity:node'
         options:
@@ -409,6 +413,13 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      pager:
+        type: none
+        options:
+          offset: 0
+      use_more: false
+      use_more_always: true
+      use_more_text: 'Load more'
     cache_metadata:
       max-age: -1
       contexts:
