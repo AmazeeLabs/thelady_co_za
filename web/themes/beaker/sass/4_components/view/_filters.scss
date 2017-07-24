@@ -1,12 +1,13 @@
 .news-filter,
 .event-filter {
   position: fixed;
-  width: 20vw;
+  left: 0;
+  width: 7.5vw;
   height: 100vw;
   background: rgba(255,255,255,.89);
   z-index: 2;
-  transform: translateX(-92%);
-  transition: transform 1s cubic-bezier(.19,1,.22,1);
+  //transform: translateX(-92%);
+  //transition: transform 1s cubic-bezier(.19,1,.22,1);
   .view-header {
     text-align: center;
     height: 100%;
