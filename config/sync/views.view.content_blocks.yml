@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.header
+    - core.entity_view_mode.node.hp_teasers
     - core.entity_view_mode.node.mini_teasers
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_filter
@@ -290,7 +291,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: hp_teasers
       rendering_language: '***LANGUAGE_language_interface***'
       filters:
         status:
@@ -1521,7 +1522,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: hp_teasers
       block_description: 'HP The Ladies'
       title: ''
       display_description: ''
@@ -1683,7 +1684,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: hp_teasers
       filters:
         status:
           value: '1'
