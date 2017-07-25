@@ -1,0 +1,10 @@
+uuid: 9396535b-96cd-4729-8a23-481575b1bc30
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hp_teasers
+label: 'HP Teasers'
+targetEntityType: node
+cache: true

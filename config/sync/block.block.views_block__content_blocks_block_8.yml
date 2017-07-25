@@ -1,0 +1,39 @@
+uuid: c8f7c077-053e-43a6-a061-03bcddb4dccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_blocks
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - beaker
+id: views_block__content_blocks_block_8
+theme: beaker
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_blocks-block_8'
+settings:
+  id: 'views_block:content_blocks-block_8'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

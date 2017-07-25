@@ -1,0 +1,63 @@
+uuid: 4dffb9c4-2255-4552-8e89-eadc2757a5a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hp_teasers
+    - field.field.node.article.field_background_color
+    - field.field.node.article.field_box_position
+    - field.field.node.article.field_date
+    - field.field.node.article.field_image
+    - field.field.node.article.field_main_gallery
+    - field.field.node.article.field_paragraph_content
+    - field.field.node.article.field_sub_title
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser
+    - node.type.article
+  module:
+    - datetime
+    - image_url_formatter
+    - options
+    - user
+id: node.article.hp_teasers
+targetEntityType: node
+bundle: article
+mode: hp_teasers
+content:
+  field_background_color:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: event_dates
+    third_party_settings: {  }
+    type: datetime_default
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image_url
+  field_teaser:
+    type: basic_string
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_box_position: true
+  field_main_gallery: true
+  field_paragraph_content: true
+  field_sub_title: true
+  field_tags: true
+  langcode: true
+  links: true
