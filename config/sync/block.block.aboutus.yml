@@ -1,9 +1,9 @@
-uuid: 42a846d2-7284-44cd-bdcb-40ab36de2322
+uuid: 9b0a850c-50f5-4bcf-8d49-0e66a6d272a7
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+    - 'block_content:basic:265b1c38-3ec8-421b-8cbc-d12e4b2d1379'
   module:
     - block_content
     - language
@@ -15,9 +15,9 @@ theme: beaker
 region: content_top
 weight: 0
 provider: null
-plugin: 'block_content:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+plugin: 'block_content:265b1c38-3ec8-421b-8cbc-d12e4b2d1379'
 settings:
-  id: 'block_content:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+  id: 'block_content:265b1c38-3ec8-421b-8cbc-d12e4b2d1379'
   label: 'About Us'
   provider: block_content
   label_display: visible
