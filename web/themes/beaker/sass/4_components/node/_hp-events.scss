@@ -5,6 +5,19 @@
     .banner-images {
       height: 551px;
     }
-
+    .teaser-text {
+      background-color: $design-sand-brown;
+      .table {
+        h4 {
+          color: $design-black;
+        }
+        span {
+          &:before,
+          &:after {
+            background: $design-black;
+          }
+        }
+      }
+    }
   }
 }
