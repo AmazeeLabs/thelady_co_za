@@ -31,13 +31,12 @@
       top: 0;
       left: 0;
       width: 100%;
-      //opacity: 0.92;
+      opacity: 0.92;
       height: 100%;
       position: absolute;
       line-height: 0;
       padding: $gutter;
       overflow: hidden;
-      background-color: $gold;
       @include transition(all 0.5s ease);
       .table {
         max-width: 600px;
@@ -46,44 +45,41 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        h2 {
-          color: $design-brown;
+        h2, p {
+          color: $white;
         }
-        p {
-          color: $design-black;
-        }
-      }
-
-      .more-button {
-        text-align: center;
-        //position: relative;
-        bottom: 5%;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        margin: auto;
-        display: block;
-
-        &:before ,
-        &:after {
-          content: '';
-          position: absolute;
-          display: block;
-          cursor: pointer;
-          height: 2px;
+        span {
+          text-align: center;
+          bottom: -30%;
+          left: 50%;
           width: 30px;
-          background: $design-black;
+          height: 30px;
+          cursor: pointer;
+          margin: auto;
+          display: block;
+          position: absolute;
+
+          &:before ,
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            height: 2px;
+            width: 30px;
+          }
+
+          &:before {
+            top: 13px;
+            @include rotate(-90deg);
+          }
+
+          &:after {
+            top: 13px;
+            @include rotate(0deg);
+          }
         }
 
-        &:before {
-          top: 13px;
-          @include rotate(-90deg);
-        }
-
-        &:after {
-          top: 13px;
-          @include rotate(0deg);
-        }
       }
     }
 

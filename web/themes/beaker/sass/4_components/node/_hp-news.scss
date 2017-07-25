@@ -3,7 +3,21 @@
   &.node--view-mode-hp-teasers {
 
     .banner-images {
-      height: 408px;
+      height: 409px;
+    }
+    .teaser-text {
+      background-color: $design-golden-brown;
+      .table {
+        h4{
+          color: $gold;
+        }
+        span {
+          &:before,
+          &:after {
+            background: $gold;
+          }
+        }
+      }
     }
   }
 }
