@@ -12,7 +12,7 @@ dependencies:
 id: views_block__content_blocks_block_3
 theme: beaker
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: 'views_block:content_blocks-block_3'
 settings:
