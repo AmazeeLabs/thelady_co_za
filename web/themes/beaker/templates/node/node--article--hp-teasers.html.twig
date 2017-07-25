@@ -78,22 +78,18 @@
   ]
 %}
 
-{% set background_image = file_url(content.field_image.entity.fileuri) %}
-
 {{ attach_library('classy/node') }}
 
-<style>
-  .background-image {
-    background: url( {{ background_image }} ) no-repeat;
-  }
-</style>
-
 <a href="{{ url }}" target="_blank">
-  <section{{ attributes.addClass(classes) }}>>
-    <div class="background-image"></div>
+  <section{{ attributes.addClass(classes) }}>
+    <div class="field-image">{{ content.field_image|field_value }}</div>
     <div class="teaser-text">
-      <h4>{{ content.field_date|field_value }}</h4>
-      <p>{{ content.field_teaser|field_value }}</p>
+      <div class="table">
+        <h4>{{ content.field_date|field_value }}</h4>
+        <h2>{{ label|field_value }}</h2>
+        <p>{{ content.field_teaser|field_value }}</p>
+      </div>
+      <span class="more-button"></span>
     </div>
   </section>
 </a>
