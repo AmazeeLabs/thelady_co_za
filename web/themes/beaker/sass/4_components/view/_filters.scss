@@ -1,7 +1,7 @@
 .news-filter,
 .event-filter {
   position: relative;
-  width: 484px;
+  width: 384px;
   margin: $gutter*2 auto;
   background: $design-black;
   z-index: 2;
@@ -19,7 +19,7 @@
 
   .view-content {
     position: absolute;
-    width: 484px;
+    width: 384px;
     text-align: center;
     .filter-row {
       opacity: 0;
