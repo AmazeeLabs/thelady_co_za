@@ -1,0 +1,79 @@
+.node--type-the-ladies {
+
+  &.node--view-mode-hp-teasers {
+    .banner-images {
+      height: 960px;
+    }
+    .info-box {
+      width: 70%;
+      height: 50%;
+      padding: $gutter*3;
+      max-width: 750px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background-color: $design-black;
+      border-right: 4px solid $gold;
+      transform: translateX(0);
+      transition: transform 1.7s cubic-bezier(.19,1,.22,1);
+      .text-row {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        h4 {
+          color: $white;
+          margin-bottom: $gutter/2;
+          &:after {
+            content: "";
+            display: block;
+            padding-bottom: $gutter/2;
+            width: 40%;
+            border-bottom: 1px solid $white;
+          }
+        }
+        h5 {
+          color: $white;
+        }
+        p {
+          color: $gold;
+        }
+        a {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 50px;
+          span {
+            font-size: 0;
+            position: absolute;
+            bottom: 45px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            &:before ,
+            &:after {
+              content: '';
+              position: absolute;
+              display: block;
+              cursor: pointer;
+              height: 2px;
+              width: 30px;
+              background: $gold;
+            }
+
+            &:before {
+              top: 13px;
+              @include rotate(-90deg);
+            }
+
+            &:after {
+              top: 13px;
+              @include rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

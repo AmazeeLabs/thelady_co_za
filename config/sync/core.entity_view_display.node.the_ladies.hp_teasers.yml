@@ -16,19 +16,12 @@ dependencies:
   module:
     - datetime
     - image_url_formatter
-    - options
     - user
 id: node.the_ladies.hp_teasers
 targetEntityType: node
 bundle: the_ladies
 mode: hp_teasers
 content:
-  field_background_color:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   field_date:
     weight: 1
     label: hidden
@@ -39,23 +32,30 @@ content:
     type: datetime_default
   field_image:
     type: image_url
-    weight: 3
+    weight: 0
     label: hidden
     settings:
-      url_type: '0'
       image_style: landscape_medium
       image_link: ''
+      url_type: ''
+    third_party_settings: {  }
+  field_sub_title:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_teaser:
     type: basic_string
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_background_color: true
   field_box_position: true
   field_paragraph_content: true
-  field_sub_title: true
   field_tags: true
   langcode: true
   links: true

@@ -1,0 +1,15 @@
+#block-aboutus {
+  background-color: $design-choc-brown;
+  padding: $gutter*2 0;
+  text-align: center;
+  border-bottom: 4px solid $gold;
+  h2 {
+
+  }
+  .field--name-body p {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    color: $gold;
+  }
+}
