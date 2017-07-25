@@ -12,10 +12,11 @@ dependencies:
     - field.field.node.the_ladies.field_sub_title
     - field.field.node.the_ladies.field_tags
     - field.field.node.the_ladies.field_teaser
+    - image.style.landscape_medium
     - node.type.the_ladies
   module:
     - datetime
-    - image_url_formatter
+    - image
     - options
     - user
 id: node.the_ladies.hp_teasers
@@ -38,11 +39,10 @@ content:
     third_party_settings: {  }
     type: datetime_default
   field_image:
-    type: image_url
+    type: image
     weight: 3
     label: hidden
     settings:
-      url_type: '0'
       image_style: landscape_medium
       image_link: ''
     third_party_settings: {  }

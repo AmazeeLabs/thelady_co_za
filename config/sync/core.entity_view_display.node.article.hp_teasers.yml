@@ -13,10 +13,11 @@ dependencies:
     - field.field.node.article.field_sub_title
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser
+    - image.style.medium
     - node.type.article
   module:
     - datetime
-    - image_url_formatter
+    - image
     - options
     - user
 id: node.article.hp_teasers
@@ -42,11 +43,10 @@ content:
     weight: 3
     label: hidden
     settings:
-      url_type: '0'
       image_style: medium
       image_link: ''
     third_party_settings: {  }
-    type: image_url
+    type: image
   field_teaser:
     type: basic_string
     weight: 2
