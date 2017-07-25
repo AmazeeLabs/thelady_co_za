@@ -1,0 +1,91 @@
+.node--type-events,
+.node--type-the-ladies,
+ .node--type-article {
+
+  &.node--view-mode-hp-teasers {
+    position: relative;
+
+    /*
+    * - Background image wrapper
+    */
+    .field-image {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /*
+    * - Text Boxes
+    */
+
+  }
+}
+
+
+.node--type-events,
+.node--type-article {
+
+  &.node--view-mode-hp-teasers {
+
+    .teaser-text {
+      top: 0;
+      left: 0;
+      width: 100%;
+      //opacity: 0.92;
+      height: 100%;
+      position: absolute;
+      line-height: 0;
+      padding: $gutter;
+      overflow: hidden;
+      background-color: $gold;
+      @include transition(all 0.5s ease);
+      .table {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        h2 {
+          color: $design-brown;
+        }
+        p {
+          color: $design-black;
+        }
+      }
+
+      .more-button {
+        text-align: center;
+        //position: relative;
+        bottom: 5%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+
+        &:before ,
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          cursor: pointer;
+          height: 2px;
+          width: 30px;
+          background: $design-black;
+        }
+
+        &:before {
+          top: 13px;
+          @include rotate(-90deg);
+        }
+
+        &:after {
+          top: 13px;
+          @include rotate(0deg);
+        }
+      }
+    }
+
+  }
+}
