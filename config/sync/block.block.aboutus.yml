@@ -1,0 +1,40 @@
+uuid: 42a846d2-7284-44cd-bdcb-40ab36de2322
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - beaker
+id: aboutus
+theme: beaker
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+settings:
+  id: 'block_content:f2e87215-f5df-4df4-84e3-16377b1bdda4'
+  label: 'About Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
