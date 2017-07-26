@@ -31,6 +31,7 @@
         height: 55px;
         width: 55px;
         transition: transform 1.7s cubic-bezier(.19,1,.22,1);
+        @include transition(all 0.5s ease-out);
       }
       .owl-prev {
         float: left;
@@ -63,8 +64,8 @@
     visibility: hidden;
     position: absolute;
     transform: translateY(60%);
-    @include transition(all 0.5s ease-out);
     transition: transform 1.7s cubic-bezier(.19,1,.22,1);
+    @include transition(all 0.5s ease-out);
     span {
       font-size: 0;
       position: absolute;
@@ -97,12 +98,14 @@
     .owl-nav {
       .owl-next, .owl-prev {
         transform: translateX(0);
+        @include transition(all 0.5s ease);
         background-color: $design-black;
       }
     }
     .view-footer {
-      transform: translateY(36%);
       visibility: visible;
+      transform: translateY(36%);
+      @include transition(all 0.5s ease);
     }
     .mini-tl-teasers {
       visibility: hidden;
@@ -123,7 +126,6 @@
         &:before {
           @include rotate(-45deg);
         }
-
         &:after {
           @include rotate(45deg);
         }
@@ -132,6 +134,7 @@
         //bottom: 20%;
         visibility: visible;
         transform: translateY(52%);
+        @include transition(all 0.5s ease);
       }
     }
   }
