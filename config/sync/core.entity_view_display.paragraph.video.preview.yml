@@ -26,8 +26,8 @@ content:
     weight: 2
     label: hidden
     settings:
-      width: 960
-      height: 720
+      width: 480
+      height: 225
       autoplay: false
       responsive: false
     third_party_settings: {  }
