@@ -3,7 +3,7 @@
 .node--type-article {
 
   /*
-  * - General styling
+  * - General Node Styling
   */
 
   .field-gallery {
@@ -11,11 +11,17 @@
   }
 
   .info-wrapper {
+
     padding: $gutter*2;
     height: 700px;
     overflow: hidden;
     position: relative;
     .node-info {
+      time {
+        @include font-regular;
+        font-size: 20px;
+        line-height: 18px;
+      }
       &:before {
         content: "";
         display: block;
@@ -24,7 +30,6 @@
         position: absolute;
       }
       h2 {
-        color: $design-brown;
         &:after {
           content: "";
           display: block;
@@ -36,15 +41,26 @@
         font-size: 16px;
         font-weight: 100;
       }
-      time {
-        @include font-regular;
-        font-size: 20px;
-        line-height: 18px;
-      }
     }
 
     .field-para {
-
+      overflow: hidden;
+      .field--name-field-paragraph-content {
+        &:after {
+          content: '';
+          transition: all 1s ease;
+          position: fixed;
+          bottom: 0;
+          transform: rotate(180deg);
+          right: 0;
+          left: 0;
+          opacity: 1;
+          z-index: 1;
+          height: 30vh;
+          width: 100%;
+          pointer-events: none;
+        }
+      }
     }
 
   }
@@ -59,7 +75,7 @@
       background-color: $design-golden-brown;
       .node-info {
         &:before {
-          border-left: 4px solid $design-brown;
+          border-left: 4px solid $gold;
         }
         time {
           color: $white;
@@ -76,22 +92,9 @@
     }
 
     .field-para {
-      overflow: hidden;
       .field--name-field-paragraph-content {
         &:after {
-          content: '';
-          background: linear-gradient($design-black,rgba(0,0,0,0));
-          transition: all 1s ease;
-          position: fixed;
-          bottom: 0;
-          transform: rotate(180deg);
-          right: 0;
-          left: 0;
-          opacity: 1;
-          z-index: 1;
-          height: 30vh;
-          width: 100%;
-          pointer-events: none;
+          background: linear-gradient($design-black,rgba(37, 37, 37, 1));
         }
       }
     }
@@ -101,7 +104,6 @@
     .info-wrapper {
       background-color: $white;
       .node-info {
-
         &:before {
           border-left: 4px solid $gold;
         }
@@ -109,12 +111,21 @@
           color: $design-black;
         }
         h2 {
+          color: $gold;
           &:after {
             border-bottom: 1px solid $design-black;
           }
         }
         h3 {
           color: $design-brown;
+        }
+      }
+    }
+
+    .field-para {
+      .field--name-field-paragraph-content {
+        &:after {
+          background: linear-gradient($white,rgba(255,255,255,0));
         }
       }
     }
@@ -131,6 +142,7 @@
           color: $design-black;
         }
         h2 {
+          color: $design-black;
           &:after {
             border-bottom: 1px solid $design-black;
           }
@@ -140,21 +152,28 @@
         }
       }
     }
+
+    .field-para {
+      .field--name-field-paragraph-content {
+        &:after {
+          background: linear-gradient($white,rgba(151, 130, 104, 1));
+        }
+      }
+    }
   }
 
   section.left-hs {
     width: 60%;
     height: 100%;
     float: left;
-
     .banner-images {
       height: 700px;
     }
   }
+
   section.right-hs {
     width: 40%;
     height: 100%;
     float: left;
-
   }
 }
