@@ -26,9 +26,6 @@
           cursor: pointer;
           height: 35px;
           width: 35px;
-          &:hover {
-            background-color: $design-black;
-          }
         }
         .owl-prev {
           margin-right: 5px;
@@ -43,10 +40,14 @@
         display: none;
       }
     }
+    &:hover {
+      .owl-next, .owl-prev {
+        background-color: $design-black;
+      }
+    }
   }
 
   section.right-hs {
-
 
   }
 }
