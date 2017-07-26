@@ -31,9 +31,6 @@
         cursor: pointer;
         height: 55px;
         width: 55px;
-        &:hover {
-          background-color: $design-black;
-        }
       }
       .owl-prev {
         float: left;
@@ -95,8 +92,10 @@
   }
 
   &:hover {
-    section.info-box {
-      transform: translateX(100%);
+    .owl-nav {
+      .owl-next, .owl-prev {
+        background-color: $design-black;
+      }
     }
     .view-footer {
       transform: translateY(36%);
