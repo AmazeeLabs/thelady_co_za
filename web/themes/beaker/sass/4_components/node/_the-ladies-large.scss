@@ -7,7 +7,7 @@
       width: 100%;
       @include transition(all 0.5s ease);
       .banner-images {
-        min-height: 700px;
+        height: 700px;
         width: 100%;
       }
     }
