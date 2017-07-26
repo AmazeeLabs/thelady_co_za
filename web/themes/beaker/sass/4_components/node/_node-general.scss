@@ -11,10 +11,18 @@
   }
 
   .info-wrapper {
-
+    padding: $gutter*2;
     height: 700px;
     overflow: hidden;
+    position: relative;
     .node-info {
+      &:before {
+        content: "";
+        display: block;
+        height: 140px;
+        left: 0;
+        position: absolute;
+      }
       h2 {
         color: $design-brown;
         &:after {
@@ -48,28 +56,19 @@
   &.black {
 
     .info-wrapper {
-      padding: $gutter*2;
       background-color: $design-golden-brown;
-      position: relative;
       .node-info {
         &:before {
-          content: "";
-          display: block;
-          height: 140px;
-          left: 0;
-          position: absolute;
-          border-left: 4px solid $gold;
+          border-left: 4px solid $design-brown;
         }
         time {
           color: $white;
         }
-
         h2 {
           &:after {
             border-bottom: 1px solid $white;
           }
         }
-
         h3 {
           color: $light-grey;
         }
@@ -100,43 +99,45 @@
 
   &.white {
     .info-wrapper {
-      padding: 40px;
       background-color: $white;
-      border-left: 4px solid $design-brown;
+      .node-info {
 
-      time {
-        color: $design-black;
-      }
-
-      h2 {
-        &:after {
-          border-bottom: 1px solid $design-black;
+        &:before {
+          border-left: 4px solid $gold;
         }
-      }
-
-      h3 {
-        color: $design-brown;
+        time {
+          color: $design-black;
+        }
+        h2 {
+          &:after {
+            border-bottom: 1px solid $design-black;
+          }
+        }
+        h3 {
+          color: $design-brown;
+        }
       }
     }
   }
 
   &.gold {
     .info-wrapper {
-      padding: 40px;
       background-color: $gold;
-
-      time {
-        color: $design-black;
-      }
-
-      h2 {
-        &:after {
-          border-bottom: 1px solid $design-black;
+      .node-info {
+        &:before {
+          border-left: 4px solid $design-black;
         }
-      }
-
-      h3 {
-        color: $design-brown;
+        time {
+          color: $design-black;
+        }
+        h2 {
+          &:after {
+            border-bottom: 1px solid $design-black;
+          }
+        }
+        h3 {
+          color: $design-brown;
+        }
       }
     }
   }
