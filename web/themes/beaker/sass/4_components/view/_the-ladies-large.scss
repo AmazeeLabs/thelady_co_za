@@ -27,20 +27,23 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 35px auto;
-        @include transition(all 0.5s ease);
         cursor: pointer;
         height: 55px;
         width: 55px;
+        transition: transform 1.7s cubic-bezier(.19,1,.22,1);
+        @include transition(all 0.5s ease-out);
       }
       .owl-prev {
         float: left;
         margin-right: 5px;
         background-image: url(../images/icons/prev.png);
+        transform: translateX(-100%);
       }
       .owl-next {
         float: right;
         margin-left: 5px;
         background-image: url(../images/icons/next.png);
+        transform: translateX(100%);
       }
     }
     .owl-dots {
@@ -61,8 +64,8 @@
     visibility: hidden;
     position: absolute;
     transform: translateY(60%);
-    @include transition(all 0.5s ease-out);
     transition: transform 1.7s cubic-bezier(.19,1,.22,1);
+    @include transition(all 0.5s ease-out);
     span {
       font-size: 0;
       position: absolute;
@@ -94,12 +97,15 @@
   &:hover {
     .owl-nav {
       .owl-next, .owl-prev {
+        transform: translateX(0);
+        @include transition(all 0.5s ease);
         background-color: $design-black;
       }
     }
     .view-footer {
-      transform: translateY(36%);
       visibility: visible;
+      transform: translateY(36%);
+      @include transition(all 0.5s ease);
     }
     .mini-tl-teasers {
       visibility: hidden;
@@ -112,23 +118,24 @@
   &.open-mini {
 
     .view-footer {
-      height: 25%;
-      bottom: 23%;
+      height: 30%;
+      bottom: 18%;
       visibility: visible;
+      background-color: $design-golden-brown;
       span {
         bottom: 75%;
         &:before {
           @include rotate(-45deg);
         }
-
         &:after {
           @include rotate(45deg);
         }
       }
       .mini-tl-teasers {
-        //bottom: 20%;
+        bottom: 20%;
         visibility: visible;
         transform: translateY(52%);
+        @include transition(all 0.5s ease);
       }
     }
   }

@@ -300,17 +300,34 @@
 
 
   /*
-  * - Display more button / close button & carousels on hover of the window
+  * - Open the mini carousel under The Ladies
+  * -
   */
 
-  Drupal.behaviors.closeOpenBtns = {
+  Drupal.behaviors.openMiniCarousel = {
     attach: function (context, settings) {
 
       $('#js-more-btn').click(function() {
-        //console.log(this);
 
         $('.the-ladies').toggleClass('open-mini');
-        //$('.info-box').toggleClass('toggle-view');
+        $('.info-box').removeClass('onload');
+
+      });
+
+    }
+  };
+
+  /*
+  * - Open the mini carousel under The Ladies
+  */
+
+  Drupal.behaviors.openMiniCarousel = {
+    attach: function (context, settings) {
+
+      $('#js-more-btn').click(function() {
+
+        $('.the-ladies').toggleClass('open-mini');
+        $('.info-box').removeClass('onload');
 
       });
 
