@@ -27,20 +27,22 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 35px auto;
-        @include transition(all 0.5s ease);
         cursor: pointer;
         height: 55px;
         width: 55px;
+        transition: transform 1.7s cubic-bezier(.19,1,.22,1);
       }
       .owl-prev {
         float: left;
         margin-right: 5px;
         background-image: url(../images/icons/prev.png);
+        transform: translateX(-100%);
       }
       .owl-next {
         float: right;
         margin-left: 5px;
         background-image: url(../images/icons/next.png);
+        transform: translateX(100%);
       }
     }
     .owl-dots {
@@ -94,6 +96,7 @@
   &:hover {
     .owl-nav {
       .owl-next, .owl-prev {
+        transform: translateX(0);
         background-color: $design-black;
       }
     }
