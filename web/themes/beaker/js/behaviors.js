@@ -299,7 +299,7 @@
   };
 
 
-   /*
+  /*
   * - Display more button / close button & carousels on hover of the window
   */
 
@@ -316,6 +316,20 @@
 
     }
   };
+
+
+  /*
+  * - On load of the ladies page transition the section info box
+  */
+  Drupal.behaviors.transInfoBox = {
+    attach: function (context, settings) {
+
+      $(window).load(function() {
+        $('.node--type-the-ladies.node--view-mode-teaser .info-box').addClass('onload');
+      });
+    }
+  };
+
 
 
 
