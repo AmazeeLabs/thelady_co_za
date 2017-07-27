@@ -120,7 +120,7 @@
 
     .view-footer {
       height: 30%;
-      bottom: 18%;
+      bottom: 14%;
       visibility: visible;
       background-color: $design-golden-brown;
       span {
@@ -133,9 +133,9 @@
         }
       }
       .mini-tl-teasers {
-        bottom: 20%;
+        bottom: 17%;
         visibility: visible;
-        transform: translateY(52%);
+        transform: translateY(35%);
         @include transition(all 0.5s ease);
       }
     }
