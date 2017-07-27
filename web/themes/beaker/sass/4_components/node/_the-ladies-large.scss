@@ -9,7 +9,7 @@
       .banner-images {
         height: 700px;
         width: 100%;
-        @include breakpoint($tablet) {
+        @include breakpoint($desktop) {
           height: 350px;
         }
       }

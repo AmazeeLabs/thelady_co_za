@@ -94,7 +94,7 @@
     .field-para {
       .field--name-field-paragraph-content {
         &:after {
-          background: linear-gradient($design-golden-brown,rgba(37, 37, 37, 1));
+          //background: linear-gradient($design-golden-brown,rgba(37, 37, 37, 1));
         }
       }
     }
@@ -125,7 +125,7 @@
     .field-para {
       .field--name-field-paragraph-content {
         &:after {
-          background: linear-gradient($white,rgba(255,255,255,0));
+          //background: linear-gradient($white,rgba(255,255,255,0));
         }
       }
     }
@@ -156,7 +156,7 @@
     .field-para {
       .field--name-field-paragraph-content {
         &:after {
-          background: linear-gradient($gold,rgba(151, 130, 104, 1));
+          //background: linear-gradient($gold,rgba(151, 130, 104, 1));
         }
       }
     }
@@ -166,13 +166,13 @@
     width: 60%;
     height: 100%;
     float: left;
-    @include breakpoint ($tablet) {
+    @include breakpoint ($desktop) {
       width: 100%;
       float: none;
     }
     .banner-images {
       height: 700px;
-      @include breakpoint ($tablet) {
+      @include breakpoint ($desktop) {
         height: 350px;
       }
     }
@@ -182,7 +182,7 @@
     width: 40%;
     height: 100%;
     float: left;
-    @include breakpoint ($tablet) {
+    @include breakpoint ($desktop) {
       width: 100%;
       float: none;
     }

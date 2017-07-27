@@ -6,10 +6,9 @@ dependencies:
     - field.field.paragraph.image_row.field_bg_color
     - field.field.paragraph.image_row.field_image
     - field.field.paragraph.image_row.field_title
-    - image.style.medium_square
     - paragraphs.paragraphs_type.image_row
   module:
-    - image
+    - image_url_formatter
     - options
 id: paragraph.image_row.default
 targetEntityType: paragraph
@@ -28,8 +27,9 @@ content:
     settings:
       image_style: medium_square
       image_link: ''
+      url_type: ''
     third_party_settings: {  }
-    type: image
+    type: image_url
   field_title:
     weight: 1
     label: inline

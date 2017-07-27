@@ -6,6 +6,12 @@
       display: none;
     }
 
+    .banner-images {
+      height: 551px;
+      @include breakpoint($desktop) {
+        height: 350px;
+      }
+    }
     .text-box {
       top: 38%;
       width: 100%;
