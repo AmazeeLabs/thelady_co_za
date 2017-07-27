@@ -9,6 +9,9 @@
       .banner-images {
         height: 700px;
         width: 100%;
+        @include breakpoint($tablet) {
+          height: 350px;
+        }
       }
     }
     section.info-box {
