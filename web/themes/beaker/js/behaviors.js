@@ -142,6 +142,7 @@
           animateIn: 'fadeIn',
           animateOut: 'fadeInDown',
           smartSpeed:250
+
       });
 
       $('.node--type-article .field-gallery',context).owlCarousel({
@@ -151,6 +152,7 @@
           animateIn: 'fadeIn',
           animateOut: 'fadeInDown',
           smartSpeed: 250
+
       });
     }
   };
@@ -272,7 +274,7 @@
             1000:{
                 items:5
             }
-        }
+          }
       });
     }
   };
