@@ -1,11 +1,14 @@
 .news-filter,
 .event-filter {
   position: relative;
-  width: 384px;
+  max-width: 384px;
   margin: $gutter*2 auto;
   background: $design-black;
   z-index: 2;
   cursor: pointer;
+  @include breakpoint($small) {
+    width: 100%;
+  }
   .view-header {
     text-align: center;
     padding: $gutter 0;
@@ -21,6 +24,9 @@
     position: absolute;
     width: 384px;
     text-align: center;
+     @include breakpoint($small) {
+      width: 100%;
+    }
     .filter-row {
       opacity: 0;
       background-color: $design-black;
