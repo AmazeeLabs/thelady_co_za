@@ -31,27 +31,32 @@
 /*
 * - mfp Overrides
 */
-
 .node--type-events,
 .node--type-article,
 .node--type-the-ladies {
 
-  .mfp-container {
-    top: -50%;
-    .mfp-content {
-      display: block;
-      .mfp-close {
-        right: 0 !important;
-        top: -44px !important;
-        opacity: 1;
-        background-color: $design-brown;
-      }
-      .mfp-title{
-        position: absolute;
-        top: -32px;
-        left: 15px;
-        z-index: 99999;
-        @include h3;
+  .mfp-wrap:not(.mfp-gallery) {
+
+    .mfp-container {
+      top: -50%;
+      .mfp-content {
+        display: block;
+        .mfp-close {
+          right: 0 !important;
+          top: -70px !important;
+          opacity: 1;
+          height: 70px;
+          padding-right: $gutter;
+          background-color: $design-brown;
+        }
+        .mfp-title{
+          position: absolute;
+          top: -60px;
+          left: 15px;
+          z-index: 99999;
+          @include h3;
+          line-height: 24px;
+        }
       }
     }
   }
