@@ -1,63 +1,72 @@
 .news-teasers,
 .event-teasers {
   width: 100%;
-  float: left;
-  margin: $gutter;
-  .view-content{
-    max-width: 1290px;
-    margin: 0 auto;
-    .news-item,
-    .event-item {
-      width: 31.1111%;
-      float: left;
-      margin: 0 25px 25px 0;
-      cursor: pointer;
-      display: block;
-      .node--view-mode-teaser {
-        position: relative;
-        .field-image {
-          overflow: hidden;
-          .banner-images {
-            height: 251px;
-            transform: scale(1.5);
-            @include transition(opacity 0.35s, transform 0.35s);
-          }
-        }
-        .text-row {
-          top: 0;
-          left: 0;
-          opacity: 0;
-          height: 100%;
-          position: absolute;
-          background-color: $gold;
-          line-height: 0;
-          padding: $gutter;
-          overflow: hidden;
-          @include transition(all 0.5s ease);
-          h4, h5 {
-            color: $white;
-            font-size: 14px;
-            margin-bottom: 5px;
-          }
-          &:before {
-            content: "";
-            display: block;
-            height: 65px;
-            left: 0;
-            position: absolute;
-            border-left: 4px solid $white;
-          }
+  margin: 0 auto;
+  .news-item,
+  .event-item {
+    width: 31.1111%;
+    float: left;
+    max-width: 376px;
+    margin: 0 25px 25px 0;
+    cursor: pointer;
+    display: block;
+    @include breakpoint($mobile) {
+      width: 100% !important;
+      float: none;
+      margin: 0 auto 25px;
+    }
+    @include breakpoint($desktop) {
+      width: 45.1111% !important;
+    }
+    @include breakpoint($tablet-only) {
+      //width: 30.1111% !important;
+    }
+
+    .node--view-mode-teaser {
+      position: relative;
+      .field-image {
+        overflow: hidden;
+        .banner-images {
+          height: 160px;
+          //transform: scale(1.5);
+          //@include transition(opacity 0.35s, transform 0.35s);
         }
       }
-
-      &:hover {
-        .text-row {
-          opacity: 0.92;
+      .text-row {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 100%;
+        position: absolute;
+        background-color: $gold;
+        line-height: 0;
+        padding: $gutter;
+        overflow: hidden;
+        @include transition(all 0.5s ease);
+        h4, h5 {
+          color: $white;
+          font-size: 14px;
+          margin-bottom: 5px;
         }
-        .banner-images {
-          transform: scale(1);
+        &:before {
+          content: "";
+          display: block;
+          height: 65px;
+          left: 0;
+          position: absolute;
+          border-left: 4px solid $white;
         }
       }
     }
+
+    &:hover {
+      .text-row {
+        opacity: 0.92;
+      }
+      .banner-images {
+        transform: scale(1);
+      }
+    }
   }
+
 }

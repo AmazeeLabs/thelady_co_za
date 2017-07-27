@@ -54,7 +54,7 @@ $susy: (
 .path-frontpage .content-wrapper {
   max-width: 100% ;
   padding: 0;
-  margin: 0 auto -8px;
+  margin: 0 auto;
 }
 
 
@@ -68,7 +68,6 @@ $susy: (
 
     .inner {
       background-image: none !important;
-      padding: 0 15px;
       @include breakpoint($tablet-up) {
         @include container($susy);
         padding: 0 40px;
