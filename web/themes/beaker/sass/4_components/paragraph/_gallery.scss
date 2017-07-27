@@ -25,32 +25,35 @@
 /*
 * - Magnific Popup overrides
 */
+.node--type-the-ladies,
+.node--type-events,
+.node--type-article {
 
-.mfp-gallery {
-  .mfp-container {
+  .mfp-gallery {
+    .mfp-container {
 
+      .mfp-arrow {
+        font-size: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $design-black;
+        border-radius: 50%;
+        background-size: 50px auto;
+        display: inline-block;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        @include transition(all 0.5s ease);
+      }
 
-    .mfp-arrow {
-      font-size: 0;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-color: $design-black;
-      border-radius: 50%;
-      background-size: 50px auto;
-      display: inline-block;
-      cursor: pointer;
-      height: 50px;
-      width: 50px;
-      @include transition(all 0.5s ease);
-    }
-
-    .mfp-arrow-left {
-      left: $gutter*2;
-      background-image: url(../images/icons/prev.png);
-    }
-    .mfp-arrow-right {
-      right: $gutter*2;
-      background-image: url(../images/icons/next.png);
+      .mfp-arrow-left {
+        left: $gutter*2;
+        background-image: url(../images/icons/prev.png);
+      }
+      .mfp-arrow-right {
+        right: $gutter*2;
+        background-image: url(../images/icons/next.png);
+      }
     }
   }
 }
