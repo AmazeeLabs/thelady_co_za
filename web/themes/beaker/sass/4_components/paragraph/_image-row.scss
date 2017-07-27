@@ -1,28 +1,40 @@
 .paragraph--type--image-row {
-
   /*
   * - General styling
   */
-
+  .banner-images {
+    height: 551px;
+    @include breakpoint($desktop) {
+      height: 350px;
+    }
+  }
   .caption {
     text-align: right;
-    margin-right: 25px;
     &:after {
       content: "";
       display: block;
       float: right;
+      width: 50%;
     }
   }
 
-  &.white {
-
+  &.white, &.black {
     .caption {
       &:after {
-        width: 50%;
         border-bottom: 1px solid $gold;
       }
       p {
         color: $white;
+      }
+    }
+  }
+  &.gold {
+    .caption {
+      &:after {
+        border-bottom: 1px solid $design-black;
+      }
+      p {
+        color: $design-black;
       }
     }
   }
