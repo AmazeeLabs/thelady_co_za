@@ -166,6 +166,10 @@
     width: 60%;
     height: 100%;
     float: left;
+    @include breakpoint ($tablet) {
+      width: 100%;
+      float: none;
+    }
     .banner-images {
       height: 700px;
     }
@@ -175,5 +179,9 @@
     width: 40%;
     height: 100%;
     float: left;
+    @include breakpoint ($tablet) {
+      width: 100%;
+      float: none;
+    }
   }
 }
