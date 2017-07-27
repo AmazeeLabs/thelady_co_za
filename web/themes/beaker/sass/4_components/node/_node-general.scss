@@ -13,7 +13,7 @@
   .info-wrapper {
 
     padding: $gutter*2;
-    height: 700px;
+    height: auto;
     overflow: hidden;
     position: relative;
     .node-info {
@@ -172,6 +172,9 @@
     }
     .banner-images {
       height: 700px;
+      @include breakpoint ($tablet) {
+        height: 350px;
+      }
     }
   }
 
