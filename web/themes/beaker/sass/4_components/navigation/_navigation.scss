@@ -10,26 +10,34 @@ nav.menu--main {
   }
   ul {
     margin-left: 0;
-    padding-bottom: 10px;
+    padding: $gutter 0;
     li {
       display: inline;
       padding: 0;
       margin: 0 $gutter;
       @include breakpoint($tablet) {
         display: block;
-        margin: $gutter;
+        margin: $gutter/2 0;
+        padding: $gutter/2 $gutter;
       }
       a {
         font-weight: 700;
         font-size: 20px;
         color: $design-black;
         padding-bottom: 8px;
+        &.is-active {
+          color: $gold;
+        }
         @include breakpoint($tablet) {
           color: $gold;
         }
-        &:hover, &:active {
-          color: $gold;
-          transform: translateY(-100%);
+      }
+      &:hover {
+        @include breakpoint($tablet) {
+          background-color: $design-golden-brown;
+          a {
+            color: $gold;
+          }
         }
       }
     }
