@@ -60,7 +60,7 @@
     text-align: center;
     width: 100%;
     height: 80px;
-    bottom: $gutter;
+    bottom: 0;
     visibility: hidden;
     position: absolute;
     transform: translateY(60%);
@@ -103,6 +103,7 @@
       }
     }
     .view-footer {
+      bottom: 4%;
       visibility: visible;
       transform: translateY(36%);
       @include transition(all 0.5s ease);
