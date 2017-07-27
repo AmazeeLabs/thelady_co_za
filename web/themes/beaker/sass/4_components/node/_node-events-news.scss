@@ -26,6 +26,9 @@
           cursor: pointer;
           height: 35px;
           width: 35px;
+          @include breakpoint($tablet) {
+            background-color: $design-black;
+          }
         }
         .owl-prev {
           margin-right: 5px;
