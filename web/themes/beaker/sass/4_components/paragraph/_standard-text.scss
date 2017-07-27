@@ -10,17 +10,22 @@
   &.black {
 
     .paragraph--type--standard-text {
-      p { color: $white; }
+      p {
+        color: $white;
+      }
+      .caption {
+
+      }
     }
   }
 
   &.white,
   &.gold {
     .paragraph--type--standard-text {
-      p { color: $design-black; }
+      p {
+        color: $design-black;
+      }
     }
   }
-
-
 }
 
