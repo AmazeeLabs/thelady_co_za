@@ -1,0 +1,33 @@
+uuid: 82d0a163-cdb4-432b-8c40-0554e53d4460
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: news_nodes
+label: 'News nodes'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  9a00f555-958f-4756-937e-d1bdd04ccdad:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9a00f555-958f-4756-937e-d1bdd04ccdad
+  0cc538ed-4328-4603-8ffa-b415c0350742:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 0cc538ed-4328-4603-8ffa-b415c0350742
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

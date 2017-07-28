@@ -1,0 +1,33 @@
+uuid: e06555cf-f6e4-4e84-8f89-d9339fa8d769
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: basic_page_nodes
+label: 'Basic Page nodes'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  8f58c699-c4b6-4f31-b4da-876b80ba3c34:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8f58c699-c4b6-4f31-b4da-876b80ba3c34
+  783a5e3a-2e35-4016-8f73-00ef330e5e79:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 783a5e3a-2e35-4016-8f73-00ef330e5e79
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
