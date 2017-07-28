@@ -4,6 +4,9 @@
 
     .banner-images {
       height: 409px;
+      @include breakpoint($desktop) {
+        height: 551px;
+      }
     }
     .teaser-text {
       background-color: $design-golden-brown;

@@ -58,7 +58,9 @@
           margin: auto;
           display: block;
           position: absolute;
-
+          @include breakpoint($desktop) {
+            bottom: -10%;
+          }
           &:before ,
           &:after {
             content: '';
