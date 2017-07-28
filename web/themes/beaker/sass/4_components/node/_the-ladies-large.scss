@@ -9,8 +9,8 @@
       .banner-images {
         height: 700px;
         width: 100%;
-        @include breakpoint($desktop) {
-          height: 350px;
+        @include breakpoint($mobile) {
+          height: 400px;
         }
       }
     }
@@ -46,6 +46,9 @@
       }
       p {
         color: $gold;
+        @include breakpoint($mobile) {
+          display: none;
+        }
       }
       a {
         position: absolute;
@@ -80,6 +83,11 @@
           }
         }
       }
+      @include breakpoint($mobile) {
+        width: 100%;
+        bottom: 5%;
+        padding: $gutter*2;
+      }
       @include breakpoint($tablet) {
         visibility: hidden;
       }
@@ -93,7 +101,7 @@
       background-size: 20px auto;
       cursor: pointer;
       padding: $gutter;
-      bottom: $gutter*4;
+      bottom: $gutter*5;
       right: $gutter;
       transform: translateX(0);
       @include transition(all 0.5s ease);
