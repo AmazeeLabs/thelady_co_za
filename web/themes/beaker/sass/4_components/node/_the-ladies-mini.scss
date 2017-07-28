@@ -1,6 +1,9 @@
 .node--type-the-ladies {
 
   &.node--view-mode-mini-teasers {
+    @include breakpoint($small) {
+      display: none;
+    }
     .field-image {
       .banner-images {
         height: 130px;
