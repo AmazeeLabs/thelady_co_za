@@ -357,8 +357,7 @@
     attach: function (context, settings) {
 
       $('.info-icon').click(function() {
-        console.log(this);
-        $(this).toggleClass('onclick-info');
+        $(this).find('.js-info-box').css({'visibility':'visible'});
       });
     }
   };
