@@ -13,6 +13,7 @@ $desktop: max-width ($almost-wide - 1px);
 
 $mobile-only: $mobile;
 $tablet-only: ($tablet-up + 1px) ($desktop-up - 1px);
+$almost-wide-only: ($desktop-up + 1px) ($almost-wide - 1px);
 
 
 // JAVASCRIPT BREAKPOINTS

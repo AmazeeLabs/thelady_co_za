@@ -11,15 +11,15 @@
     cursor: pointer;
     display: block;
     @include breakpoint($mobile) {
-      width: 100% !important;
+      width: 100%;
       float: none;
       margin: 0 auto 25px;
     }
-    @include breakpoint($desktop) {
-      width: 45.1111% !important;
-    }
     @include breakpoint($tablet-only) {
-      //width: 30.1111% !important;
+      width: 45.1111%;
+    }
+    @include breakpoint($almost-wide-only) {
+      width: 30.1111%;
     }
 
     .node--view-mode-teaser {
