@@ -350,6 +350,18 @@
   };
 
 
+  /*
+  * - On click of the class .info-icon display the .info-box on mobile
+  */
+  Drupal.behaviors.displayInfoBox = {
+    attach: function (context, settings) {
+
+      $('.info-icon').click(function() {
+        console.log(this);
+        $(this).toggleClass('onclick-info');
+      });
+    }
+  };
 
 
 })(jQuery);
