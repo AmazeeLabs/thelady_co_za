@@ -3,6 +3,9 @@
   &.node--view-mode-hp-teasers {
     .banner-images {
       height: 960px;
+      @include breakpoint($desktop) {
+        height: 500px;
+      }
     }
     .info-box {
       width: 70%;
@@ -15,6 +18,10 @@
       z-index: 2;
       background-color: $design-black;
       border-right: 4px solid $gold;
+      @include breakpoint($desktop) {
+        height: 70%;
+        top: 15%;
+      }
       .text-row {
         position: relative;
         top: 50%;
