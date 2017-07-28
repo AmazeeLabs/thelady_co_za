@@ -1,0 +1,33 @@
+uuid: a12ee587-0b3e-4875-b65c-a52567be6686
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: the_ladies_nodes
+label: 'The Ladies nodes'
+type: 'canonical_entities:node'
+pattern: '/the-ladies/[node:title]'
+selection_criteria:
+  5c40ddc4-5c0f-4057-b35e-9d3b29238630:
+    id: node_type
+    bundles:
+      the_ladies: the_ladies
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5c40ddc4-5c0f-4057-b35e-9d3b29238630
+  f9c04781-892f-4a90-a745-b92d40fe6233:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: f9c04781-892f-4a90-a745-b92d40fe6233
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
