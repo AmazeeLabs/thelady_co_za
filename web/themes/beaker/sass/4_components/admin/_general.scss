@@ -1,12 +1,10 @@
 .content-wrapper {
   width: 100%;
-  min-height: calc(25vh);
   margin: 100px auto -8px;
 }
 
 .content-top {
   width: 100%;
-  min-height: calc(25vh);
   margin: 100px auto 100px;
   @include breakpoint($tablet){
     margin-top: $gutter*4;
