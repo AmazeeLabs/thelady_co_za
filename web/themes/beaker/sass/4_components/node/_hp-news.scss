@@ -3,10 +3,7 @@
   &.node--view-mode-hp-teasers {
 
     .banner-images {
-      height: 409px;
-      @include breakpoint($desktop) {
-        height: 551px;
-      }
+      height: 500px
     }
     .teaser-text {
       background-color: $design-golden-brown;
