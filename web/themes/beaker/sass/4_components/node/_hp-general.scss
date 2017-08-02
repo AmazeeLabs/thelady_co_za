@@ -58,8 +58,11 @@
           margin: auto;
           display: block;
           position: absolute;
+          @include breakpoint($mobile) {
+            bottom: -25% !important;
+          }
           @include breakpoint($desktop) {
-            bottom: -10%;
+            bottom: -15%;
           }
           &:before ,
           &:after {

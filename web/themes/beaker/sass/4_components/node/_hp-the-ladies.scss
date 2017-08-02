@@ -2,7 +2,7 @@
 
   &.node--view-mode-hp-teasers {
     .banner-images {
-      height: 960px;
+      height: 1000px;
       @include breakpoint($desktop) {
         height: 500px;
       }
@@ -18,7 +18,12 @@
       z-index: 2;
       background-color: $design-black;
       border-right: 4px solid $gold;
-      @include breakpoint($desktop) {
+      @include breakpoint($mobile) {
+        height: 50% !important;
+        top: 25% !important;
+        padding: $gutter*2 !important;
+      }
+      @include breakpoint($almost-wide-only) {
         height: 70%;
         top: 15%;
       }
@@ -42,6 +47,9 @@
         }
         p {
           color: $gold;
+          @include breakpoint($almost-desktop) {
+            display: none;
+          }
         }
         a {
           position: absolute;

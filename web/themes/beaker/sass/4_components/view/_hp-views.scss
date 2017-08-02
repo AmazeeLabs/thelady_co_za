@@ -10,12 +10,21 @@
 .hp-events {
   width: 50%;
   float: right;
-  @include breakpoint($desktop) {
-    float: left;
+  @include breakpoint($small) {
+    float: none;
+    width: 100%;
   }
 }
 
 .hp-news {
   width: 50%;
   float: right;
+}
+
+.hp-events,
+.hp-news {
+  @include breakpoint($mobile) {
+    float: none;
+    width: 100%;
+  }
 }
