@@ -345,6 +345,7 @@
 
       $(window).load(function() {
         $('.node--type-the-ladies.node--view-mode-teaser .info-box').addClass('onload');
+        $('.node--type-the-ladies.node--view-mode-hp-teasers .info-box').addClass('onload');
       });
     }
   };
