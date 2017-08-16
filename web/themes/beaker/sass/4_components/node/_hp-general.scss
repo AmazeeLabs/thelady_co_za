@@ -58,6 +58,7 @@
           margin: auto;
           display: block;
           position: absolute;
+          @include transition(all 0.5s ease);
           @include breakpoint($mobile) {
             bottom: -25% !important;
           }
@@ -72,6 +73,7 @@
             cursor: pointer;
             height: 2px;
             width: 30px;
+            @include transition(all 0.5s ease);
           }
 
           &:before {
@@ -87,6 +89,16 @@
 
       }
     }
-
+    &:hover {
+      .teaser-text {
+        opacity: 0.97;
+        span {
+          &:before,
+          &:after {
+            width: 35px;
+          }
+        }
+      }
+    }
   }
 }
