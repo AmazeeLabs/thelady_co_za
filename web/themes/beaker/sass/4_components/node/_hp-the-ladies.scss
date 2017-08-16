@@ -70,6 +70,7 @@
             width: 30px;
             height: 30px;
             cursor: pointer;
+            @include transition(all 0.5s ease);
             &:before ,
             &:after {
               content: '';
@@ -79,6 +80,7 @@
               height: 2px;
               width: 30px;
               background: $gold;
+              @include transition(all 0.5s ease);
             }
 
             &:before {
@@ -97,7 +99,14 @@
     }
     &:hover {
       .info-box {
-
+        .text-row {
+          a span {
+            &:before,
+            &:after {
+              width: 35px;
+            }
+          }
+        }
       }
     }
   }
